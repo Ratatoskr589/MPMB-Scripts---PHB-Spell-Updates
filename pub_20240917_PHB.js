@@ -14476,7 +14476,7 @@ SpellsList["conjure fey"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Conj. a Med Fey Spirit, make one melee spell atk against a crea w/i 5ft of the spirit dealing 3d12+2d12/SL plus casting ability mod, crea has fright. cond until start of next turn. As Bns on subsequent turns can teleport spirit up to 30 feet and make atk.",
+	description : "Medium fey; spell atk in 5ft; 3d12+2/SL+mod Psychic & Frightened 1 rd; Rd 2+ ba teleport 30ft+atk",
 	descriptionFull : "You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear." + "\n   " + "As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left, and make the attack against a creature within 5 feet of it." + AtHigherLevels + "The damage increases by 2d12 for each spell slot level above 6."
 };
 SpellsList["conjure minor elementals"] = {

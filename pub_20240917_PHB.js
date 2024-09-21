@@ -13763,7 +13763,7 @@ SpellsList["astral projection"] = {
 	descriptionFull : "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age." + "\n   " + "A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut which happens only when an effect specifically states that it does-your soul and body are separated, killing you instantly." + "\n   " + "A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane." + "\n   " + "Any damage or other effect that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it." + "\n   " + "When the spell ends for a target who isn't dead the target reappears in a body and exits the state of suspended animation."
 };
 SpellsList["augury"] = {
-	name : "Augury",
+	name : "Augury (R)",
 	classes : ["cleric", "druid", "wizard"],
 	source : [["PHB2024", 244]],
 	ritual : true,
@@ -13851,11 +13851,12 @@ SpellsList["banishing smite"] = {
 	source : [["PHB2024", 245]],
 	level : 5,
 	school : "Conj",
-	time : "1 bns",
+	time : "1 bns*",
+	timeFull : "1 Bonus Action, which you take immediately after hitting a creature with a melee weapon or an Unarmed Strike",
 	range : "Self",
 	components : "V",
 	duration : "Conc, 1 min",
-	description : "Next weapon hit +5d10 Force dmg; if this brings target HP<50, I banish it until spell ends",
+	description : "Melee wpn/unarmed hit +5d10 Force dmg; if this brings target HP<51, banished until spell ends",
 	descriptionFull : "The target hit by the attack roll takes an extra 5d10 Force damage from the attack. If the attack reduces the target to 50 Hit Points or fewer, the target must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.",
 };
 SpellsList["banishment"] = {
@@ -13870,7 +13871,7 @@ SpellsList["banishment"] = {
 	compMaterial : "A pentacle",
 	duration : "Conc, 1 min",
 	save : "Cha",
-	description : "1+1/SL crea save or banished; crea return if spell lasts < 1 min",
+	description : "1+1/SL crea  save or banished; Aberration/Celestial/Elemental/Fey/Fiend don't return if spell lasts 1 min",
 	descriptionFull : "One creature that you can see within range must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied." + "\n   " + "If the target is an Aberration, a Celestial, an Elemental, a Fey, or a Fiend, the target doesn't return if the spell lasts for 1 minute. The target is instead transported to a random location on a plane (DM's choice) associated with its creature type." + AtHigherLevels + "You can target one additional creature for each spell slot above 4."
 };
 SpellsList["barkskin"] = {
@@ -13901,7 +13902,7 @@ SpellsList["beacon of hope"] = {
 	descriptionFull : "Choose any number of creatures within range. For the duration, each target has Advantage on Wisdom saving throws and Death Saving Throws and regains the maximum number of Hit Points possible from any healing."
 };
 SpellsList["beast sense"] = {
-	name : "Beast Sense",
+	name : "Beast Sense (R)",
 	classes : ["druid", "ranger"],
 	source : [["PHB2024", 245]],
 	ritual : true,
@@ -13911,7 +13912,7 @@ SpellsList["beast sense"] = {
 	range : "Touch",
 	components : "S",
 	duration : "Conc, 1 h",
-	description : "Use 1 willing beast's senses; I'm blinded and deafened while doing so",
+	description : "Use 1 willing beast's senses as well as my own for the duration",
 	descriptionFull : "You touch a willing, Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has."
 };
 SpellsList["befuddlement"] = {
@@ -13926,7 +13927,7 @@ SpellsList["befuddlement"] = {
 	compMaterial : "A key ring with no keys",
 	duration : "Instantaneous",
 	save : "Int",
-	description : "1 crea Int save or take 10d12 Psy dmg and cant cast spell or take Magic action, remake save after 30 days.",
+	description : "1 crea 10d12 Psychic and can't cast spells/take Magic action; on save 5d12 only; resave every 30 days",
 	descriptionFull : "You blast the mind of a creature that you can see within range. The target makes an Intelligence saving throw." + "\n   " + "On a failed save, the target takes 10d12 Psychic damage and can't cast spells or take the Magic action. At the end of every 30 days, he target repeats the save, ending the effect on a success. The effect can also be ended by the Greater Restoration, Heal, or Wish spell." + "\n   " + "On a successful save, the target takes half as much damage only",
 };
 SpellsList["bestow curse"] = {
@@ -13940,13 +13941,13 @@ SpellsList["bestow curse"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 creature save or cursed, see book; duration SL4:conc, 10 min; SL5:8h; SL7:24h; SL9:until dispelled",
+	description : "1 creature save or cursed, see book; duration SL4: conc, 10 min; SL5: 8h; SL7: 24h; SL9: until dispelled",
 	descriptionFull : "You touch a creature, which must succeed on a Wisdom saving throw or become cursed for the duration. Until the curse ends, the target suffers one of the following effects of your choice:." + "\n " + "\u2022 Choose one ability. The target has Disadvantage on ability check and saving throws made with that ability." + "\n " + "\u2022 The target has Disadvantage on attack rolls against you." + "\n " + "\u2022 In combat, the target must succeed on a Wisdom saving throw at the start of each of its turns or be forced to take the Dodge action on that turn." + "\n " + "\u2022 If you deal damage to the target with an attack roll or a spell, the target takes an extra 1d8 Necrotic damage." + AtHigherLevels + "If you cast this spell using a level 4 spell slot, you can maintain Concentration on it for up to 10 minutes. If you use a level 5+ spell slot, the spell doesn't require Concentration, and the duration becomes 8 hours (level 5-6 slot) or 24 hours (7-8 slot). If you use a level 9 spell slot, the spell lasts until dispelled."
 };
 SpellsList["bigby's hand"] = {
 	name : "Bigby's Hand",
 	nameAlt : "Arcane Hand",
-	classes : ["sorcerer", "wizard"],
+	classes : ["artificer","sorcerer", "wizard"],
 	source : [["PHB2024", 246-247]],
 	level : 5,
 	school : "Evoc",
@@ -13955,7 +13956,7 @@ SpellsList["bigby's hand"] = {
 	components : "V,S,M",
 	compMaterial : "An eggshell and a glove",
 	duration : "Conc, 1 min",
-	description : "Large hand attacks, pushes, grapples or shields, see book; AC 20, my max HP; bns a move 60 ft",
+	description : "Large hand attacks, pushes, grapples or protects, see book; AC 20, my max HP; bns a move 60 ft & act",
 	descriptionFull : "You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand." + "\n   " + "The hand is an object that has AC 2 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space." + "\n   " + "When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects:" + "\n   " + "Clenched Fist. The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage." + "\n   " + "Forceful Hand. The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it. " + "\n   " + "Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. When the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier." + "\n   " + "Interposing Hand. The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, the space counts as Difficult Terrain for your enemies." + AtHigherLevels + "The damage of the Clenched Fist increases by 2d8 and the damage of the grasping Hand increases by 2d6 for each spell slot level above 5."
 };
 SpellsList["blade barrier"] = {
@@ -13969,7 +13970,7 @@ SpellsList["blade barrier"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	save : "Dex",
-	description : "100\xD720\xD75ft (l\xD7w\xD7h) wall or 60 diam 20\xD75ft (w\xD7h) ring; 6d10 Slashing dmg; save halves; 3/4 cover",
+	description : "100\xD720\xD75ft (l\xD7w\xD7h) wall or 60 dia 20\xD75ft (w\xD7h) ring; 3/4 cvr; cast/enter/EOT 6d10 Slashing (1/T/C, S:1/2)",
 	descriptionMetric : "60\xD76\xD71,5m (l\xD7w\xD7h) wall or 9 rad 6\xD71,5m (w\xD7h) ring; 6d10 Slashing dmg; save halves; 3/4 cover",
 	descriptionShorter : typePF ? false : "100|20|5ft (l|w|h) wall or 30|20|5ft (r|w|h) ring; 6d10 Slashing dmg; save half; \u00BEcover",
 	descriptionShorterMetric : typePF ? false : "60|6|1,5m (l|w|h) wall or 9|6|1,5m (r|w|h) ring; 6d10 Slash. dmg; save half; \u00BEcover",
@@ -13985,7 +13986,7 @@ SpellsList["blade ward"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "Conc, 1 min",
-	description : "For the duration, when a crea makes an atk roll against you it rolls 1d4 and subtracts it from the atk roll.",
+	description : "For the duration, creatures subtract 1d4 from attack rolls made against me",
 	descriptionFull : "Whenever a creature makes an attack roll against you before the spell ends, the attacker subtracts 1d4 from the attack roll."
 };
 SpellsList["bless"] = {
@@ -13996,10 +13997,10 @@ SpellsList["bless"] = {
 	school : "Ench",
 	time : "1 a",
 	range : "30 ft",
-	components : "V,S,M",
+	components : "V,S,M\u0192",
 	compMaterial : "A holy symbol worth 5+ gp",
 	duration : "Conc, 1 min",
-	description : "3+1/SL creatures can add 1d4 on every attack roll or saving throw during the duration",
+	description : "3+1/SL creatures can add 1d4 on every attack roll or saving throw for the duration (5gp)",
 	descriptionFull : "You bless up to three creatures within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target adds 1d4 to the attack roll or save." + AtHigherLevels + "You can target one additional creature for each spell slot above 1."
 };
 SpellsList["blight"] = {
@@ -14013,7 +14014,7 @@ SpellsList["blight"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "1 creature takes 8d8+1d8/SL Necrotic dmg; save halves; plants have dis. on save",
+	description : "1 creature takes 8d8+1d8/SL Necrotic dmg; save halves; Plant crea auto fails; nonmagical plant dies",
 	descriptionFull : "A creature that you can see within range makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one. A plant creature automatically fails the save." + "\n   " + "Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies." + AtHigherLevels + "The damage increases by 1d8 for each spell slot above 4."
 };
 SpellsList["blinding smite"] = {
@@ -14022,12 +14023,13 @@ SpellsList["blinding smite"] = {
 	source : [["PHB2024", 247-248]],
 	level : 3,
 	school : "Evoc",
-	time : "1 bns",
+	time : "1 bns*",
+	timeFull : "1 Bonus Action, which you take immediately after hitting a creature with a melee weapon or an Unarmed Strike",
 	range : "Self",
 	components : "V",
 	duration : "1 min",
 	save : "Con",
-	description : "Next melee weapon hit +3d8+1d8/SL Radiant dmg; save or blinded; extra save at end of every turn",
+	description : "Melee weapon/unarmed hit +3d8 +1d8/SL Radiant dmg; crea Blinded for 1 min; EOT save to end",
 	descriptionFull : "The target hit by the attack roll takes an extra 3d8 Force damage from the attack and the target must succeed on a Constitution saving throw, or it has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw,ending the spell on itself on a success." + AtHigherLevels + "The extra damage increases b 1d8 for each spell slot level above 3."
 };
 SpellsList["blindness/deafness"] = {
@@ -14041,25 +14043,25 @@ SpellsList["blindness/deafness"] = {
 	components : "V",
 	duration : "1 min",
 	save : "Con",
-	description : "1+1/SL crea save or blinded or deafened; extra save at end of every turn",
+	description : "1+1/SL crea save vs Blinded or Deafened; extra save at end of every turn",
 	descriptionFull : "One creature that you can see within range must succeed on a Constitution saving throw, or it has the Blinded or deafened condition (your choice) for the duration. At the end of each of its turns, the target repeats the save, ending the spell on itself on a success." + AtHigherLevels + "You can target one additional creature for each spell slot level above 2."
 };
 SpellsList["blink"] = {
 	name : "Blink",
-	classes : ["sorcerer", "wizard"],
+	classes : ["artificer","sorcerer", "wizard"],
 	source : [["PHB2024", 248]],
 	level : 3,
 	school : "Trans",
 	time : "1 a",
 	range : "Self",
 	components : "V,S",
-	duration : "1 min (D)",
-	description : "50% chance every turn to travel to Ethereal Plane and return to an empty space within 10 ft next turn",
+	duration : "1 min",
+	description : "50% chance every EOT to travel to Ethereal Plane and return to an empty space within 10 ft next turn",
 	descriptionFull : "Roll 1d6 at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plan, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane." + "\n   " + "You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space."
 };
 SpellsList["blur"] = {
 	name : "Blur",
-	classes : ["sorcerer", "wizard"],
+	classes : ["artificer","sorcerer", "wizard"],
 	source : [["PHB2024", 248]],
 	level : 2,
 	school : "Illus",
@@ -14067,7 +14069,7 @@ SpellsList["blur"] = {
 	range : "Self",
 	components : "V",
 	duration : "Conc, 1 min",
-	description : "Enemies have dis. on attacks vs. me; no effect against crea without vision or immune to illus.",
+	description : "Creatures have disadv. on attacks vs. me; no effect against creature with Blindsight or Truesight",
 	descriptionFull : "Your body becomes blurred. For the duration, any creature has Disadvantage on attack rolls against you. An attacker is immune to the effect if it perceives you with Blindsight or Truesight."
 };
 SpellsList["burning hands"] = {
@@ -14077,11 +14079,11 @@ SpellsList["burning hands"] = {
 	level : 1,
 	school : "Evoc",
 	time : "1 a",
-	range : "Self",
+	range : "S:15" + (typePF ? "-" : "") + "ft cone",
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "All in area 15-ft cone 3d6+1d6/SL Fire dmg; save halves; unattended flammable objects ignite",
+	description : "All in area 3d6+1d6/SL Fire dmg; save halves; unattended flammable objects start Burning",
 	descriptionFull : "A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one." + "\n   " + "Flammable objects in the Cone that aren't being worn or carried start burning." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 1."
 };
 SpellsList["call lightning"] = {

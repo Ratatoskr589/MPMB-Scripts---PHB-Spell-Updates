@@ -13498,7 +13498,7 @@ PacksList["scholar's pack"] = {
 //Spells
 SpellsList["acid splash"] = {
 	name : "Acid Splash",
-	classes : ["sorcerer", "wizard"],
+	classes : ["artificer","sorcerer", "wizard"],
 	source : [["PHB2024", 239]],
 	level : 0,
 	school : "Evoc",
@@ -13507,13 +13507,13 @@ SpellsList["acid splash"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "Ea crea within a 5 ft rad. sphere makes a Dex save or 1d6 Acid dmg; +1d6 at CL 5, 11, and 17",
+	description : "Each creature in 5 ft radius sphere save or 1d6 Acid dmg; +1d6 at CL 5, 11, and 17",
 	descriptionCantripDie : "Ea crea within a 5 ft rad. sphere makes a Dex save or `CD`d6 Acid dmg",
 	descriptionFull : "You create an acidic bubble at a point within range, where it explode in a 5-foot radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage." + "\n   " + "This spell's damage increases by 1d6 when you reach 5th Level (2d6), 11th level (3d6) and 17th level (4d6).",
 };
 SpellsList["aid"] = {
 	name : "Aid",
-	classes : ["bard", "cleric", "druid", "paladin", "ranger"],
+	classes : ["artificer","bard", "cleric", "druid", "paladin", "ranger"],
 	source : [["PHB2024", 239]],
 	level : 2,
 	school : "Abjur",
@@ -13526,8 +13526,8 @@ SpellsList["aid"] = {
 	descriptionFull : "Choose up to three creatures within range. Each target's Hit Point maximum and Current Hit Points increase by 5 for the duration." + AtHigherLevels + "Each target's Hit Points increases by 5 for each spell slot level above 2."
 };
 SpellsList["alarm"] = {
-	name : "Alarm",
-	classes : ["ranger", "wizard"],
+	name : "Alarm (R)",
+	classes : ["artificer","ranger", "wizard"],
 	source : [["PHB2024", 239]],
 	ritual : true,
 	level : 1,
@@ -13542,7 +13542,7 @@ SpellsList["alarm"] = {
 };
 SpellsList["alter self"] = {
 	name : "Alter Self",
-	classes : ["sorcerer", "wizard"],
+	classes : ["artificer","sorcerer", "wizard"],
 	source : [["PHB2024", 239]],
 	level : 2,
 	school : "Trans",
@@ -13550,7 +13550,7 @@ SpellsList["alter self"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "Conc, 1 h",
-	description : "Change appearance, gain +1 magical 1d6 natural weapons, or water breathing and swim spd",
+	description : "Change appearance, gain natural weapons (1d6, spell ablty), or water breathing & swim spd; a to switch",
 	descriptionFull : "You alter your physical form. Choose one of the following options. Its effects last for the duration, during which you can take a Magic action to replace the option you chose with a different one." + "\n   " + toUni("Aquatic Adaptation") + ": You sprout gills and grow webs between your fingers. You can breathe underwater and gain a Swim Speed equal to your Speed." + "\n   " + toUni("Change Appearance") + ": You alter your appearance. You decide what you look like, including your height, weight, facial features, sound of your voice, hair length, coloration, and other distinguishing characteristics. You can make yourself appear as a member of another species, though none of your statistics change. You can't appear as a creature of a different size, and your basic shape stays the same; if you're bipedal, you can't use this spell to become quadrupedal, for instance. For the duration, you can take a Magic action to change your appearance in this way again." + "\n   " + toUni("Natural Weapons") + ": You grow claws (Slashing), fangs (Piercing), horns (Piercing), or hooves (Bludgeoning). When you use your Unarmed Strike to deal damage with that new growth, it deals 1d6 damage of the type in parenthesis instead of dealing the normal damage for your Unarmed Strike, and you use your spellcasting ability modifier for the attack and damage rolls rather than using Strength."
 };
 SpellsList["animal friendship"] = {
@@ -13565,11 +13565,11 @@ SpellsList["animal friendship"] = {
 	compMaterial : "A morsel of food",
 	duration : "24 h",
 	save : "Wis",
-	description : "1+1/SL beasts save or charmed for the duration",
+	description : "1+1/SL beasts save or Charmed. Ends if target damaged by me or allies.",
 	descriptionFull : "Target a Beast that you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. If you or one of your allies deals damage to the target, the spell ends." + AtHigherLevels + "You can target one additional Beast for each spell slot above 1."
 };
 SpellsList["animal messenger"] = {
-	name : "Animal Messenger",
+	name : "Animal Messenger (R)",
 	classes : ["bard", "druid", "ranger"],
 	source : [["PHB2024", 240]],
 	ritual : true,
@@ -13581,10 +13581,10 @@ SpellsList["animal messenger"] = {
 	compMaterial : "A morsel of food",
 	duration : "24 h",
 	save : "Cha",
-	description : "Tiny beast makes Cha save or delivers 25 word message up to 25 miles (50 miles if flier); +48h/SL duration",
+	description : "Tiny beast save or delivers 25 word message up to 25 miles (50 miles if flyer); +48h/SL duration",
 	descriptionFull : "A Tiny Beast of your choice that you can see within range must succeed on a Charisma saving throw, or it attempts to deliver a message for you (if the target's Challenge Rating isn't 0, it automatically succeeds). You specify a location you have visited and a recipient who matches a general description such as 'a person dressed in the uniform of the town guard' or  'a red-haired dwarf wearing a pointed hat'. You also communicate a message of up to twenty-five words. The Beast travels for the duration toward the specified location, covering 25 miles per 24 hours or 50 miles if the Beast can fly." + "\n   " + "When the Beast arrives, it delivers your message to the creature that you described, mimicking your communication. If the Beast doesn't reach its destination before the spell ends, the message is lost, and the Beast returns to where you cast the spell." + AtHigherLevels + "The spell's duration increases by 48 hours for each spell slot level above 2."
 };
-SpellsList["animal shapes (wip)"] = {
+SpellsList["animal shapes"] = {
 	name : "Animal Shapes",
 	classes : ["druid"],
 	source : [["PHB2024", 240]],
@@ -13594,11 +13594,11 @@ SpellsList["animal shapes (wip)"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "24 h",
-	description : "Any willing creatures transform into up to Large CR4 beasts; retain Wis, Int, Cha, but nothing else",
-	descriptionFull : "Choose any number of willing creatures tat you can see within range. Each target shape-shifts into a Large or smaller Beast of your choice that has a Challenge Rating of 4 or lower. You can choose a different form for each target. On later turns, you can take a Magic action to transform the targets again." + "\n   " + "A target's game statistics are replaced by the chosen Beast's statistics, but the target retains its creature type; HitPoints; Hit Point Dice; alignment; ability to communicate and Intelligence, Wisdom, and Charisma scores. The target's actions are limited by the Beast form's anatomy, and it can't cast spells, the target's equipment melds into the new form, and the target can't use any of that equipment while in that form." + "\n   " + "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target..."
+	description : "Any willing crea becomes up to Lg CR4 beast; beast HP as THP; ends 0 THP or ba; see B for stat changes",
+	descriptionFull : "Choose any number of willing creatures tat you can see within range. Each target shape-shifts into a Large or smaller Beast of your choice that has a Challenge Rating of 4 or lower. You can choose a different form for each target. On later turns, you can take a Magic action to transform the targets again." + "\n   " + "A target's game statistics are replaced by the chosen Beast's statistics, but the target retains its creature type; HitPoints; Hit Point Dice; alignment; ability to communicate and Intelligence, Wisdom, and Charisma scores. The target's actions are limited by the Beast form's anatomy, and it can't cast spells, the target's equipment melds into the new form, and the target can't use any of that equipment while in that form." + "\n   " + "The target gains a number of Temporary Hit Points equal to the Beast form's Hit Points. The transformation lasts for the duration for each target, until the target has no Temporary Hit Points, or until the target leaves the form as a Bonus Action."
 };
 SpellsList["animate dead"] = {
-	name : "Animate Dead",
+	name : "Animate Dead (R)",
 	classes : ["cleric", "wizard"],
 	source : [["PHB2024", 240]],
 	level : 3,
@@ -13613,7 +13613,7 @@ SpellsList["animate dead"] = {
 };
 SpellsList["animate objects"] = {
 	name : "Animate Objects",
-	classes : ["bard", "sorcerer", "wizard"],
+	classes : ["artificer","bard", "sorcerer", "wizard"],
 	source : [["PHB2024", 240-241]],
 	level : 5,
 	school : "Trans",
@@ -13621,7 +13621,7 @@ SpellsList["animate objects"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Conc, 1 min",
-	description : "10+2/SL nonmagical objects not worn or carried; bns a command within 500 ft; see book",
+	description : "Spell mod nonmagical objects not worn/carried/fixed (M=1/L=2/H=3); bns command in 500 ft; see B",
 	descriptionFull : "Objects animate at your command. Choose a number of nonmagical objects within range that aren't being worn or carried, aren't fixed to a surface, and aren't Gargantuan. The maximum number of objects is equal to your spellcasting ability modifier, for this number, a Medium or smaller target counts as one object, a Large target counts as two, and a Huge target counts as four." + "\n   " + "Each target animates, sprouts legs, and becomes a Construct that uses the Animated Object stat block; this creature is under your control until the spell ends or until it is reduced to 0 Hit Points. Each creature you make with this spell is an ally to you and your allies. In combat, it shares your Initiative count and takes its turn immediately after yours." + "\n   " + "Until the spell ends you can take a Bonus Action you can mentally command any creatures you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to each one). If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. When the creature drops to 0 Hit Points it reverts to its object form, and any remaining damage carries over to that form\n\n"+ AtHigherLevels + "The creature's Slam damage increases by 1d4 (Medium or smaller), 1d6 (Large), or 1d12 (Huge) for each spell slot level above 5."
 };
 SpellsList["antilife shell"] = {
@@ -13631,10 +13631,10 @@ SpellsList["antilife shell"] = {
 	level : 5,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:10-ft rad",
 	components : "V,S",
 	duration : "Conc, 1 h",
-	description : "Only undead and constructs can come within 10 ft; if forced upon living creature the spell ends",
+	description : "Only undead and constructs can come within 10ft; spell ends if you move in 10ft of living creature",
 	descriptionFull : "An aura extends from you in a 10-foot Emanation for the duration. The aura prevents creatures other than Constructs and Undead from passing or reaching through it. An affected creature can cast spells or making attacks with Ranged or Reach weapons through the barrier." + "\n   " + "If you move so that an affected creature is forced to pass through the barrier, the spell ends.",
 };
 SpellsList["antimagic field"] = {
@@ -13644,11 +13644,11 @@ SpellsList["antimagic field"] = {
 	level : 8,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:10-ft rad",
 	components : "V,S,M",
 	compMaterial : "iron filings",
 	duration : "Conc, 1 h",
-	description : "No magical effects functions in area except those created by an artifact or a deity",
+	description : "Nothing magical functions in area except spells cast by an artifact or a deity",
 	descriptionFull : "An aura of antimagic surrounds you in a 10-foot Emanation. No one ca cast spells, take Magic actions, or create other magical effects inside the aura, and those things can't target or otherwise affect anything inside it. Magical properties of magic items don't work inside the aura or on anything inside it." + "\n   " + "Areas of effect created by spells or other magic can't extend into the aura, and no one can teleport into or out of it, or use planar travel there. Portals close temporarily while in the aura." + "\n   " + "Ongoing spells, except those cast by an Artifact or a deity, are suppressed in the are. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration." + "\n   " + "Dispel Magic has no effect on the aura, and the auras created by different Antimagic Field spells don't nullify each other."
 };
 SpellsList["antipathy/sympathy"] = {
@@ -13663,12 +13663,12 @@ SpellsList["antipathy/sympathy"] = {
 	compMaterial : "a mix of vinegar and honey",
 	duration : "10 days",
 	save : "Wis",
-	description : "Creature, or object attracts or repels specific type of crea; see book",
+	description : "Creature or up to Huge object attracts (save vs Charm) or repels (save vs Fear) specific crea type; see B",
 	descriptionFull : "As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. You choice of antipathy or sympathy determines what happens to a creature when it fails the save:" + "\n   " + toUni("Antipathy") + ": The creature has the Frightened condition. The Frightened creature must use its movement on its turn to get as far away as possible from the target, moving by the safest route." + "\n   " + toUni("Sympathy") + ": The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. IF the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below" + "\n   " + toUni("Ending the Effect") + ": If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a Successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again.",
 };
 SpellsList["arcane eye"] = {
 	name : "Arcane Eye",
-	classes : ["wizard"],
+	classes : ["artificer","wizard"],
 	source : [["PHB2024", 242]],
 	level : 4,
 	school : "Div",
@@ -13677,7 +13677,7 @@ SpellsList["arcane eye"] = {
 	components : "V,S,M",
 	compMaterial : "A bit of bat fur",
 	duration : "Conc, 1 h",
-	description : "Create invisible, moving (unlimited range, 30 ft/rnd) 1\" magic eye with darkvision I see through",
+	description : "Create invisible, 1\" magic eye with darkvision I see through; bns to move (unlimited range, 30 ft/rnd)",
 	descriptionFull : "You create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet." + "\n   " + "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter."
 };
 SpellsList["arcane gate"] = {
@@ -13690,7 +13690,7 @@ SpellsList["arcane gate"] = {
 	range : "500 ft",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Two portals, up to 500 ft apart, teleport any to other side; portals are filled with opaque mist",
+	description : "Two portals up to 500 ft apart filled with opaque mist; teleport any between; bns change orientation",
 	descriptionFull : "You create linked teleportation portals. Choose two Large, unoccupied spaces on the ground that you can see, one space within range and the other one within 10 feet of you. A circular portal opens in each of those spaces and remains for the duration." + "\n   " + "The portals are two-dimensional glowing rings filled with mist that blocks sight. They hover inches from the ground and are perpendicular to it." + "\n   " + "A portal is open on only one side (you choose which). Anything entering the open side of a portal exits from the open side on the other portal as if they two were adjacent to each other. As a Bonus Action, you can change the facing of the open sides."
 };
 SpellsList["arcane lock"] = {
@@ -13704,7 +13704,7 @@ SpellsList["arcane lock"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "Gold dust worth 25+ gp, which the spell consumes",
 	duration : "until dispelled",
-	description : "Entryway locked; password or designated crea opens;(25gp cons.)",
+	description : "Entryway locked; only password or designated crea opens (25gp cons.)",
 	descriptionFull : "You touch a closed door, window, gate, container, or hatch and magically lock it for the duration. This lock can't be unlocked by any nonmagical means. You and any creatures you designate when you cast the spell can open and close the object despite the lock. You can also set a password that, when spoken within 5 feet of the object, unlocks it for 1 minute."
 };
 SpellsList["arcane vigor"] = {
@@ -13717,7 +13717,7 @@ SpellsList["arcane vigor"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "You can spend 2+1/SL Hit Dice roll them and add your spellcasting mod and regain that much HP.",
+	description : "Roll 1-2 +1/SL unused hit dice and regain roll + spellcasting mod HP. Hit dice then expended.",
 	descriptionFull : "You tap into your life force to heal yourself. Roll one or two of your unexpended Hit Point Dice, and regain a number of Hit Point's equal to the rolls total plus your spellcasting ability modifier. Those dice are expended\n\n"+ AtHigherLevels + "The number of unexpended Hit Dice you can roll increases by one for each spell slot level above 2.",
 };
 SpellsList["armor of agathys"] = {
@@ -13731,7 +13731,7 @@ SpellsList["armor of agathys"] = {
 	components : "V,S,M",
 	compMaterial : "A shard of blue glass",
 	duration : "1 h",
-	description : "5+5/SL temp HP; as long as temp HP last any crea that hits in melee takes 5+5/SL Cold dmg",
+	description : "5+5/SL temp HP; while you have any temp HP any crea that hits in melee takes 5+5/SL Cold dmg",
 	descriptionFull : "Protective magical frost surrounds you. You gain 5 Temporary Hit Points. IF a creature hits you with a melee attack roll before the spell ends, the creature takes 5 Cold damage. The spell ends early if you have no Temporary Hit Points." + AtHigherLevels + "The Temporary Hit Points and the Cold damage both increase by 5 for each spell slot above 1."
 };
 SpellsList["arms of hadar"] = {
@@ -13741,7 +13741,7 @@ SpellsList["arms of hadar"] = {
 	level : 1,
 	school : "Conj",
 	time : "1 a",
-	range : "Self",
+	range : "S:10-ft rad",
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Str",
@@ -13757,9 +13757,9 @@ SpellsList["astral projection"] = {
 	time : "1 h",
 	range : "10 ft",
 	components : "V,S,M\u2020",
-	compMaterial : "For each of the spell's targets, one jacinth worth 1,000 gp and one silver bar worth 100+ gp, all of which the spell consumes",
+	compMaterial : "For each of the spell's targets, one jacinth worth 1,000+ gp and one silver bar worth 100+ gp, all of which the spell consumes",
 	duration : "Until dispelled",
-	description : "Me + 8 willing crea projected to Astral Plane with identical statistics (per crea 1100gp cons.)",
+	description : "Me + 8 willing crea projected to Astral Plane with identical statistics; see book (per crea 1100gp cons.)",
 	descriptionFull : "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age." + "\n   " + "A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut which happens only when an effect specifically states that it does-your soul and body are separated, killing you instantly." + "\n   " + "A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane." + "\n   " + "Any damage or other effect that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it." + "\n   " + "When the spell ends for a target who isn't dead the target reappears in a body and exits the state of suspended animation."
 };
 SpellsList["augury"] = {
@@ -13774,7 +13774,7 @@ SpellsList["augury"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "Specially marked sticks, bones, cards, or other divinatory tokens worth 25+ gp",
 	duration : "Instantaneous",
-	description : "Omen about specific course of action I plan to take in the next 30 min (25gp)",
+	description : "Omen about specific course of action I plan to take in next 30 min: weal/woe/both/neither (25gp)",
 	descriptionFull : "You receive an omen from an otherworldly entity about the result of a course of action that you plan to take within the next 30 minutes. The DM chooses the omen from the Omens table." + "\n " + "\u2022 Weal, for good results" + "\n " + "\u2022 Woe, for bad results" + "\n " + "\u2022 Weal and woe, for both good and bad results" + "\n " + "\u2022 Indifference, for results that aren't especially good or bad" + "\n\n" + "The spell doesn't account for circumstances, such as other spells, that might change the results." + "\n   " + "If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer."
 };
 SpellsList["aura of life"] = {
@@ -13784,10 +13784,10 @@ SpellsList["aura of life"] = {
 	level : 4,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V",
 	duration : "Conc, 10 min",
-	description : "Me + any crea while in area Necrotic dmg resist.; at turn start, 0 HP living in area heal 1 HP",
+	description : "While in area me + allies resist Necrotic dmg; at turn start, 0 HP ally heal 1 HP",
 	descriptionFull : "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally starts its turn in the aura with 0 Hit Points it regains 1 Hit Point."
 };
 SpellsList["aura of purity"] = {
@@ -13797,10 +13797,10 @@ SpellsList["aura of purity"] = {
 	level : 4,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V",
 	duration : "Conc, 10 min",
-	description : "Me + any crea while in area Poison dmg resist., adv. on saves vs. conditions",
+	description : "In area me + allies resist Poison, adv. on saves vs. Blind/Charm/Deaf/Frightened/Paralyze/Poison/Stun",
 	descriptionFull : "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Poison damage and Advantage on saving throws to avoid or end effects that include the Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned, or Stunned condition."
 };
 SpellsList["aura of vitality"] = {
@@ -13810,10 +13810,10 @@ SpellsList["aura of vitality"] = {
 	level : 3,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V",
 	duration : "Conc, 1 min",
-	description : "At the start of each of your turns for the duration, I can heal 2d6 HP to 1 creature in range (can be me)",
+	description : "On cast and at the start of each of my turns, I can heal 2d6 HP to 1 creature in range",
 	descriptionFull : "An aura radiates from you in a 30-foot Emanation for the duration. When you create the aura and at the start of each of your turns while it persists, you can restore 2d6 Hit Points to one creature in it."
 };
 SpellsList["awaken"] = {
@@ -13827,7 +13827,7 @@ SpellsList["awaken"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "An agate worth 1,000+ gp, which the spell consumes",
 	duration : "Instantaneous",
-	description : "Give beast or plant Int 10 and ability to move. Follows commands for 30 days (1000gp cons.)",
+	description : "Give beast or plant Int 10, speech and ability to move. Charmed for 30 days; see book (1000gp cons.)",
 	descriptionFull : "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must e either a Beast or Plant creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the Awakened Shrub or Awakened Tree in the Monster Manual." + "\n   " + "The awakened target has the Charmed condition for 30 days or until you or your allies deal damage to it. When the condition ends, the awakened creature chooses its attitude toward you."
 };
 SpellsList["bane"] = {

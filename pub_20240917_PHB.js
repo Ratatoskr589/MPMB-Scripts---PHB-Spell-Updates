@@ -13871,7 +13871,7 @@ SpellsList["banishment"] = {
 	compMaterial : "A pentacle",
 	duration : "Conc, 1 min",
 	save : "Cha",
-	description : "1+1/SL crea  save or banished; Aberration/Celestial/Elemental/Fey/Fiend don't return if spell lasts 1 min",
+	description : "1+1/SL crea  save or banished; aberration/celestial/elemental/fey/fiend don't return if spell lasts 1 min",
 	descriptionFull : "One creature that you can see within range must succeed on a Charisma saving throw or be transported to a harmless demiplane for the duration. While there, the target has the Incapacitated condition. When the spell ends, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied." + "\n   " + "If the target is an Aberration, a Celestial, an Elemental, a Fey, or a Fiend, the target doesn't return if the spell lasts for 1 minute. The target is instead transported to a random location on a plane (DM's choice) associated with its creature type." + AtHigherLevels + "You can target one additional creature for each spell slot above 4."
 };
 SpellsList["barkskin"] = {
@@ -14014,7 +14014,7 @@ SpellsList["blight"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "1 creature takes 8d8+1d8/SL Necrotic dmg; save halves; Plant crea auto fails; nonmagical plant dies",
+	description : "1 creature takes 8d8+1d8/SL Necrotic dmg; save halves; plant crea auto fails; nonmagical plant dies",
 	descriptionFull : "A creature that you can see within range makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one. A plant creature automatically fails the save." + "\n   " + "Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies." + AtHigherLevels + "The damage increases by 1d8 for each spell slot above 4."
 };
 SpellsList["blinding smite"] = {
@@ -14608,7 +14608,7 @@ SpellsList["control weather"] = {
 	compMaterial : "Burning incense",
 	duration : "Conc, 8 h",
 	description : "Change weather precipitation, temp, and wind in 5 miles; changes take 1d4\xD710 min; see book",
-	descriptionFull : "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early." + "\n   " + "When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 \xD7 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal." + "\n   " + "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction." + "\n\n" + toUni("Precipitation") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tClear" + "\n     " + "2\tLight clouds" + "\n     " + "3\tOvercast or ground fog" + "\n     " + "4\tRain, hail or snow" + "\n     " + "5\tTorrential rain, driving hail or blizzard" + "\n\n" + toUni("Temperature") + "\t\t" + toUni("Wind") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\t " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tUnbearable heat" + "\t     " + "1\tCalm" + "\n     " + "2\tHot" + "\t\t     " + "2\tModerate wind" + "\n     " + "3\tWarm" + "\t\t     " + "3\tStrong wind" + "\n     " + "4\tCool" + "\t\t     " + "4\tGale" + "\n     " + "5\tCold" + "\t\t     " + "5\tStorm" + "\n     " + "6\tArctic cold"
+	descriptionFull : "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early." + "\n   " + "When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 \xD7 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal." + "\n   " + "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction." + "\n\n" + toUni("Precipitation") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tClear" + "\n     " + "2\tLight clouds" + "\n     " + "3\tOvercast or ground fog" + "\n     " + "4\tRain, hail or snow" + "\n     " + "5\tTorrential rain, driving hail or blizzard" + "\n\n" + toUni("Temperature") + "\t\t" + toUni("Wind") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\t " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tHeat wave" + "\t     " + "1\tCalm" + "\n     " + "2\tHot" + "\t\t     " + "2\tModerate wind" + "\n     " + "3\tWarm" + "\t\t     " + "3\tStrong wind" + "\n     " + "4\tCool" + "\t\t     " + "4\tGale" + "\n     " + "5\tCold" + "\t\t     " + "5\tStorm" + "\n     " + "6\tAFreezing"
 };
 SpellsList["cordon of arrows"] = {
 	name : "Cordon of Arrows",
@@ -14651,7 +14651,7 @@ SpellsList["create food and water"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	description : "Create 45 pounds of food and 30 gallons of fresh water on ground/in containers; food lasts 24 hrs",
-	descriptionFull : "You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range - both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
+	descriptionFull : "You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range - both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
 };
 SpellsList["create or destroy water"] = {
 	name : "Create or Destroy Water",
@@ -14665,7 +14665,7 @@ SpellsList["create or destroy water"] = {
 	compMaterial : "A mix of water and sand",
 	duration : "Instantaneous",
 	description : "Create/destroy 10+10/SL gal of water in open container or create rain/destroy fog in 30+5ft/SL cu",
-	descriptionFull : "You do one of the following." + "\n   " + toUni("Create Water") + ": You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area." + "\n   " + toUni("Destroy Water") + ": You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
+	descriptionFull : "You do one of the following." + "\n   " + toUni("Create Water") + ": You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames there." + "\n   " + toUni("Destroy Water") + ": You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range." + AtHigherLevels + "You create or destroy 10 additional gallons of water, or the size of the Cube increases by 5 feet, for each spell slot level above 1."
 };
 SpellsList["create undead"] = {
 	name : "Create Undead",
@@ -14747,7 +14747,7 @@ SpellsList["dancing lights"] = {
 	compMaterial : "A bit of phosphorous",
 	duration : "Conc, 1 min",
 	description : "4 torch-sized lights or 1 humanlike Medium light; each emits 10-ft rad dim light; bns to move 60 ft",
-	descriptionFull : "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius." + "\n   " + "As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range."
+	descriptionFull : "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius." + "\n   " + "As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell’s range."
 };
 SpellsList["darkness"] = {
 	name : "Darkness",
@@ -14760,7 +14760,7 @@ SpellsList["darkness"] = {
 	components : "V,M",
 	compMaterial : "Bat fur and a piece of coal",
 	duration : "Conc, 10 min",
-	description : "15-ft rad darkness on point or object; darkvision doesn't work; only magical light of SL 3+ works in it",
+	description : "15-ft rad darkness on point or object; Darkvision doesn't work; only magical light of SL 3+ works in it",
 	descriptionFull : "For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it." + "\n   " + "Alternatively, you can cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covered that object with something opaque such as a bowl or helm, blocks the Darkness." + "\n   " + "If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled."
 };
 SpellsList["darkvision"] = {
@@ -14774,12 +14774,12 @@ SpellsList["darkvision"] = {
 	components : "V,S,M",
 	compMaterial : "A dried carrot",
 	duration : "8 h",
-	description : "1 willing creature has darkvision 150 ft for the duration",
+	description : "1 willing creature has Darkvision 150 ft for the duration",
 	descriptionFull : "For the duration, a willing creature you touch has Darkvision with a range of 150 feet."
 };
 SpellsList["daylight"] = {
 	name : "Daylight",
-	classes : ["cleric", "druid", "paladin", "ranger"],
+	classes : ["sorcerer","cleric", "druid", "paladin", "ranger"],
 	source : [["PHB2024", 260]],
 	level : 3,
 	school : "Evoc",
@@ -14787,7 +14787,7 @@ SpellsList["daylight"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "1 h",
-	description : "60-ft rad bright light + 60-ft dim light on point or object; only magical darkness of SL 4+ works in it",
+	description : "Sunlight in 60-ft rad bright + 60-ft dim on point or object; only magical darkness of SL 4+ works in it",
 	descriptionFull : "For the duration, sunlight spreads from a point within range and fills a 60-foot-radius Sphere. The sunlight's area is Bright Light and sheds Dim Light for an additional 60 feet." + "\n   " + "Alternatively, you cast the spell on an object that isn't being worn or carried, causing the sunlight to fill a 60-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the sunlight." + "\n   " + "If any of this spell's area overlaps with an area of Darkness created by a spell of level 3 or lower, that other spell is dispelled."
 };
 SpellsList["death ward"] = {
@@ -14800,8 +14800,8 @@ SpellsList["death ward"] = {
 	range : "Touch",
 	components : "V,S",
 	duration : "8 h",
-	description : "Once, when crea drops to 0 HP it drops to 1 HP instead; or negates first instantaneous kill effect",
-	descriptionFull : "You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 Hit Points before the spell ends, the target instead drops to 1 Hit Point, and the spell ends." + "\n   " + "If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, the effect is negated against the target, and the spell ends."
+	description : "First time crea drops to 0 HP it drops to 1 HP instead; or negates first instantaneous kill effect",
+	descriptionFull : "You touch a creature and grant it a measure of protection from death. The first time the target would drop to 0 Hit Points before the spell ends, the target instead drops to 1 Hit Point, and the spell ends." + "\n   " + "If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, that effect is negated against the target, and the spell ends."
 };
 SpellsList["delayed blast fireball"] = {
 	name : "Delayed Blast Fireball",
@@ -14815,8 +14815,8 @@ SpellsList["delayed blast fireball"] = {
 	compMaterial : "A ball of bat guano and sulfur",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "Create bead; at chosen moment, or if conc. is broken, 20-ft rad 12d6+1d6/SL Fire dmg; save halves",
-	descriptionFull : "A beam of yellow light flashes from your pointing finger, then condenses to linger at a chosen point within range as a glowing bead for the duration. When the spell ends, either because your concentration is broken or because you decide to end it, the bead blossoms with a low roar into an explosion of flame that spreads around corners. Each creature in a 20-foot-radius sphere centered on that point must make a Dexterity saving throw. A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one." + "\n   " + "The spell's base damage is 12d6. If at the end of your turn the bead has not yet detonated, the damage increases by 1d6." + "\n   " + "If the glowing bead is touched before the interval has expired, the creature touching it must make a Dexterity saving throw. On a failed save, the spell ends immediately, causing the bead to erupt in flame. On a successful save, the creature can throw the bead up to 40 feet. When it strikes a creature or a solid object, the spell ends, and the bead explodes." + "\n   " + "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried." + AtHigherLevels + "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th.",
+	description : "Create bead; when conc. ends (dropped/broken) 20ft rad 12d6+1d6/SL+1d6/EoT. Fire; save halves",
+	descriptionFull : "A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one." + "\n   " + "The spell’s base damage is 12d6, and the damage increases by 1d6 whenever your turn ends and the spell hasn’t ended." + "\n   " + "If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature’s space or collides with a solid object, the spell ends, and the bead explodes." + "\n   " + "When the bead explodes, flammable objects in the explosion that aren’t being worn or carried start burning." + AtHigherLevels + "The base damage increases by 1d6 for each spell slot level above 7.",
 	dynamicDamageBonus : { multipleDmgMoments : false }
 };
 SpellsList["demiplane"] = {
@@ -14829,8 +14829,8 @@ SpellsList["demiplane"] = {
 	range : "60 ft",
 	components : "S",
 	duration : "1 h",
-	description : "Create door to a demiplane of 30-ft cube; when spell ends, creatures inside remain trapped",
-	descriptionFull : "You create a shadowy door on a flat solid surface that you can see within range. The door is large enough to allow Medium creatures to pass through unhindered. When opened, the door leads to a demiplane that appears to be an empty room 30 feet in each dimension, made of wood or stone. When the spell ends, the door disappears, and any creatures or objects inside the demiplane remain trapped there, as the door also disappears from the other side." + "\n   " + "Each time you cast this spell, you can create a new demiplane, or have the shadowy door connect to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can have the shadowy door connect to its demiplane instead."
+	description : "Create door to 30-ft cu demiplane (new or existing); when spell ends, obj. remain, crea choose if stay",
+	descriptionFull : "You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice)." + "\n   " + "When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the Prone condition in the unoccupied spaces closest to the door’s former space." + "\n   " + "Each time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead."
 };
 SpellsList["destructive wave"] = {
 	name : "Destructive Wave",
@@ -14839,11 +14839,11 @@ SpellsList["destructive wave"] = {
 	level : 5,
 	school : "Evoc",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "30ft Emanation Any crea 5d6 Thunder dmg \u0026 5d6 Radiant or Necrotic dmg \u0026 knocked prone; save halves, not prone",
+	description : "Any crea 5d6 Thunder dmg & 5d6 Radiant or Necrotic dmg & knocked prone; save halves, not prone",
 	descriptionShorter : "30ft Eman. Any crea 5d6 Thunder dmg \u0026 5d6 Radiant or Necrotic dmg \u0026 prone; save half, not prone",
 	descriptionFull : "Destructive energy ripples outward from you in a 30-foot Emanation. Each creature you choose in the Emanation makes a Constitution saving throw. On a failed save, a target takes 5d6 Thunder damage and 5d6 Radiant or Necrotic damage (your choice) and has the Prone condition. On a successful save, a target takes half as much damage only.",
 	dynamicDamageBonus : {
@@ -14861,24 +14861,24 @@ SpellsList["detect evil and good"] = {
 	level : 1,
 	school : "Div",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Know if aberration, celestial, elemental, fey, fiend, undead, and des-/consecrated area within 30 ft",
-	descriptionFull : "For the duration, you sens the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the Hallow spell is active there and, if so, where." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+	description : "Know location of aberration, celestial, elemental, fey, fiend, undead, and Hallow spell in 30ft",
+	descriptionFull : "For the duration, you sense the location of any Aberration, Celestial, Elemental, Fey, Fiend, or Undead within 30 feet of yourself. You also sense whether the Hallow spell is active there and, if so, where." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
 };
 SpellsList["detect magic"] = {
 	name : "Detect Magic",
-	classes : ["artificer","bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "sorcerer", "wizard"],
+	classes : ["artificer","bard", "cleric", "druid", "paladin", "ranger", "sorcerer", "sorcerer", "warlock","wizard"],
 	source : [["PHB2024", 262]],
 	ritual : true,
 	level : 1,
 	school : "Div",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Know presence of magic within 30 ft; 1 a to see auras and determine school",
+	description : "Sense magic effects in 30ft; 1 a to see aura on magical object/creature and determine school",
 	descriptionFull : "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic Action to see a faint aura around any visible creature or object int he area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
 };
 SpellsList["detect poison and disease"] = {
@@ -14890,11 +14890,11 @@ SpellsList["detect poison and disease"] = {
 	level : 1,
 	school : "Div",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S,M",
 	compMaterial : "A yew leaf",
 	duration : "Conc, 10 min",
-	description : "Know presence, location, and type of poisons, poisonous creatures, and diseases within 30 ft",
+	description : "Know location and type of poisons, poisonous/venomous creatures, and magical contagions in 30 ft",
 	descriptionFull : "For the duration, you sense the location of poisons, poisonous or venomous creatures, and magical contagions within 30 feet of yourself. You sense the kind of poison, creature, or contagion in each case." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
 };
 SpellsList["detect thoughts"] = {
@@ -14904,12 +14904,12 @@ SpellsList["detect thoughts"] = {
 	level : 2,
 	school : "Div",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S,M",
 	compMaterial : "A copper piece",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "You can sense the presence of crea that know at least 1 language w/i 30 ft, action to probe crea mind and read thoughts, wis save",
+	description : "Sense thinking crea or read 1 crea surface thoughts; 1 a  switch or probe mind; save or Arc. chk to end",
 	descriptionFull : "You activate one of the effects below. Until the spell ends, you can activate either effect as a Magic Action on your later turns." + "\n   " + "Sense Thoughts. You sense the presence of thoughts within 30 feet of yourself that belong to creatures that know languages or are telepathic. You don't read the thoughts, but you know that a thinking creature is present." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead." + "\n   " + "Read Thoughts. Target one creature you can see within 30 feet of yourself or one creature within 30 feet of yourself that you detected with the Sense Thoughts option. You learn what is most on the target's mind right now if the target doesn't know any languages, they are unaffected." + "\n   " + "As a Magic action on your next turn, you can try to probe deeper into the target's mind. If you probe deeper, the target makes a Wisdom saving throw. On a failed save, you discern the target's reasoning, emotions, and something that looms large in it mind (such as a worry, love, or hate). On a successful save the spell ends. Either way, the target knows that you are probing into its mind, and until you shift your attention away from the target's mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
 };
 SpellsList["dimension door"] = {
@@ -14922,7 +14922,7 @@ SpellsList["dimension door"] = {
 	range : "500 ft",
 	components : "V",
 	duration : "Instantaneous",
-	description : "Teleport myself and 1 willing crea within 5 ft, up to 500 ft to a place I can see, specify, or describe",
+	description : "Teleport myself and 1 willing crea within 5 ft, up to 500 ft to place I can see, visualize or describe",
 	descriptionFull : "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as 200 feet straight downward or upward to the northwest at a 45-degree angle, 300 feet." + "\n   " + "You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell." + "\n   " + "If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you."
 };
 SpellsList["disguise self"] = {

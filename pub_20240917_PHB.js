@@ -13609,7 +13609,7 @@ SpellsList["animate dead"] = {
 	compMaterial : "A drop of blood, a piece of flesh, and a pinch of bone dust",
 	duration : "Instantaneous",
 	description : "Turn corpses into 1+2/SL Skeletons or Zombies; control for 24h; bns command within 60 ft",
-	descriptionFull : "Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. The target becomes an Undead creature: a Skeleton if you chose bones or a Zombie if you chose a corpse (see appendix B for the stat blocks)." + "\n   " + "On each of your turns, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command all of them at the same time, issuing the same command to each one) You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete." + "\n   " + "The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature." + AtHigherLevels + "You animate or reassert control over two additional Undead creatures for each spell slot level above 3.Each of the creatures must come from a different corpse or pile of bones."
+	descriptionFull : "Choose a pile of bones or a corpse of a Medium or Small Humanoid within range. The target becomes an Undead creature: a Skeleton if you chose bones or a Zombie if you chose a corpse (see appendix B for the stat blocks)." + "\n   " + "On each of your turns, you can take a Bonus Action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a chamber or corridor. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete." + "\n   " + "The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell rather than animating a new creature." + AtHigherLevels + "You animate or reassert control over two additional Undead creatures for each spell slot level above 3.Each of the creatures must come from a different corpse or pile of bones."
 };
 SpellsList["animate objects"] = {
 	name : "Animate Objects",
@@ -13664,7 +13664,7 @@ SpellsList["antipathy/sympathy"] = {
 	duration : "10 days",
 	save : "Wis",
 	description : "Creature or up to Huge object attracts (save vs Charm) or repels (save vs Fear) specific crea type; see B",
-	descriptionFull : "As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. You choice of antipathy or sympathy determines what happens to a creature when it fails the save:" + "\n   " + toUni("Antipathy") + ": The creature has the Frightened condition. The Frightened creature must use its movement on its turn to get as far away as possible from the target, moving by the safest route." + "\n   " + toUni("Sympathy") + ": The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. IF the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below" + "\n   " + toUni("Ending the Effect") + ": If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a Successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again.",
+	descriptionFull : "As you cast the spell, choose whether it creates antipathy or sympathy, and target one creature or object that is Huge or smaller. Then specify a kind of creature, such as red dragons, goblins, or vampires. A creature of the chosen kind makes a Wisdom saving throw when it comes within 120 feet of the target. You choice of antipathy or sympathy determines what happens to a creature when it fails the save:" + "\n   " + toUni("Antipathy") + ": The creature has the Frightened condition. The Frightened creature must use its movement on its turn to get as far away as possible from the target, moving by the safest route." + "\n   " + toUni("Sympathy") + ": The creature has the Charmed condition. The Charmed creature must use its movement on its turns to get as close as possible to the target, moving by the safest route. If the creature is within 5 feet of the target, the creature can't willingly move away. IF the target damages the Charmed creature, that creature can make a Wisdom saving throw to end the effect, as described below." + "\n   " + toUni("Ending the Effect") + ": If the Frightened or Charmed creature ends its turn more than 120 feet away from the target, the creature makes a Wisdom saving throw. On a Successful save, the creature is no longer affected by the target. A creature that successfully saves against this effect is immune to it for 1 minute, after which it can be affected again.",
 };
 SpellsList["arcane eye"] = {
 	name : "Arcane Eye",
@@ -13746,7 +13746,7 @@ SpellsList["arms of hadar"] = {
 	duration : "Instantaneous",
 	save : "Str",
 	description : "2d6+1d6/SL Necrotic dmg; save halves; on failed save no reactions until next turn",
-	descriptionFull : "Invoking Hadar, you cuase tendrils to erupt from yourself. Each creature in a 10-foot Emanation originating from you makes a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can't take Reactions until the start of its next turn. On a successful save, a target takes half as much damage only." + AtHigherLevels + "The damage increases by 1d6 for each spell slot levels above 1."
+	descriptionFull : "Invoking Hadar, you cause tendrils to erupt from yourself. Each creature in a 10-foot Emanation originating from you makes a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can't take Reactions until the start of its next turn. On a successful save, a target takes half as much damage only." + AtHigherLevels + "The damage increases by 1d6 for each spell slot levels above 1."
 };
 SpellsList["astral projection"] = {
 	name : "Astral Projection",
@@ -13760,7 +13760,7 @@ SpellsList["astral projection"] = {
 	compMaterial : "For each of the spell's targets, one jacinth worth 1,000+ gp and one silver bar worth 100+ gp, all of which the spell consumes",
 	duration : "Until dispelled",
 	description : "Me + 8 willing crea projected to Astral Plane with identical statistics; see book (per crea 1100gp cons.)",
-	descriptionFull : "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age." + "\n   " + "A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut which happens only when an effect specifically states that it does-your soul and body are separated, killing you instantly." + "\n   " + "A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane." + "\n   " + "Any damage or other effect that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it." + "\n   " + "When the spell ends for a target who isn't dead the target reappears in a body and exits the state of suspended animation."
+	descriptionFull : "You and up to eight willing creatures within range project your astral bodies into the Astral Plane (the spell ends instantly if you are already on that plane). Each target's body is left behind in a state of suspended animation; it has the Unconscious condition, doesn't need food or air, and doesn't age." + "\n   " + "A target's astral form resembles its body in almost every way, replicating its game statistics and possessions. The principal difference is the addition of a silvery cord that trails from between the shoulder blades of the astral form. The cord fades from view after 1 foot. If the cord is cut—which happens only when an effect states that it does so—the target's body and astral form both die." + "\n   " + "A target's astral form can travel through the Astral Plane. The moment an astral form leaves that plane, the target's body and possessions travel along the silver cord, causing the target to re-enter its body on the new plane." + "\n   " + "Any damage or other effects that apply to an astral form have no effect on the target's body and vice versa. If a target's body or astral form drops to 0 Hit Points, the spell ends for that target. The spell ends for all the targets if you take a Magic action to dismiss it." + "\n   " + "When the spell ends for a target who isn't dead, the target reappears in a body and exits the state of suspended animation."
 };
 SpellsList["augury"] = {
 	name : "Augury",
@@ -13788,7 +13788,7 @@ SpellsList["aura of life"] = {
 	components : "V",
 	duration : "Conc, 10 min",
 	description : "While in area me + allies resist Necrotic dmg; at turn start, 0 HP ally heal 1 HP",
-	descriptionFull : "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally starts its turn in the aura with 0 Hit Points it regains 1 Hit Point."
+	descriptionFull : "An aura radiates from you in a 30-foot Emanation for the duration. While in the aura, you and your allies have Resistance to Necrotic damage, and your Hit Point maximums can't be reduced. If an ally with 0 Hit Points starts its turn in the aura, that ally regains 1 Hit Point."
 };
 SpellsList["aura of purity"] = {
 	name : "Aura of Purity",
@@ -13828,7 +13828,7 @@ SpellsList["awaken"] = {
 	compMaterial : "An agate worth 1,000+ gp, which the spell consumes",
 	duration : "Instantaneous",
 	description : "Give beast or plant Int 10, speech and ability to move. Charmed for 30 days; see book (1000gp cons.)",
-	descriptionFull : "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must e either a Beast or Plant creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the Awakened Shrub or Awakened Tree in the Monster Manual." + "\n   " + "The awakened target has the Charmed condition for 30 days or until you or your allies deal damage to it. When the condition ends, the awakened creature chooses its attitude toward you."
+	descriptionFull : "You spend the casting time tracing magical pathways within a precious gemstone, and then touch the target. The target must be either a Beast or Plant creature with an Intelligence of 3 or less or a natural plant that isn't a creature. The target gains an Intelligence of 10 and the ability to speak one language you know. If the target is a natural plant, it becomes a Plant creature and gains the ability to move its limbs, roots, vines, creepers, and so forth, and it gains senses similar to a human's. The DM chooses statistics appropriate for the awakened Plant, such as the statistics for the Awakened Shrub or Awakened Tree in the Monster Manual." + "\n   " + "The awakened target has the Charmed condition for 30 days or until you or your allies deal damage to it. When the condition ends, the awakened creature chooses its attitude toward you."
 };
 SpellsList["bane"] = {
 	name : "Bane",
@@ -13843,7 +13843,7 @@ SpellsList["bane"] = {
 	duration : "Conc, 1 min",
 	save : "Cha",
 	description : "3+1/SL creatures save or subtract 1d4 on every attack and save for the duration",
-	descriptionFull : "Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or saving throw." + AtHigherLevels + "You can target one additional creature for each spell slot level above 1."
+	descriptionFull : "Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save." + AtHigherLevels + "You can target one additional creature for each spell slot level above 1."
 };
 SpellsList["banishing smite"] = {
 	name : "Banishing Smite",
@@ -13913,7 +13913,7 @@ SpellsList["beast sense"] = {
 	components : "S",
 	duration : "Conc, 1 h",
 	description : "Use 1 willing beast's senses as well as my own for the duration",
-	descriptionFull : "You touch a willing, Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has."
+	descriptionFull : "You touch a willing Beast. For the duration, you can perceive through the Beast's senses as well as your own. When perceiving through the Beast's senses, you benefit from any special senses it has."
 };
 SpellsList["befuddlement"] = {
 	name : "Befuddlement",
@@ -13957,7 +13957,7 @@ SpellsList["bigby's hand"] = {
 	compMaterial : "An eggshell and a glove",
 	duration : "Conc, 1 min",
 	description : "Large hand attacks, pushes, grapples or protects, see book; AC 20, my max HP; bns a move 60 ft & act",
-	descriptionFull : "You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand." + "\n   " + "The hand is an object that has AC 2 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space." + "\n   " + "When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects:" + "\n   " + "Clenched Fist. The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage." + "\n   " + "Forceful Hand. The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it. " + "\n   " + "Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. When the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier." + "\n   " + "Interposing Hand. The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, the space counts as Difficult Terrain for your enemies." + AtHigherLevels + "The damage of the Clenched Fist increases by 2d8 and the damage of the grasping Hand increases by 2d6 for each spell slot level above 5."
+	descriptionFull : "You create a Large hand of shimmering magical energy in an unoccupied space that you can see within range. The hand lasts for the duration, and it moves at your command, mimicking the movements of your own hand." + "\n   " + "The hand is an object that has AC 20 and Hit Points equal to your Hit Point maximum. If it drops to 0 Hit Points, the spell ends. The hand doesn't occupy its space." + "\n   " + "When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects:" + "\n   " + "Clenched Fist. The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage." + "\n   " + "Forceful Hand. The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it." + "\n   " + "Grasping Hand. The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier." + "\n   " + "Interposing Hand. The hand grants you Half Cover against attacks and other effects that originate from its space or that pass through it. In addition, the space counts as Difficult Terrain for your enemies." + AtHigherLevels + "The damage of the Clenched Fist increases by 2d8 and the damage of the grasping Hand increases by 2d6 for each spell slot level above 5."
 };
 SpellsList["blade barrier"] = {
 	name : "Blade Barrier",
@@ -13974,7 +13974,7 @@ SpellsList["blade barrier"] = {
 	descriptionMetric : "60\xD76\xD71,5m (l\xD7w\xD7h) wall or 9 rad 6\xD71,5m (w\xD7h) ring; 6d10 Slashing dmg; save halves; 3/4 cover",
 	descriptionShorter : typePF ? false : "100|20|5ft (l|w|h) wall or 30|20|5ft (r|w|h) ring; 6d10 Slashing dmg; save half; \u00BEcover",
 	descriptionShorterMetric : typePF ? false : "60|6|1,5m (l|w|h) wall or 9|6|1,5m (r|w|h) ring; 6d10 Slash. dmg; save half; \u00BEcover",
-	descriptionFull : "You create a wall of whirling blades made of magical energy. The wall appears within range and lasts for the duration. You make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides Three-Quarter Cover, and its space is Difficult Terrain." + "\n   " + "Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's area for the first time on a turn or starts its turn there.",
+	descriptionFull : "You create a wall of whirling blades made of magical energy. The wall appears within range and lasts for the duration. You make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides Three-Quarters Cover, and its space is Difficult Terrain." + "\n   " + "Any creature in the wall's space makes a Dexterity saving throw, taking 6d10 Force damage on a failed save or half as much damage on a successful one. A creature also makes that save if it enters the wall's space or ends it turn there. A creature makes that save only once per turn.",
 };
 SpellsList["blade ward"] = {
 	name : "Blade Ward",
@@ -14015,7 +14015,7 @@ SpellsList["blight"] = {
 	duration : "Instantaneous",
 	save : "Con",
 	description : "1 creature takes 8d8+1d8/SL Necrotic dmg; save halves; plant crea auto fails; nonmagical plant dies",
-	descriptionFull : "A creature that you can see within range makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one. A plant creature automatically fails the save." + "\n   " + "Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies." + AtHigherLevels + "The damage increases by 1d8 for each spell slot above 4."
+	descriptionFull : "A creature that you can see within range makes a Constitution saving throw, taking 8d8 Necrotic damage on a failed save or half as much damage on a successful one. A Plant creature automatically fails the save." + "\n   " + "Alternatively, target a nonmagical plant that isn't a creature, such as a tree or shrub. It doesn't make a save; it simply withers and dies." + AtHigherLevels + "The damage increases by 1d8 for each spell slot above 4."
 };
 SpellsList["blinding smite"] = {
 	name : "Blinding Smite",
@@ -14030,7 +14030,7 @@ SpellsList["blinding smite"] = {
 	duration : "1 min",
 	save : "Con",
 	description : "Melee weapon/unarmed hit +3d8 +1d8/SL Radiant dmg; crea Blinded for 1 min; EoT save to end",
-	descriptionFull : "The target hit by the attack roll takes an extra 3d8 Force damage from the attack and the target must succeed on a Constitution saving throw, or it has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw,ending the spell on itself on a success." + AtHigherLevels + "The extra damage increases b 1d8 for each spell slot level above 3."
+	descriptionFull : "The target hit by the strike takes an extra 3d8 Radiant damage from the attack, and the target has the Blinded condition until the spell ends. At the end of each of its turns, the Blinded target makes a Constitution saving throw, ending the spell on itself on a success." + AtHigherLevels + "The extra damage increases by 1d8 for each spell slot level above 3."
 };
 SpellsList["blindness/deafness"] = {
 	name : "Blindness/Deafness",
@@ -14057,7 +14057,7 @@ SpellsList["blink"] = {
 	components : "V,S",
 	duration : "1 min",
 	description : "50% chance every EoT to travel to Ethereal Plane and return to an empty space within 10 ft next turn",
-	descriptionFull : "Roll 1d6 at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plan, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane." + "\n   " + "You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space."
+	descriptionFull : "Roll 1d6 at the end of each of your turns for the duration. On a roll of 4-6, you vanish from your current plane of existence and appear in the Ethereal Plane (the spell ends instantly if you are already on that plane). While on the Ethereal Plane, you can perceive the plane you left, which is cast in shades of gray, but you can't see anything there more than 60 feet away. You can affect and be affected only by other creatures on the Ethereal Plane, and creatures on the other plane can't perceive you unless they have a special ability that lets them perceive things on the Ethereal Plane." + "\n   " + "You return to the other plane at the start of your next turn and when the spell ends if you are on the Ethereal Plane. You return to an unoccupied space of your choice that you can see within 10 feet of the space you left. If no unoccupied space is available within that range, you appear in the nearest unoccupied space."
 };
 SpellsList["blur"] = {
 	name : "Blur",
@@ -14098,8 +14098,8 @@ SpellsList["call lightning"] = {
 	duration : "Conc, 10 min",
 	save : "Dex",
 	description : "60-ft rad 10-ft high cloud; 1 a all in 5-ft rad under cloud 3d10+1d10/SL Lightning dmg; save half",
-	descriptionShorter : "60-ft rad 10-ft high cloud; 1 a all in 5-ft rad under it 3d10+1d10/SL Lightn. dmg; save half",
-	descriptionFull : "A storm cloud appears at a point within range that you can see above yourself. It takes the shape of a Cylinder that is 10 feet tall with a 60-foot radius." + "\n   " + "When you cast the spell, choose a point you can see under the cloud. A lightning bolt shoots from the cloud to that point. Each creature within 5 feet of that point makes a Dexterity saving throw, taking 3d10 Lightning damage on a failed save or half as much damage on a successful one." + "\n   " + "Until the spell ends, you can take a Magic action to call down lightning in that way again, targeting the same point or a different one." + "\n   " + "If you're outside in a storm when you cast this spell, the spell gives you control over that storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10." + AtHigherLevels + "The damage increases by 1d10 for each spell slot level above 3."
+	descriptionShorter : "60-ft rad 10-ft high cloud; all in 5-ft rad under it 3d10+1d10/SL Lightn. dmg; save half; 1 a to repeat",
+	descriptionFull : "A storm cloud appears at a point within range that you can see above yourself. It takes the shape of a Cylinder that is 10 feet tall with a 60-foot radius." + "\n   " + "When you cast the spell, choose a point you can see under the cloud. A lightning bolt shoots from the cloud to that point. Each creature within 5 feet of that point makes a Dexterity saving throw, taking 3d10 Lightning damage on a failed save or half as much damage on a successful one." + "\n   " + "Until the spell ends, you can take a Magic action to call down lightning in that way again, targeting the same point or a different one." + "\n   " + "If you're outdoors in a storm when you cast this spell, the spell gives you control over that storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10." + AtHigherLevels + "The damage increases by 1d10 for each spell slot level above 3."
 };
 SpellsList["calm emotions"] = {
 	name : "Calm Emotions",
@@ -14112,10 +14112,10 @@ SpellsList["calm emotions"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Cha",
-	description : "20-ft rad all Humanoids suppress either Charmed Frightened or hostility toward any creature",
-	descriptionFull : "Each Humanoid in a 20-foot radius Sphere centered on a point you choose within range must succeed on a Charisma saving throw or be affected by one of the following effects (choose for each creature)."+
-	"\n The creature has Immunity to the Charmed and Frightened condition until the spell ends. If the creature was already Charmed or Frightened those conditions are suppressed for the duration."+
-	"\n The creature becomes indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the targets takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
+	description : "20-ft rad all humanoids suppress either Charmed Frightened or hostility toward any creature",
+	descriptionFull : "Each Humanoid in a 20-foot-radius Sphere centered on a point you choose within range must succeed on a Charisma saving throw or be affected by one of the following effects (choose for each creature):"+
+	"\n The creature has Immunity to the Charmed and Frightened conditions until the spell ends. If the creature was already Charmed or Frightened, those conditions are suppressed for the duration."+
+	"\n The creature becomes indifferent about creatures of your choice that it's Hostile toward. This indifference ends if the target takes damage or witnesses its allies taking damage. When the spell ends, the creature's attitude returns to normal."
 };
 SpellsList["chain lightning"] = {
 	name : "Chain Lightning",
@@ -14129,8 +14129,8 @@ SpellsList["chain lightning"] = {
 	compMaterial : "Three silver pins",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "Lightning bolt 1 crea and 3+1/SL crea within 30 ft; 10d8 Lightning dmg; save halves",
-	descriptionFull : "You launch a lightning bolt toward the target you can see within range. Three bolts then leap from that target to as many as three other targets of your choice each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts." + "\n   " + "Each target makes a Dexterity saving throw, taking 10d8 Lightning damage on a failed save or half as much damage on a successful one." + AtHigherLevels + "One additional bolt leaps from the first target to another target for each spell slot level above 6."
+	description : "Lightning bolt 1 crea/obj and 3+1/SL crea/obj within 30 ft; 10d8 Lightning dmg; save halves",
+	descriptionFull : "You launch a lightning bolt toward a target you can see within range. Three bolts then leap from that target to as many as three other targets of your choice, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts." + "\n   " + "Each target makes a Dexterity saving throw, taking 10d8 Lightning damage on a failed save or half as much damage on a successful one." + AtHigherLevels + "One additional bolt leaps from the first target to another target for each spell slot level above 6."
 };
 SpellsList["charm monster"] = {
 	name : "Charm Monster",
@@ -14158,7 +14158,7 @@ SpellsList["charm person"] = {
 	duration : "1 h",
 	save : "Wis",
 	description : "1+1/SL humanoids save or Charmed & Friendly;  adv. on save if fighting me/ally; ends if we dmg it",
-	descriptionFull : "One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature Friendly to you. When the spell ends, the target knows it was Charmed by you." + AtHigherLevels + "you can target on additional creature for each spell slot level above 1."
+	descriptionFull : "One Humanoid you can see within range makes a Wisdom saving throw. It does so with Advantage if you or your allies are fighting it. On a failed save, the target has the Charmed condition until the spell ends or until you or your allies damage it. The Charmed creature is Friendly to you. When the spell ends, the target knows it was Charmed by you." + AtHigherLevels + "you can target on additional creature for each spell slot level above 1."
 };
 SpellsList["chill touch"] = {
 	name : "Chill Touch",
@@ -14186,8 +14186,8 @@ SpellsList["chromatic orb"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A diamond worth 50+ gp",
 	duration : "Instantaneous",
-	description : "Spell atk 3d8+1d8/SL Acid/Cold/Fire/Lghtng/Poison/Thdr; if dup. atk new target in 30ft; leap 1/SL (50gp)",
-	descriptionFull : "You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type" + "\n   " +  "If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the original target, make a new attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+	description : "Spell atk 3d8+1d8/SL Acid/Cold/Fire/Lightn./Poison/Thdr; if dup. atk new target in 30ft; leap 1/SL (50gp)",
+	descriptionFull : "You hurl an orb of energy at a target within range. Choose Acid, Cold, Fire, Lightning, Poison, or Thunder for the type of orb you create, and then make a ranged spell attack against the target. On a hit, the target takes 3d8 damage of the chosen type." + "\n   " +  "If you roll the same number on two or more of the d8s, the orb leaps to a different target of your choice within 30 feet of the target. Make a new attack roll against the new target, and make a new damage roll. The orb can't leap again unless you cast the spell with a level 2+ spell slot." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 1. The orb can leap a maximum number of times equal to the level of the slot expended, and a creature can be targeted only once by each casting of this spell..",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["acid", "cold", "fire", "lightning", "poison", "thunder"],
@@ -14249,7 +14249,7 @@ SpellsList["clone"] = {
 	compMaterial : "A diamond worth 1000+ gp, which the spell consumes, and a sealable vessel worth 2000+ gp that is large enough to hold the creature being cloned",
 	duration : "Instantaneous",
 	description : "Create a clone of living crea; after 120 days its soul can move to the clone if dies (1K gp cons.; 2K gp)",
-	descriptionFull : "You touch a creature or at least 1 cubic inch of its flesh the vessel used in this spell's casting and finishes growing after 120 days; you choose whether the finished clone is the same age as the creature or younger. The clone remains inert and endures indefinitely while its vessel remains undisturbed." + "\n   " + "If the original creature dies after the clone finishes forming, the creature's soul transfer to the clone if the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The creature's original remains, if any, become inert and can't be revived, since the creature's soul is elsewhere."
+	descriptionFull : "You touch a creature or at least 1 cubic inch of its flesh. An inert duplicate of that creature forms inside the vessel used in the spell's casting and finishes growing after 120 days; you choose whether the finished clone is the same age as the creature or younger. The clone remains inert and endures indefinitely while its vessel remains undisturbed." + "\n   " + "If the original creature dies after the clone finishes forming, the creature's soul transfers to the clone if the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The creature's original remains, if any, become inert and can't be revived, since the creature's soul is elsewhere."
 };
 SpellsList["cloudkill"] = {
 	name : "Cloudkill",
@@ -14262,9 +14262,9 @@ SpellsList["cloudkill"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	save : "Con",
-	description : "Heavily Obsc. 20-ft rad; cover/enter/EoT 5d8+1d8/SL Poison (1/turn/crea, save 1/2); move 10 ft/rnd",
+	description : "Heavily obsc. 20ft rad; cast/cover/enter/EoT 5d8+1d8/SL Poison (1/turn/crea, save 1/2); move 10ft/rnd",
 	descriptionShorter : "20-ft rad 5d8+1d8/SL Poison dmg; save halves; move 10 ft/rnd; heavily obscured",
-	descriptionFull : "You create a 20-foot-radius Sphere of yellow-green fog centered on a point within range. The fog lasts for the duration or until string wind (such as the one created by Gust of Wind) disperses it, ending the spell. Its area is Heavily Obscured." + "\n   " + "Each creature in the Sphere makes a Constitution saving throw, taking 5d8 Poison damage on a failed save or half as much damage on a successful one. A creature also make this save when the Sphere moves into its space or ends its turn there." + "\n   " + "The Sphere moves 10 feet away from you at the start of your turns." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 5."
+	descriptionFull : "You create a 20-foot-radius Sphere of yellow-green fog centered on a point within range. The fog lasts for the duration or until string wind (such as the one created by Gust of Wind) disperses it, ending the spell. Its area is Heavily Obscured." + "\n   " + "Each creature in the Sphere makes a Constitution saving throw, taking 5d8 Poison damage on a failed save or half as much damage on a successful one. A creature must also make this save when the Sphere moves into its space and when it enters the Sphere or ends its turn there. A creature makes this save only once per turn." + "\n   " + "The Sphere moves 10 feet away from you at the start of each of your turns." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 5."
 };
 SpellsList["cloud of daggers"] = {
 	name : "Cloud of Daggers",
@@ -14277,7 +14277,7 @@ SpellsList["cloud of daggers"] = {
 	components : "V,S,M",
 	compMaterial : "A sliver of glass",
 	duration : "Conc, 1 min",
-	description : "5-ft cube 4d4+2d4/SL Slashing to crea in area on cast/when enter/EoT (1/turn/crea); a to teleport 30ft",
+	description : "5ft cube 4d4+2d4/SL Slashing to crea in area on cast/cover/enters/EoT (1/turn/crea); a to teleport 30ft",
 	descriptionFull : "You conjure spinning daggers in a 5-foot Cube centered on a point within range. Each creature in that area takes 4d4 Slashing damage. A creature also takes this damage if it enters the Cube or ends its turn there or if the Cube moves into its space. A creature takes this damage only once per turn." + "\n   " + "On your later turns, you can take a Magic action to teleport the Cube up to 30 feet." + AtHigherLevels + "The damage increases by 2d4 for each spell slot level above 2."
 };
 SpellsList["color spray"] = {
@@ -14292,7 +14292,7 @@ SpellsList["color spray"] = {
 	compMaterial : "A pinch of colorful sand",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "All crea in area save or Blinded until your next turn ends",
+	description : "All creatures in area save or Blinded until your next turn ends",
 	descriptionFull : "You launch a dazzling array of flashing, colorful light. Each creature in a 15-foot Cone originating from you must succeed on a Constitution saving throw or have the Blinded condition until the end of your next turn."
 };
 SpellsList["command"] = {
@@ -14307,7 +14307,7 @@ SpellsList["command"] = {
 	duration : "Instantaneous",
 	save : "Wis",
 	description : "1+1/SL crea, save or follow one word command: Approach, Drop, Flee, Grovel or Halt; see book",
-	descriptionFull : "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options." + "\n   " + toUni("Approach") + ": The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you." + "\n   " + toUni("Drop") + ": The target drops whatever it is holding and then ends its turn." + "\n   " + toUni("Flee") + ": The target spends its turn moving away from you by the fastest available means." + "\n   " + toUni("Grovel") + ": The target has the Prone condition and then ends its turn." + "\n   " + toUni("Halt") + ": On its turn, the target doesn't move and takes no action or Bonus Action." + AtHigherLevels + "You can affect one additional creature for each spell slot level above 1."
+	descriptionFull : "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. Choose the command from these options:" + "\n   " + toUni("Approach") + ": The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you." + "\n   " + toUni("Drop") + ": The target drops whatever it is holding and then ends its turn." + "\n   " + toUni("Flee") + ": The target spends its turn moving away from you by the fastest available means." + "\n   " + toUni("Grovel") + ": The target has the Prone condition and then ends its turn." + "\n   " + toUni("Halt") + ": On its turn, the target doesn't move and takes no action or Bonus Action." + AtHigherLevels + "You can affect one additional creature for each spell slot level above 1."
 };
 SpellsList["commune"] = {
 	name : "Commune",
@@ -14322,7 +14322,7 @@ SpellsList["commune"] = {
 	compMaterial : "Incense",
 	duration : "1 min",
 	description : "Ask up to 3 yes/no questions of deity or divine proxy; receive correct word or short phrase (if knows)",
-	descriptionFull : "You contact a deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question." + "\n   " + "Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead." + "\n   " + "If you cast the spell more than one before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer."
+	descriptionFull : "You contact a deity or a divine proxy and ask up to three questions that can be answered with a yes or no. You must ask your questions before the spell ends. You receive a correct answer for each question." + "\n   " + "Divine beings aren't necessarily omniscient, so you might receive \"unclear\" as an answer if a question pertains to information that lies beyond the deity's knowledge. In a case where a one-word answer could be misleading or contrary to the deity's interests, the DM might offer a short phrase as an answer instead." + "\n   " + "If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer."
 };
 SpellsList["commune with nature"] = {
 	name : "Commune with Nature",
@@ -14337,7 +14337,7 @@ SpellsList["commune with nature"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	description : "Know 3 facts about natural features within 3 miles (300 ft underground); see book",
-	descriptionFull : "You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements." + "\n   " + "Choose three of the following facts; you learn those facts as the pertain to the spell's area." + "\n   " + "Locations of Settlements, Locations of portals to other planes of existence, Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead, The most prevalent, kind of plant, mineral, or Beast (you choose which to learn), Locations of bodies of water. For example you could determine the location of a powerful monster in the are, the location of bodies of water, and the locations of any towns."
+	descriptionFull : "You commune with nature spirits and gain knowledge of the surrounding area. In the outdoors, the spell gives you knowledge of the area within 3 miles of you. In caves and other natural underground settings, the radius is limited to 300 feet. The spell doesn't function where nature has been replaced by construction, such as in castles and settlements." + "\n   " + "Choose three of the following facts; you learn those facts as the pertain to the spell's area:\n \u2022Locations of Settlements\n \u2022Locations of portals to other planes of existence\n \u2022Location of one Challenge Rating 10+ creature (DM's choice) that is a Celestial, an Elemental, a Fey, a Fiend, or an Undead\n \u2022The most prevalent, kind of plant, mineral, or Beast (you choose which to learn)\n \u2022Locations of bodies of water." + "\n   " + "For example, you could determine the location of a powerful monster in the area, the locations of bodies of water, and the locations of any towns"
 };
 SpellsList["compelled duel"] = {
 	name : "Compelled Duel",
@@ -14351,7 +14351,7 @@ SpellsList["compelled duel"] = {
 	duration : "Conc, 1 min",
 	save : "Wis",
 	description : "1 crea save or dis. on atks vs. not-me and can't move >30ft away; ends early if target other crea/see B",
-	descriptionFull : "You try to compel a creature into a duel. One creature that you can see within range makes Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you." + "\n   " + "The spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if your end your turn more than 30 feet away form the target."
+	descriptionFull : "You try to compel a creature into a duel. One creature that you can see within range makes a Wisdom saving throw. On a failed save, the target has Disadvantage on attack rolls against creatures other than you, and it can't willingly move to a space that is more than 30 feet away from you." + "\n   " + "The spell ends if you make an attack roll against a creature other than the target, if you cast a spell on an enemy other than the target, if an ally of yours damages the target, or if your end your turn more than 30 feet away form the target."
 };
 SpellsList["comprehend languages"] = {
 	name : "Comprehend Languages",
@@ -14367,7 +14367,7 @@ SpellsList["comprehend languages"] = {
 	compMaterial : "A pinch of soot and salt",
 	duration : "1 h",
 	description : "Understand all spoken and signed languages and writing when touched; doesn't help vs codes",
-	descriptionFull : "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you can see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
+	descriptionFull : "For the duration, you understand the literal meaning of any language that you hear or see signed. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text. This spell doesn't decode symbols or secret messages."
 };
 SpellsList["compulsion"] = {
 	name : "Compulsion",
@@ -14381,7 +14381,7 @@ SpellsList["compulsion"] = {
 	duration : "Conc, 1 min",
 	save : "Wis",
 	description : "Any crea save or Charmed; bns a pick horizontal direction; on turn Charmed crea move then redo save",
-	descriptionFull : "Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition until the spell ends." + "\n   " + "For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each Charmed target must use as much of its movement as possible to move in a direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
+	descriptionFull : "Each creature of your choice that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition until the spell ends." + "\n   " + "For the duration, you can take a Bonus Action to designate a direction that is horizontal to you. Each Charmed target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the save, ending the spell on itself on a success."
 };
 SpellsList["cone of cold"] = {
 	name : "Cone of Cold",
@@ -14411,7 +14411,7 @@ SpellsList["confusion"] = {
 	duration : "Conc, 1 min",
 	save : "Wis",
 	description : "10+5ft/SL rad all crea save or no bns/rea and confused; see book; extra save at EoT",
-	descriptionFull : "Each creature in a 10-foot-radius Sphere centered on a point you choose within range must succeed on a Wisdom saving throw, or that target can't take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below." + "\n\n" + toUni("d10") + "\t" + toUni("Behavior") + "\n   " + "1\tThe target doesn't take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4,west." + "\n   " + "2-6\tThe target doesn't move or take actions." + "\n   " + "7-8\tThe target doesn't move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action." + "\n   " + "9-10\tThe target can act and move normally." + "\n\n" + "At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success." + AtHigherLevels + "The Sphere's radius increases by 5 feet for each spell slot level above 4."
+	descriptionFull : "Each creature in a 10-foot-radius Sphere centered on a point you choose within range must succeed on a Wisdom saving throw, or that target can't take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below." + "\n\n" + toUni("d10") + "\t" + toUni("Behavior for the Turn") + "\n   " + "1\tThe target doesn't take an action, and it uses all its movement to move. Roll 1d4 for the direction: 1, north; 2, east; 3, south; or 4,west." + "\n   " + "2-6\tThe target doesn't move or take actions." + "\n   " + "7-8\tThe target doesn't move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action." + "\n   " + "9-10\tThe target chooses its behavior." + "\n\n" + "At the end of each of its turns, an affected target repeats the save, ending the spell on itself on a success." + AtHigherLevels + "The Sphere's radius increases by 5 feet for each spell slot level above 4."
 };
 SpellsList["conjure animals"] = {
 	name : "Conjure Animals",
@@ -14453,7 +14453,7 @@ SpellsList["conjure celestial"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	description : "20ft\xD40ft cylin; cast/cover/enter/EoT (1/t/c) heal 4d12+mod or 6d12 Rad (S:1/2); +1d12/SL; 30ft move",
-	descriptionFull : "You conjure a spirit from the Upper planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. For each creature you can see in the Cylinder, choose which one of these lights shines on it:" + "\n   " + "Healing Light. The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier." + "\n   " + "Searing Light. The target makes a Dexterity saving throw, taking 5d12 Radiant damage on a failed save or half as much damage on a successful one." + "\n   " + "Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet." + "\n   " + "Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there you can bathe it in one of the lights. A creature can be affected by this spell only once per turn." + AtHigherLevels + "The healing and damage increases by 1d12 for each spell slot level above 7."
+	descriptionFull : "You conjure a spirit from the Upper planes, which manifests as a pillar of light in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range. For each creature you can see in the Cylinder, choose which of these lights shines on it:" + "\n   " + "Healing Light. The target regains Hit Points equal to 4d12 plus your spellcasting ability modifier." + "\n   " + "Searing Light. The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one." + "\n   " + "Until the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet." + "\n   " + "Whenever the Cylinder moves into the space of a creature you can see and whenever a creature you can see enters the Cylinder or ends its turn there you can bathe it in one of the lights. A creature can be affected by this spell only once per turn." + AtHigherLevels + "The healing and damage increases by 1d12 for each spell slot level above 7."
 };
 SpellsList["conjure elemental"] = {
 	name : "Conjure Elemental",
@@ -14465,8 +14465,8 @@ SpellsList["conjure elemental"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "10ft cu; no R enter/SoT 5ft 8d8+2d8/SL Lghtng/Thdr/Fire/Cold + Restrain; S:1/2 no R; SoT R save or 4d8",
-	descriptionFull : "You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lighting), earth (Thunder), fire (Fire), or water (Cold), the spirit lasts for the duration." + "\n   " + "Whenever a creature you can see enters the spirit's space or stats its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes 8d8 damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. On a failed save, the target takes 4d8 damage of the spirit's type. On a successful save the target isn't Restrained by the spirit.",
+	description : "10ft cu; no R enter/SoT 5ft 8d8+2d8/SL Lightn./Thdr/Fire/Cold + Restrain; S:1/2 no R; SoT R save or 4d8",
+	descriptionFull : "You conjure a Large, intangible spirit from the Elemental Planes that appears in an unoccupied space within range. Choose the spirit's element, which determines its damage type: air (Lightning), earth (Thunder), fire (Fire), or water (Cold), the spirit lasts for the duration." + "\n   " + "Whenever a creature you can see enters the spirit's space or starts its turn within 5 feet of the spirit, you can force that creature to make a Dexterity saving throw if the spirit has no creature Restrained. On failed save, the target takes 8d8 damage of the spirit's type, and the target has the Restrained condition until the spell ends. At the start of each of its turns, the Restrained target repeats the save. On a failed save, the target takes 4d8 damage of the spirit's type. On a successful save, the target isn't Restrained by the spirit." + AtHigherLevels + "The damage increases by 2d8 for each spell slot level above 5.",
 };
 SpellsList["conjure fey"] = {
 	name : "Conjure Fey",
@@ -14479,7 +14479,7 @@ SpellsList["conjure fey"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	description : "Medium fey; spell atk in 5ft; 3d12+2d12/SL+mod Psychic & Frightened 1 rnd; bns teleport 30ft+atk",
-	descriptionFull : "You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear." + "\n   " + "As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left, and make the attack against a creature within 5 feet of it." + AtHigherLevels + "The damage increases by 2d12 for each spell slot level above 6."
+	descriptionFull : "You conjure a Medium spirit from the Feywild in an unoccupied space you can see within range. The spirit lasts for the duration, and it looks like a Fey creature of your choice. When the spirit appears, you can make one melee spell attack against a creature within 5 feet of it. On a hit, the target takes Psychic damage equal to 3d12 plus your spellcasting ability modifier, and the target has the Frightened condition until the start of your next turn, with both you and the spirit as the source of the fear." + "\n   " + "As a Bonus Action on your later turns, you can teleport the spirit to an unoccupied space you can see within 30 feet of the space it left and make the attack against a creature within 5 feet of it." + AtHigherLevels + "The damage increases by 2d12 for each spell slot level above 6."
 };
 SpellsList["conjure minor elementals"] = {
 	name : "Conjure Minor Elementals",
@@ -14492,8 +14492,8 @@ SpellsList["conjure minor elementals"] = {
 	range : "S:15-ft rad",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Atks at targets in area deal +2d8+2d8/SL Acid/Cold/Fire/Lghtng (choice); area is Dif. Ter. for enemies",
-	descriptionFull : "You conjure spirits from the Elemental Plans that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra 2d8 damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fir, or Lightning (your choice when you make the attack)." + "\n   " + "In addition, the ground in the Emanation is Difficult Terrain for your enemies." + AtHigherLevels + "The damage increases by 2d8 for each spell slot level above 4."
+	description : "Atks at targets in area deal +2d8+2d8/SL Acid/Cold/Fire/Lightn. (choice); area is Dif. Ter. for enemies",
+	descriptionFull : "You conjure spirits from the Elemental Plans that flit around you in a 15-foot Emanation for the duration. Until the spell ends, any attack you make deals an extra 2d8 damage when you hit a creature in the Emanation. This damage is Acid, Cold, Fire, or Lightning (your choice when you make the attack)." + "\n   " + "In addition, the ground in the Emanation is Difficult Terrain for your enemies." + AtHigherLevels + "The damage increases by 2d8 for each spell slot level above 4."
 };
 SpellsList["conjure volley"] = {
 	name : "Conjure Volley",
@@ -14508,7 +14508,7 @@ SpellsList["conjure volley"] = {
 	duration : "Instantaneous",
 	save : "Dex",
 	description : "Volley falls in 40-ft rad 20-ft high cylinder; any visible creatures take 8d8 Force dmg; save halves",
-	descriptionFull : "You brandish the weapon used to cast the spell and choose a point within range. Hundreds of similar spectral weapons (or ammunition appropriate to the weapon) that launch forward and then disappear. Each creature of your choice that you can see in a 40-foot-radius, 20-foot-high Cylinder centered on that point makes a Dexterity saving throw. A creature takes 8d8 Force damage on a failed save or half as much damage on a successful one."
+	descriptionFull : "You brandish the weapon used to cast the spell and choose a point within range. Hundreds of similar spectral weapons (or ammunition appropriate to the weapon) fall in a volley and then disappear. Each creature of your choice that you can see in a 40-foot-radius, 20-foot-high Cylinder centered on that point makes a Dexterity saving throw. A creature takes 8d8 Force damage on a failed save or half as much damage on a successful one."
 };
 SpellsList["conjure woodland beings"] = {
 	name : "Conjure Woodland Beings",
@@ -14523,7 +14523,7 @@ SpellsList["conjure woodland beings"] = {
 	duration : "Conc, 1 h",
 	save : "Wis",
 	description : "Disengage as bns; when visible crea covered/enters/EoT in area (1/turn) 5d8+1d8/SL Force (save 1/2)",
-	descriptionFull : "You conjure nature spirits that flit around you in a 10-foot Emanation for the duration. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. The creature takes 5d8 Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn." + "\n   " + "In addition, you can take the Disengage action as a Bonus Action for the spell's duration." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 5."
+	descriptionFull : "You conjure nature spirits that flit around you in a 10-foot Emanation for the duration. Whenever the Emanation enters the space of a creature you can see and whenever a creature you can see enters the Emanation or ends its turn there, you can force that creature to make a Wisdom saving throw. The creature takes 5d8 Force damage on a failed save or half as much damage on a successful one. A creature makes this save only once per turn." + "\n   " + "In addition, you can take the Disengage action as a Bonus Action for the spell's duration." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 4."
 };
 SpellsList["contact other plane"] = {
 	name : "Contact Other Plane",
@@ -14538,7 +14538,7 @@ SpellsList["contact other plane"] = {
 	duration : "1 min",
 	save : "Int",
 	description : "DC 15 to ask planar entity 5 questions; 1 word/phrase answer; fail 6d6 Psych & Incapac. until LR/Gr Rest",
-	descriptionFull : "You mentally contact a demigod, the spirit of a long-dead sage, or some other knowledgeable entity from another plane. Contacting this otherworldly intelligence can break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes\", \"no\", \"maybe\", \"maybe\", \"never\", \"irrelevant\", or \"unclear\" (if the entity doesn't know the answer to the question. If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer." + "\n   " + "On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A Greater Restoration spell cast on you ends this effect."
+	descriptionFull : "You mentally contact a demigod, the spirit of a long-dead sage, or some other knowledgeable entity from another plane. Contacting this otherworldly intelligence can break your mind. When you cast this spell, make a DC 15 Intelligence saving throw. On a successful save, you can ask the entity up to five questions. You must ask your questions before the spell ends. The DM answers each question with one word, such as \"yes\", \"no\", \"maybe\", \"maybe\", \"never\", \"irrelevant\", or \"unclear\" (if the entity doesn't know the answer to the question). If a one-word answer would be misleading, the DM might instead offer a short phrase as an answer." + "\n   " + "On a failed save, you take 6d6 Psychic damage and have the Incapacitated condition until you finish a Long Rest. A Greater Restoration spell cast on you ends this effect."
 };
 SpellsList["contagion"] = {
 	name : "Contagion",
@@ -14552,7 +14552,7 @@ SpellsList["contagion"] = {
 	duration : "7 days",
 	save : "Con",
 	description : "Target save or 11d8 Necrotic, Poisoned + Disadv 1 save type; EoT save till 3 pass (ends) or 3 fail (7 days)",
-	descriptionFull : "Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability.." + "\n   " + "The target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. IF the target fails three of the saves, the spell lasts for 7 days on it." + "\n   " + "Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it."
+	descriptionFull : "Your touch inflicts a magical contagion. The target must succeed on a Constitution saving throw or take 11d8 Necrotic damage and have the Poisoned condition. Also, choose one ability when you cast the spell. While Poisoned, the target has Disadvantage on saving throws made with the chosen ability." + "\n   " + "The target must repeat the saving throw at the end of each of its turns until it gets three successes or failures. If the target succeeds on three of these saves, the spell ends on the target. If the target fails three of the saves, the spell lasts for 7 days on it." + "\n   " + "Whenever the Poisoned target receives an effect that would end the Poisoned condition, the target must succeed on a Constitution saving throw, or the Poisoned condition doesn't end on it."
 };
 SpellsList["contingency"] = {
 	name : "Contingency",
@@ -14566,7 +14566,7 @@ SpellsList["contingency"] = {
 	compMaterial : "a gem-encrusted statuette of yourself worth 1500 gp",
 	duration : "10 days",
 	description : "Cast another SL<6 action spell that targets me to activate when a condition is met (1500gp)",
-	descriptionFull : "Choose a spell of level 5 or lower that you can cast, that has a casting time of an action, and that can target you. You cast that spell - called the contingent spell - as part of casting Contingency, expending spell slots for both, both the contingent spell doesn't come into effect. Instead, it takes effect when a certain trigger occurs. You describe that trigger when you cast the two spells. For example, a Contingency cast with Water Breathing might stipulate that Water Breathing comes into effect when you are engulfed in water or a similar liquid." + "\n   " + "The contingent spell takes effect immediately after the trigger occurs for the first time, whether or not you want it to, and hen Contingency ends." + "\n   " + "The contingent spell takes effect only on you, even if it can normally target others. You can use only one Contingency spell at a time. If you cast this spell again, the effect of another Contingency spell on you ends. Also, Contingency ends on you if its material component is ever not on your person."
+	descriptionFull : "Choose a spell of level 5 or lower that you can cast, that has a casting time of an action, and that can target you. You cast that spell — called the contingent spell — as part of casting Contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain trigger occurs. You describe that trigger when you cast the two spells. For example, a Contingency cast with Water Breathing might stipulate that Water Breathing comes into effect when you are engulfed in water or a similar liquid." + "\n   " + "The contingent spell takes effect immediately after the trigger occurs for the first time, whether or not you want it to, and then Contingency ends." + "\n   " + "The contingent spell takes effect only on you, even if it can normally target others. You can use only one Contingency spell at a time. If you cast this spell again, the effect of another Contingency spell on you ends. Also, Contingency ends on you if its material component is ever not on your person."
 };
 SpellsList["continual flame"] = {
 	name : "Continual Flame",
@@ -14594,7 +14594,7 @@ SpellsList["control water"] = {
 	compMaterial : "A mixture of water and dust",
 	duration : "Conc, 10 min",
 	description : "Control any water in a 100 ft cube as 1 a: Flood, Part Water, Redirect Flow, or Whirlpool, see book",
-	descriptionFull : "Until the spell ends, you control any water inside an area you choose that is a Cube up to 100 feet on a side, using one of the following effects. As a Magic action on your later turns, you can repeat the same effect or choose a different one." + "\n   " + toUni("Flood") + ": You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing." + "\n   " + "The water level remains elevated until the spell ends or you choose a different effect. If this effect produces a wave, the wave repeats on the start of your next turn while the flood effect lasts." + "\n   " +  toUni("Part Water") + ": You part water in the are and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored." + "\n   " + toUni("Redirect Flow") + ": You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect." + "\n   " + toUni("Whirlpool") + ": You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC."
+	descriptionFull : "Until the spell ends, you control any water inside an area you choose that is a Cube up to 100 feet on a side, using one of the following effects. As a Magic action on your later turns, you can repeat the same effect or choose a different one." + "\n   " + toUni("Flood") + ": You cause the water level of all standing water in the area to rise by as much as 20 feet. If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing." + "\n   " + "The water level remains elevated until the spell ends or you choose a different effect. If this effect produces a wave, the wave repeats on the start of your next turn while the flood effect lasts." + "\n   " +  toUni("Part Water") + ": You part water in the area and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored." + "\n   " + toUni("Redirect Flow") + ": You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell’s area, it resumes its flow based on the terrain. The water continues to move in the direction you chose until the spell ends or you choose a different effect." + "\n   " + toUni("Whirlpool") + ": You cause a whirlpool to form in the center of the area, which must be at least 50 feet square and 25 feet deep. The whirlpool lasts until you choose a different effect or the spell ends. The whirlpool is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature in the water and within 25 feet of the whirlpool is pulled 10 feet toward it. When a creature enters the whirlpool for the first time on a turn or ends its turn there, it makes a strength saving throw. On a failed save, the creature takes 2d8 Bludgeoning damage. On a successful save, the creature takes half as much damage. A creature can swim away from the whirlpool only if it first takes an action to pull away and succeeds on a Strength (Athletics) check against your spell save DC."
 };
 SpellsList["control weather"] = {
 	name : "Control Weather",
@@ -14608,7 +14608,7 @@ SpellsList["control weather"] = {
 	compMaterial : "Burning incense",
 	duration : "Conc, 8 h",
 	description : "Change weather precipitation, temp, and wind in 5 miles; changes take 1d4\xD710 min; see book",
-	descriptionFull : "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early." + "\n   " + "When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 \xD7 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal." + "\n   " + "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction." + "\n\n" + toUni("Precipitation") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tClear" + "\n     " + "2\tLight clouds" + "\n     " + "3\tOvercast or ground fog" + "\n     " + "4\tRain, hail or snow" + "\n     " + "5\tTorrential rain, driving hail or blizzard" + "\n\n" + toUni("Temperature") + "\t\t" + toUni("Wind") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\t " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tHeat wave" + "\t     " + "1\tCalm" + "\n     " + "2\tHot" + "\t\t     " + "2\tModerate wind" + "\n     " + "3\tWarm" + "\t\t     " + "3\tStrong wind" + "\n     " + "4\tCool" + "\t\t     " + "4\tGale" + "\n     " + "5\tCold" + "\t\t     " + "5\tStorm" + "\n     " + "6\tAFreezing"
+	descriptionFull : "You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell, and it ends early if you go indoors." + "\n   " + "When you cast the spell, you change the current weather conditions, which are determined by the DM. You can change precipitation, temperature, and wind. It takes 1d4 \xD7 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal." + "\n   " + "When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction." + "\n\n" + toUni("Precipitation") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tClear" + "\n     " + "2\tLight clouds" + "\n     " + "3\tOvercast or ground fog" + "\n     " + "4\tRain, hail or snow" + "\n     " + "5\tTorrential rain, driving hail or blizzard" + "\n\n" + toUni("Temperature") + "\t\t" + toUni("Wind") + "\n " + toUni("Stage") + "\t" + toUni("Condition") + "\t " + toUni("Stage") + "\t" + toUni("Condition") + "\n     " + "1\tHeat wave" + "\t     " + "1\tCalm" + "\n     " + "2\tHot" + "\t\t     " + "2\tModerate wind" + "\n     " + "3\tWarm" + "\t\t     " + "3\tStrong wind" + "\n     " + "4\tCool" + "\t\t     " + "4\tGale" + "\n     " + "5\tCold" + "\t\t     " + "5\tStorm" + "\n     " + "6\tAFreezing"
 };
 SpellsList["cordon of arrows"] = {
 	name : "Cordon of Arrows",
@@ -14623,7 +14623,7 @@ SpellsList["cordon of arrows"] = {
 	duration : "8 h",
 	save : "Dex",
 	description : "4+2/SL arrows/bolts in space; undesignated crea moves/EoT in 30 ft 1 piece atks; save or 2d4 Piercing",
-	descriptionFull : "You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can't be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there,one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 2d4 Piercing damage. The piece of ammunition is then destroyed. The spell ends when none of the ammunition remains planted in the ground." + "\n   " + "When you cast this spell, you can designate any creatures you choose, and the spell ignores them." + AtHigherLevels + "The amount of ammunition that can be affected increases by two for each spell slot level above 2."
+	descriptionFull : "You touch up to four nonmagical Arrows or Bolts and plant them in the ground in your space. Until the spell ends, the ammunition can't be physically uprooted, and whenever a creature other than you enters a space within 30 feet of the ammunition for the first time on a turn or ends its turn there, one piece of ammunition flies up to strike it. The creature must succeed on a Dexterity saving throw or take 2d4 Piercing damage. The piece of ammunition is then destroyed. The spell ends when none of the ammunition remains planted in the ground." + "\n   " + "When you cast this spell, you can designate any creatures you choose, and the spell ignores them." + AtHigherLevels + "The amount of ammunition that can be affected increases by two for each spell slot level above 2."
 };
 SpellsList["counterspell"] = {
 	name : "Counterspell",
@@ -14638,7 +14638,7 @@ SpellsList["counterspell"] = {
 	duration : "Instantaneous",
 	save : "Con",
 	description : "Stop a spell being cast; target saves to keep casting; if fail spell action wasted but spell slot unused",
-	descriptionFull : "You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended."
+	descriptionFull : "You attempt to interrupt a creature in the process of casting a spell. The creature makes a Constitution saving throw. On a failed save, the spell dissipates with no effect, and the action, Bonus Action, or Reaction used to cast it is wasted. If that spell was cast with a spell slot, the slot isn't expended."
 };
 SpellsList["create food and water"] = {
 	name : "Create Food and Water",
@@ -14651,7 +14651,7 @@ SpellsList["create food and water"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	description : "Create 45 pounds of food and 30 gallons of fresh water on ground/in containers; food lasts 24 hrs",
-	descriptionFull : "You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range - both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
+	descriptionFull : "You create 45 pounds of food and 30 gallons of fresh water on the ground or in containers within range — both useful in fending off the hazards of malnutrition and dehydration. The food is bland but nourishing and looks like a food of your choice, and the water is clean. The food spoils after 24 hours if uneaten."
 };
 SpellsList["create or destroy water"] = {
 	name : "Create or Destroy Water",
@@ -14679,7 +14679,7 @@ SpellsList["create undead"] = {
 	compMaterial : "one 150+ gp black onyx stone for each corpse.",
 	duration : "Instantaneous",
 	description : "Turn corpses into 3+1/SL ghouls i.a.; control 24h; bns command 120 ft; see B (150gp/corpse cons.)", // i.a. -> inter alia -> among others
-	descriptionFull : "You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a Ghoul under your control (see the Monster Manual for its stat block)." + "\n   " + "As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command all of them at the same time,issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete." + "\n   " + "The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones." + AtHigherLevels + "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
+	descriptionFull : "You can cast this spell only at night. Choose up to three corpses of Medium or Small Humanoids within range. Each one becomes a Ghoul under your control (see the Monster Manual for its stat block)." + "\n   " + "As a Bonus Action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any of them at the same time, issuing the same command to them). You decide what action the creature will take and where it will move on its next turn, or you can issue a general command, such as to guard a particular place. If you issue no commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete." + "\n   " + "The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell rather than animating new ones." + AtHigherLevels + "If you use a level 7 spell slot, you can animate or reassert control over four Ghouls. If you use a level 8 spell slot, you can animate or reassert control over five Ghouls or two Ghasts or Wights. If you use a level 9 spell slot, you can animate or reassert control over six Ghouls, three Ghasts or Wights, or two Mummies. See the Monster Manual for these stat blocks."
 };
 SpellsList["creation"] = {
 	name : "Creation",
@@ -14693,7 +14693,7 @@ SpellsList["creation"] = {
 	compMaterial : "A paintbrush",
 	duration : "Special",
 	description : "Create familiar object up to 5+5ft/SL cube of plant matter, stone, metal, gems or rare metals; see B",
-	descriptionFull : "You pull wisps of shadow material from the Shadowfell to create a nonliving object of vegetable matter within range - soft goods, rope, wood, or something similar. You can also use this spell to create mineral objects such as stone, crystal, or metal. The object created must be no larger than a 5-foot cube, and the object must be of a form and material that you have seen before." + "\n   " + "The duration depends on the object's material. If the object is composed of multiple materials, use the shortest duration." + "\n\n" + toUni("Material") + "\t\t" + toUni("Duration") + "\n" + "Vegetable matter\t1 day" + "\n" + "Stone or crystal\t12 hours" + "\n" + "Precious metals\t1 hour" + "\n" + "Gems\t\t10 minutes" + "\n\n" + "Adamantine/Mithral - 1 minute" + "\n   " + "Using any material created by this spell as another spell's material component causes that spell to fail." + AtHigherLevels + "The Cube increases by 5 feet for each spell slot level above 5."
+	descriptionFull : "You pull wisps of shadow material from the Shadowfell to create an object within range. It is either an object of vegetable matter (soft goods, rope, wood, and the like) or mineral matter (stone, crystal, metal, and the like). The object must be no larger than a 5-foot Cube, and the object must be of a form and material that you have seen." + "\n   " + "The spell’s duration depends on the object’s material, as shown in the Materials table. If the object is composed of multiple materials, use the shortest duration. Using any object created by this spell as another spell’s Material component causes the other spell to fail." + "\n\n" + toUni("Material") + "\t\t" + toUni("Duration") + "\n" + "Vegetable matter\t1 day" + "\n" + "Stone or crystal\t12 hours" + "\n" + "Precious metals\t1 hour" + "\n" + "Gems\t\t10 minutes" + "\n\n" + "Adamantine/Mithral - 1 minute" + "\n   " + AtHigherLevels + "The Cube increases by 5 feet for each spell slot level above 5."
 };
 SpellsList["crown of madness"] = {
 	name : "Crown of Madness",
@@ -14706,8 +14706,8 @@ SpellsList["crown of madness"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 Humanoid save or Charmed; a to maintain; melee atk crea of my choice before move; repeat save EoT",
-	descriptionFull : "One creature that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The creature succeeds automatically if it isn't Humanoid." + "\n   " + "A spectral crown appears on the Charmed target's head, and a madness glows in its eyes." + "\n   " + "The charmed target must use each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if no creature is within its reach. The target repeats the save at the end of each of its turns, ending the spell on itself on a success." + "\n   " + "On your later turns, you must take the Magic action to maintain control of the target, or the spell ends."
+	description : "1 humanoid save or Charmed; a to maintain; melee atk crea of my choice before move; repeat save EoT",
+	descriptionFull : "One creature that you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The creature succeeds automatically if it isn't Humanoid." + "\n   " + "A spectral crown appears on the Charmed target's head, and it must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if no creature is within its reach. The target repeats the save at the end of each of its turns, ending the spell on itself on a success." + "\n   " + "On your later turns, you must take the Magic action to maintain control of the target, or the spell ends."
 };
 SpellsList["crusader's mantle"] = {
 	name : "Crusader's Mantle",
@@ -14747,7 +14747,7 @@ SpellsList["dancing lights"] = {
 	compMaterial : "A bit of phosphorous",
 	duration : "Conc, 1 min",
 	description : "4 torch-sized lights or 1 humanlike Medium light; each emits 10-ft rad dim light; bns to move 60 ft",
-	descriptionFull : "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius." + "\n   " + "As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell’s range."
+	descriptionFull : "You create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius." + "\n   " + "As a Bonus Action, you can move the lights up to 60 feet to a space within range. A light must be within 20 feet of another light created by this spell, and a light vanishes if it exceeds the spell's range."
 };
 SpellsList["darkness"] = {
 	name : "Darkness",
@@ -14761,7 +14761,7 @@ SpellsList["darkness"] = {
 	compMaterial : "Bat fur and a piece of coal",
 	duration : "Conc, 10 min",
 	description : "15-ft rad darkness on point or object; Darkvision doesn't work; only magical light of SL 3+ works in it",
-	descriptionFull : "For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it." + "\n   " + "Alternatively, you can cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covered that object with something opaque such as a bowl or helm, blocks the Darkness." + "\n   " + "If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled."
+	descriptionFull : "For the duration, magical Darkness spreads from a point within range and fills a 15-foot-radius Sphere. Darkvision can't see through it, and nonmagical light can't illuminate it." + "\n   " + "Alternatively, you cast the spell on an object that isn't being worn or carried, causing the Darkness to fill a 15-foot Emanation originating from that object. Covering that object with something opaque, such as a bowl or helm, blocks the Darkness." + "\n   " + "If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled."
 };
 SpellsList["darkvision"] = {
 	name : "Darkvision",
@@ -14816,7 +14816,7 @@ SpellsList["delayed blast fireball"] = {
 	duration : "Conc, 1 min",
 	save : "Dex",
 	description : "Create bead; when conc. ends (dropped/broken) 20ft rad 12d6+1d6/SL+1d6/EoT. Fire; save halves",
-	descriptionFull : "A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one." + "\n   " + "The spell’s base damage is 12d6, and the damage increases by 1d6 whenever your turn ends and the spell hasn’t ended." + "\n   " + "If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature’s space or collides with a solid object, the spell ends, and the bead explodes." + "\n   " + "When the bead explodes, flammable objects in the explosion that aren’t being worn or carried start burning." + AtHigherLevels + "The base damage increases by 1d6 for each spell slot level above 7.",
+	descriptionFull : "A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one." + "\n   " + "The spell's base damage is 12d6, and the damage increases by 1d6 whenever your turn ends and the spell hasn't ended." + "\n   " + "If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends, and the bead explodes." + "\n   " + "When the bead explodes, flammable objects in the explosion that aren't being worn or carried start burning." + AtHigherLevels + "The base damage increases by 1d6 for each spell slot level above 7.",
 	dynamicDamageBonus : { multipleDmgMoments : false }
 };
 SpellsList["demiplane"] = {
@@ -14830,7 +14830,7 @@ SpellsList["demiplane"] = {
 	components : "S",
 	duration : "1 h",
 	description : "Create door to 30-ft cu demiplane (new or existing); when spell ends, obj. remain, crea choose if stay",
-	descriptionFull : "You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice)." + "\n   " + "When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the Prone condition in the unoccupied spaces closest to the door’s former space." + "\n   " + "Each time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead."
+	descriptionFull : "You create a shadowy Medium door on a flat solid surface that you can see within range. This door can be opened and closed, and it leads to a demiplane that is an empty room 30 feet in each dimension, made of wood or stone (your choice)." + "\n   " + "When the spell ends, the door vanishes, and any objects inside the demiplane remain there. Any creatures inside also remain unless they opt to be shunted through the door as it vanishes, landing with the Prone condition in the unoccupied spaces closest to the door's former space." + "\n   " + "Each time you cast this spell, you can create a new demiplane or connect the shadowy door to a demiplane you created with a previous casting of this spell. Additionally, if you know the nature and contents of a demiplane created by a casting of this spell by another creature, you can connect the shadowy door to that demiplane instead."
 };
 SpellsList["destructive wave"] = {
 	name : "Destructive Wave",
@@ -14879,7 +14879,7 @@ SpellsList["detect magic"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	description : "Sense magic effects in 30ft; 1 a to see aura on magical object/creature and determine school",
-	descriptionFull : "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic Action to see a faint aura around any visible creature or object int he area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
+	descriptionFull : "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic Action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead."
 };
 SpellsList["detect poison and disease"] = {
 	name : "Detect Poison and Disease",
@@ -14910,7 +14910,7 @@ SpellsList["detect thoughts"] = {
 	duration : "Conc, 1 min",
 	save : "Wis",
 	description : "Sense thinking crea or read 1 crea surface thoughts; 1 a  switch or probe mind; save or Arc. chk to end",
-	descriptionFull : "You activate one of the effects below. Until the spell ends, you can activate either effect as a Magic Action on your later turns." + "\n   " + "Sense Thoughts. You sense the presence of thoughts within 30 feet of yourself that belong to creatures that know languages or are telepathic. You don't read the thoughts, but you know that a thinking creature is present." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead." + "\n   " + "Read Thoughts. Target one creature you can see within 30 feet of yourself or one creature within 30 feet of yourself that you detected with the Sense Thoughts option. You learn what is most on the target's mind right now if the target doesn't know any languages, they are unaffected." + "\n   " + "As a Magic action on your next turn, you can try to probe deeper into the target's mind. If you probe deeper, the target makes a Wisdom saving throw. On a failed save, you discern the target's reasoning, emotions, and something that looms large in it mind (such as a worry, love, or hate). On a successful save the spell ends. Either way, the target knows that you are probing into its mind, and until you shift your attention away from the target's mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
+	descriptionFull : "You activate one of the effects below. Until the spell ends, you can activate either effect as a Magic Action on your later turns." + "\n   " + "Sense Thoughts. You sense the presence of thoughts within 30 feet of yourself that belong to creatures that know languages or are telepathic. You don't read the thoughts, but you know that a thinking creature is present." + "\n   " + "The spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead." + "\n   " + "Read Thoughts. Target one creature you can see within 30 feet of yourself or one creature within 30 feet of yourself that you detected with the Sense Thoughts option. You learn what is most on the target’s mind right now. If the target doesn’t know any languages and isn’t telepathic, you learn nothing." + "\n   " + "As a Magic action on your next turn, you can try to probe deeper into the target's mind. If you probe deeper, the target makes a Wisdom saving throw. On a failed save, you discern the target's reasoning, emotions, and something that looms large in its mind (such as a worry, love, or hate). On a successful save, the spell ends. Either way, the target knows that you are probing into its mind, and until you shift your attention away from the target's mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
 };
 SpellsList["dimension door"] = {
 	name : "Dimension Door",
@@ -14923,7 +14923,7 @@ SpellsList["dimension door"] = {
 	components : "V",
 	duration : "Instantaneous",
 	description : "Teleport myself and 1 willing crea within 5 ft, up to 500 ft to place I can see, visualize or describe",
-	descriptionFull : "You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as 200 feet straight downward or upward to the northwest at a 45-degree angle, 300 feet." + "\n   " + "You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell." + "\n   " + "If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you."
+	descriptionFull : "You teleport to a location within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as 200 feet straight downward or 300 feet upward to the northwest at a 45-degree angle." + "\n   " + "You can also teleport one willing creature. The creature must be within 5 feet of you when you teleport, and it teleports to a space within 5 feet of your destination space." + "\n   " + "If you, the other creature, or both would arrive in a space occupied by a creature or completely filled by one or more objects, you and any creature traveling with you each take 4d6 Force damage, and the teleportation fails."
 };
 SpellsList["disguise self"] = {
 	name : "Disguise Self",
@@ -14934,9 +14934,9 @@ SpellsList["disguise self"] = {
 	time : "1 a",
 	range : "Self",
 	components : "V,S",
-	duration : "1 h (D)",
-	description : "Alter appearance; Int(Investigation) check vs. spell DC to determine disguise",
-	descriptionFull : "You make yourself, including your clothing, armor, weapons, and other belongings on your person, look different until the spell ends or until you use your action to dismiss it. You can seem 1 foot shorter or taller and can appear thin, fat, or in between. You can't change your body type, so you must adopt a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you." + "\n   " + "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair." + "\n   " + "To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
+	duration : "1 h",
+	description : "Alter appearance with illusion; Int (Investigation) check vs. spell DC to determine disguise",
+	descriptionFull : "You make yourself — including your clothing, armor, weapons, and other belongings on your person — look different until the spell ends. You can seem 1 foot shorter or taller and can appear heavier or lighter. You must adopt a form that has the same basic arrangement of limbs as you have. Otherwise, the extent of the illusion is up to you." + "\n   " + "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to your outfit, objects pass through the hat, and anyone who touches it would feel nothing or would feel your head and hair. If you use this spell to appear thinner than you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair." + "\n   " + "To discern that you are disguised, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC."
 };
 SpellsList["disintegrate"] = {
 	name : "Disintegrate",
@@ -14950,8 +14950,8 @@ SpellsList["disintegrate"] = {
 	compMaterial : "A lodestone and dust",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "1 crea save or 40+10d6+3d6/SL Force dmg; or up to 10-ft cube nonmagical object is destroyed",
-	descriptionFull : "A thin green ray springs from your pointing finger to a target that you can see within range. The target can be a creature, an object, or a creation of magical force, such as the wall created by Wall of Force." + "\n   " + "A creature targeted by this spell must make a Dexterity saving throw. On a failed save, the target takes 10d6+40 force damage. The target is disintegrated if this damage leaves it with 0 hit points." + "\n   " + "A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell." + "\n   " + "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If the target is a Huge or larger object or creation of force, this spell disintegrates a 10-foot-cube portion of it. A magic item is unaffected by this spell." + AtHigherLevels + "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th."
+	description : "1 crea save or 40+10d6+3d6/SL Force; or up to 10ft cube nonmagical obj/force creation is destroyed",
+	descriptionFull : "You launch a green ray at a target you can see within range. The target can be a creature, a nonmagical object, or a creation of magical force, such as the wall created by Wall of Force." + "\n   " + "A creature targeted by this spell makes a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 Force damage. If this damage reduces it to 0 Hit Points, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a True Resurrection or a Wish spell." + "\n   " + "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If such a target is Huge or larger, this spell disintegrates a 10-foot-Cube portion of it." + AtHigherLevels + "The damage increases by 3d6 for each spell slot level above 6."
 };
 SpellsList["dispel evil and good"] = {
 	name : "Dispel Evil and Good",
@@ -14964,8 +14964,8 @@ SpellsList["dispel evil and good"] = {
 	components : "V,S,M",
 	compMaterial : "powdered silver and iron",
 	duration : "Conc, 1 min",
-	description : "Cele., elem., fey, fiends, and undead dis. on attacks vs. me; end early for dismissal/break enchantment",
-	descriptionFull : "Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions." + "\n   " + toUni("Break Enchantment") + ": As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures." + "\n   " + toUni("Dismissal") + ": As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a Charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild."
+	description : "Cele., elem., fey, fiends, and undead dis. on atks vs. me; a to end early for Dismissal/Break enchantment",
+	descriptionFull : "For the duration, Celestials, Elementals, Fey, Fiends, and Undead have Disadvantage on attack rolls against you. You can end the spell early by using either of the following special functions." + "\n   " + toUni("Break Enchantment") + ": As a Magic action, you touch a creature that is possessed by or has the Charmed or Frightened condition from one or more creatures of the types above. The target is no longer possessed, Charmed, or Frightened by such creatures." + "\n   " + toUni("Dismissal") + ": As a Magic action, you target one creature you can see within 5 feet of you that has one of the creature types above. The target must succeed on a Charisma saving throw or be sent back to its home plane if it isn't there already. If they aren't on their home plane, Undead are sent to the Shadowfell, and Fey are sent to the Feywild."
 };
 SpellsList["dispel magic"] = {
 	name : "Dispel Magic",
@@ -14977,8 +14977,8 @@ SpellsList["dispel magic"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Dispel all magical effects on crea or object; if above this SL, DC 10+SL spellcasting ability check",
-	descriptionFull : "Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends." + AtHigherLevels + "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used."
+	description : "Dispel all spells on crea, obj, or magical effect; if above casting SL, DC 10+SL spellcasting ability chk",
+	descriptionFull : "Choose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell’s level). On a successful check, the spell ends." + AtHigherLevels + "You automatically end a spell on the target if the spell’s level is equal to or less than the level of the spell slot you use."
 };
 SpellsList["dissonant whispers"] = {
 	name : "Dissonant Whispers",
@@ -14991,8 +14991,8 @@ SpellsList["dissonant whispers"] = {
 	components : "V",
 	duration : "Instantaneous",
 	save : "Wis",
-	description : "1 crea 3d6+1d6/SL Psychic dmg and flee; save halves and no fleeing; deaf crea are immune",
-	descriptionFull : "You whisper a discordant melody that only one creature of your choice within range can hear, wracking it with terrible pain. The target must make a Wisdom saving throw. On a failed save, it takes 3d6 psychic damage and must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. On a successful save, the target takes half as much damage and doesn't have to move away. A deafened creature automatically succeeds on the save." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+	description : "1 visible crea 3d6+1d6/SL Psychic dmg and flee on safest route; save halves and no fleeing",
+	descriptionFull : "One creature of your choice that you can see within range hears a discordant melody in its mind. The target makes a Wisdom saving throw. On a failed save, it takes 3d6 Psychic damage and must immediately use its Reaction, if available, to move as far away from you as it can, using the safest route. On a successful save, the target takes half as much damage only." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 1."
 };
 SpellsList["divination"] = {
 	name : "Divination",
@@ -15006,8 +15006,8 @@ SpellsList["divination"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "Incense worth 25+ gp, which the spell consumes",
 	duration : "Instantaneous",
-	description : "Get answer to one question about a goal, event, or activity to occur within the next 7 days (25gp cons.)",
-	descriptionFull : "Your magic and an offering put you in contact with a god or a god's servants. You ask a single question concerning a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply. The reply might be a short phrase, a cryptic rhyme, or an omen." + "\n   " + "The spell doesn't take into account any possible circumstances that might change the outcome, such as the casting of additional spells or the loss or gain of a companion." + "\n   " + "If you cast this spell two or more times before finishing your next long rest, there is a cumulative 25 percent chance for each casting after the first that you get a random reading. The DM makes this roll in secret."
+	description : "Receive answer to 1 question about goal, event, or activity to occur within the next 7 days (25gp cons.)",
+	descriptionFull : "This spell puts you in contact with a god or a god’s servants. You ask one question about a specific goal, event, or activity to occur within 7 days. The DM offers a truthful reply, which might be a short phrase or cryptic rhyme. The spell doesn’t account for circumstances that might change the answer, such as the casting of other spells." + "\n   " + "If you cast the spell more than once before finishing a Long Rest, there is a cumulative 25 percent chance for each casting after the first that you get no answer."
 };
 SpellsList["divine favor"] = {
 	name : "Divine Favor",
@@ -15019,7 +15019,7 @@ SpellsList["divine favor"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "1 min",
-	description : "My weapon attacks deal an +1d4 Radiant damage for the duration",
+	description : "My weapon attacks deal +1d4 Radiant damage for the duration",
 	descriptionFull : "Until the spell ends, your attacks with weapons deal an extra 1d4 Radiant damage on a hit."
 };
 SpellsList["divine smite"] = {
@@ -15028,12 +15028,12 @@ SpellsList["divine smite"] = {
 	source : [["PHB2024", 265]],
 	level : 1,
 	school : "Evoc",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting a target with a Melee weapon or Unarmed Strike.",
 	range : "Self",
 	components : "V",
 	duration : "Instantaneous",
-	description : "+2d8+1d8/SL+1d8(if Fiend or Undead) Rad. dmg on a melee weapon attack that hits.",
+	description : "Melee weapon/unarmed hit deals +2d8 +1d8/SL Radiant; Fiends & Undead take extra 1d8 Radiant",
 	descriptionFull : "The target takes an extra 2d8 Radiant damage from the attack. The damage increases by 1d8 if the target is a Fiend or an Undead." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 1."
 };
 SpellsList["divine word"] = {
@@ -15047,8 +15047,8 @@ SpellsList["divine word"] = {
 	components : "V",
 	duration : "Instantaneous",
 	save : "Cha",
-	description : "Any crea save or deaf/blind/stunned/dead depending on current HP; banishes extra planar crea",
-	descriptionFull : "You utter a divine word, imbued with the power that shaped the world at the dawn of creation. Choose any number of creatures you can see within range. Each creature that can hear you must make a Charisma saving throw. On a failed save, a creature suffers an effect based on its current hit points." + "\n " + "\u2022 50 hit points or fewer - deafened for 1 minute" + "\n " + "\u2022 40 hit points or fewer - deafened and blinded for 10 minutes" + "\n " + "\u2022 30 hit points or fewer - blinded, deafened, and stunned for 1 hour" + "\n " + "\u2022 20 hit points or fewer - killed instantly" + "\n\n" + "Regardless of its current hit points, a celestial, an elemental, a fey, or a fiend that fails its save is forced back to its plane of origin (if it isn't there already) and can't return to your current plane for 24 hours by any means short of a wish spell."
+	description : "Any crea save or deaf/blind/stunned/dead depending on current HP; banishes extraplanar crea",
+	descriptionFull : "You utter a word imbued with power from the Upper Planes. Each creature of your choice in range makes a Charisma saving throw. On a failed save, a target that has 50 Hit Points or fewer suffers an effect based on its current Hit Points, as shown in the Divine Word Effects table." + "\n " + "\u2022 41-50: Deafened for 1 minute" + "\n " + "\u2022 31-40: Deafened and Blinded for 10 minutes" + "\n " + "\u2022 21-30: Blinded, Deafened, and Stunned for 1 hour" + "\n " + "\u2022 0-20: the target dies" + "\n\n" + "Regardless of its Hit Points, a Celestial, an Elemental, a Fey, or a Fiend target that fails its save is forced back to its plane of origin (if it isn’t there already) and can’t return to the current plane for 24 hours by any means short of a Wish spell."
 };
 SpellsList["dominate beast"] = {
 	name : "Dominate Beast",
@@ -15061,8 +15061,8 @@ SpellsList["dominate beast"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 beast save or charmed, follows telepathic commands, 1 a for complete control; +SL for duration",
-	descriptionFull : "You attempt to beguile a beast that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw." + "\n   " + "While the beast is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as Attack that creature, Run over there, or Fetch that object. If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability." + "\n   " + "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well." + "\n   " + "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends." + AtHigherLevels + "When you cast this spell with a 5th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 6th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 7th level or higher, the duration is concentration, up to 8 hours."
+	description : "1 beast save or Charmed; repeat on dmg; follows telepathic commands; rea to use rea; +SL for duration",
+	descriptionFull : "One Beast you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success." + "\n   " + "You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as “Attack that creature,” “Move over there,” or “Fetch that object.” The target does its best to obey on its turn. If it completes an order and doesn’t receive further direction from you, it acts and moves as it likes, focusing on protecting itself." + "\n   " + "You can command the target to take a Reaction but must take your own Reaction to do so." + AtHigherLevels + "Your Concentration can last longer with a spell slot of level 5 (up to 10 minutes), 6 (up to 1 hour), or 7+ (up to 8 hours)."
 };
 SpellsList["dominate monster"] = {
 	name : "Dominate Monster",
@@ -15075,8 +15075,8 @@ SpellsList["dominate monster"] = {
 	components : "V,S",
 	duration : "Conc, 1 h",
 	save : "Wis",
-	description : "1 crea save or charmed, follows telepathic commands, 1 a for complete control; SL9: conc, 8h",
-	descriptionFull : "You attempt to beguile a creature that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw." + "\n   " + "While the creature is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as Attack that creature, Run over there, or Fetch that object. If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability." + "\n   " + "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well." + "\n   " + "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends." + AtHigherLevels + "When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours."
+	description : "1 crea save or Charmed; repeat on dmg; follows telepathic commands; rea to use rea; SL9: conc, 8h",
+	descriptionFull : "One creature you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success." + "\n   " + "You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as “Attack that creature,” “Move over there,” or “Fetch that object.” The target does its best to obey on its turn. If it completes an order and doesn’t receive further direction from you, it acts and moves as it likes, focusing on protecting itself." + "\n   " + "You can command the target to take a Reaction but must take your own Reaction to do so." + AtHigherLevels + "Your Concentration can last longer with a level 9 spell slot (up to 8 hours)."
 };
 SpellsList["dominate person"] = {
 	name : "Dominate Person",
@@ -15089,8 +15089,8 @@ SpellsList["dominate person"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 humanoid save or charmed, follows telepathic commands, 1 a for complete control; +SL for dur.",
-	descriptionFull : "You attempt to beguile a humanoid that you can see within range. It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw." + "\n   " + "While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as Attack that creature, Run over there, or Fetch that object. If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability." + "\n   " + "You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well." + "\n   " + "Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends." + AtHigherLevels + "When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+	description : "1 humanoid save or Charmed; repeat on dmg; follows telepathic commands; rea to use rea; +SL for dur.",
+	descriptionFull : "One Humanoid you can see within range must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target has Advantage on the save if you or your allies are fighting it. Whenever the target takes damage, it repeats the save, ending the spell on itself on a success." + "\n   " + "You have a telepathic link with the Charmed target while the two of you are on the same plane of existence. On your turn, you can use this link to issue commands to the target (no action required), such as “Attack that creature,” “Move over there,” or “Fetch that object.” The target does its best to obey on its turn. If it completes an order and doesn’t receive further direction from you, it acts and moves as it likes, focusing on protecting itself." + "\n   " + "You can command the target to take a Reaction but must take your own Reaction to do so." + AtHigherLevels + "Your Concentration can last longer with a spell slot of level 6 (up to 10 minutes), 7 (up to 1 hour), or 8+ (up to 8 hours)."
 };
 SpellsList["dragon's breath"] = {
 	name : "Dragon's Breath",
@@ -15104,9 +15104,9 @@ SpellsList["dragon's breath"] = {
 	compMaterial : "A hot pepper",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "1 willing crea: 1 a breathe 15-ft cone all 3d6+1d6/SL Acid/Cold/Fire/Lightn./Poison dmg; save half",
+	description : "1 willing crea: Magic action breathe 15-ft cone all 3d6+1d6/SL Acid/Cold/Fire/Lightn./Poison; save half",
 	descriptionShorter : "1 willing crea: 1 a 15-ft cone 3d6+1d6/SL Acid/Cold/Fire/Lightn/Poison dmg; save half",
-	descriptionFull : "You touch one willing creature and imbue it with the power to spew magical energy from its mouth, provided it has one. Choose acid, cold, fire, lightning, or poison. Until the spell ends, the creature can use an action to exhale energy of the chosen type in a 15-foot cone. Each creature in that area must make a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save, or half as much damage on a successful one." + AtHigherLevels + "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
+	descriptionFull : "You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 2.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["acid", "cold", "fire", "lightning", "poison"],
@@ -15128,8 +15128,8 @@ SpellsList["drawmij's instant summons"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A sapphire worth 1,000+ gp",
 	duration : "Until dispelled",
-	description : "Link object to sapphire (1000gp); 1 a crush gem to summon the unattended object or learn of wielder",
-	descriptionFull : "You touch an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an invisible mark on its surface and invisibly inscribes the name of the item on the sapphire you use as the material component. Each time you cast this spell, you must use a different sapphire." + "\n   " + "At any time thereafter, you can use your action to speak the item's name and crush the sapphire. The item instantly appears in your hand regardless of physical or planar distances, and the spell ends." + "\n   " + "If another creature is holding or carrying the item, crushing the sapphire doesn't transport the item to you, but instead you learn who the creature possessing the object is and roughly where that creature is located at that moment." + "\n   " + "Dispel magic or a similar effect successfully applied to the sapphire ends this spell's effect."
+	description : "Link object to sapphire (M); 1 M a crush gem to summon the unattended object or learn of holder",
+	descriptionFull : "You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object’s name on the sapphire. Each time you cast this spell, you must use a different sapphire." + "\n   " + "Thereafter, you can take a Magic action to speak the object’s name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends." + "\n   " + "If another creature is holding or carrying the object, crushing the sapphire doesn’t transport it, but instead you learn who that creature is and where that creature is currently located."
 };
 SpellsList["dream"] = {
 	name : "Dream",
@@ -15142,8 +15142,9 @@ SpellsList["dream"] = {
 	components : "V,S,M",
 	compMaterial : "A handful of sand",
 	duration : "8 h",
-	description : "Me or willing crea enters a crea's dreams, manifesting as a messenger with whom it can communicate",
-	descriptionFull : "This spell shapes a creature's dreams. Choose a creature known to you as the target of this spell. The target must be on the same plane of existence as you. Creatures that don't sleep, such as elves, can't be contacted by this spell. You, or a willing creature you touch, enters a trance state, acting as a messenger. While in the trance, the messenger is aware of his or her surroundings, but can't take actions or move." + "\n   " + "If the target is asleep, the messenger appears in the target's dreams and can converse with the target as long as it remains asleep, through the duration of the spell. The messenger can also shape the environment of the dream, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the effect of the spell early. The target recalls the dream perfectly upon waking. If the target is awake when you cast the spell, the messenger knows it, and can either end the trance (and the spell) or wait for the target to fall asleep, at which point the messenger appears in the target's dreams." + "\n   " + "You can make the messenger appear monstrous and terrifying to the target. If you do, the messenger can deliver a message of no more than ten words and then the target must make a Wisdom saving throw. On a failed save, echoes of the phantasmal monstrosity spawn a nightmare that lasts the duration of the target's sleep and prevents the target from gaining any benefit from that rest. In addition, when the target wakes up, it takes 3d6 psychic damage." + "\n   " + "If you have a body part, lock of hair, clipping from a nail, or similar portion of the target's body, the target makes its saving throw with disadvantage."
+	save : "Wis",
+	description : "Me or willing crea enters other crea's dream; communicate or terrify (save or 3d6 Psych, no rest benefit)",
+	descriptionFull : "You target a creature you know on the same plane of existence. You or a willing creature you touch enters a trance state to act as a dream messenger. While in the trance, the messenger is Incapacitated and has a Speed of 0." + "\n   " + "If the target is asleep, the messenger appears in the target’s dreams and can converse with the target as long as it remains asleep, through the spell’s duration. The messenger can also shape the dream’s environment, creating landscapes, objects, and other images. The messenger can emerge from the trance at any time, ending the spell. The target recalls the dream perfectly upon waking." + "\n   " + "If the target is awake when you cast the spell, the messenger knows it and can either end the trance (and the spell) or wait for the target to sleep, at which point the messenger enters its dreams." + "\n   " + "You can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up."
 };
 SpellsList["druidcraft"] = {
 	name : "Druidcraft",
@@ -15155,8 +15156,8 @@ SpellsList["druidcraft"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Small nature effect; predict weather, expedite small plant growth, snuff light, harmless sensory effect",
-	descriptionFull : "Whispering to the spirits of nature, you create one of the following effects within range." + "\n " + "\u2022 You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round." + "\n " + "\u2022 You instantly make a flower blossom, a seed pod open, or a leaf bud bloom." + "\n " + "\u2022 You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube." + "\n " + "\u2022 You instantly light or snuff out a candle, a torch, or a small campfire."
+	description : "Predict weather 24 hrs, grow flower/pod/leaf, harmless sensory effect in 5ft cu, snuff/light small fire",
+	descriptionFull : "Whispering to the spirits of nature, you create one of the following effects within range." + "\n " + "\u2022 Weather Sensor. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round." + "\n " + "\u2022 Bloom. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom." + "\n " + "\u2022 Sensory Effect. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube." + "\n " + "\u2022 Fire Play. You light or snuff out a candle, a torch, or a campfire."
 };
 SpellsList["earthquake"] = {
 	name : "Earthquake",
@@ -15169,8 +15170,8 @@ SpellsList["earthquake"] = {
 	components : "V,S,M",
 	compMaterial : "A fractured rock",
 	duration : "Conc, 1 min",
-	description : "Cause an earthquake in a 100-ft rad, damaging structures and creating dangerous fissures, see book",
-	descriptionFull : "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot- radius circle centered on that point and shakes creatures and structures in contact with the ground in that area." + "\n   " + "The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a Constitution saving throw. On a failed save, the creature's concentration is broken." + "\n   " + "When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a Dexterity saving throw. On a failed save, the creature is knocked prone and its concentration is broken." + "\n   " + "This spell can have additional effects depending on the terrain in the area, as determined by the DM." + "\n   " + "Fissures. Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the DM. Each is 1d10 \xD7 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below)." + "\n   " + "Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a Dexterity saving throw. On a failed save, the creature takes 12d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The DM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried."
+	description : "Create earthquake in a 100-ft rad, affecting any crea, damaging structures and creating fissures, see book",
+	descriptionFull : "Choose a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point. The ground there is Difficult Terrain." + "\n   " + "When you cast this spell and at the end of each of your turns for the duration, each creature on the ground in the area makes a Dexterity saving throw. On a failed save, a creature has the Prone condition, and its Concentration is broken." + "\n   " + "You can also cause the effects below." + "\n   " + "Fissures. A total of 1d6 fissures open in the spell’s area at the end of the turn you cast it. You choose the fissures’ locations, which can’t be under structures. Each fissure is 1d10 \xD7 10 feet deep and 10 feet wide, and it extends from one edge of the spell’s area to another edge. A creature in the same space as a fissure must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure’s edge as it opens." + "\n   " + "Structures. The tremor deals 50 Bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the end of each of your turns until the spell ends. If a structure drops to 0 Hit Points, it collapses." + "\n   " + "A creature within a distance from a collapsing structure equal to half the structure’s height makes a Dexterity saving throw. On a failed save, the creature takes 12d6 Bludgeoning damage, has the Prone condition, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. On a successful save, the creature takes half as much damage only."
 };
 SpellsList["eldritch blast"] = {
 	name : "Eldritch Blast",
@@ -15182,10 +15183,10 @@ SpellsList["eldritch blast"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell attack beam 1d10 Force damage; beams can be combined or split; CL5:2, CL11:3, CL17:4 beams",
+	description : "Spell attack 1d10 Force damage per beam; same or different targets; CL5: 2, CL11: 3, CL17: 4 beams",
 	descriptionShorter : "Spell atk beam 1d10 Force damage; can combine/split beams; CL5:2, CL11:3, CL17:4 beams",
 	descriptionCantripDie : "Spell attack for `CD` beam(s), each 1d10 Force damage; beams can be combined or split",
-	descriptionFull : "A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage." + "\n   " + "The spell creates more than one beam when you reach higher levels - two beams at 5th level, three beams at 11th level, and four beams at 17th level. you can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
+	descriptionFull : "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage." + "\n   " + "The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
 	dynamicDamageBonus : { multipleDmgMoments : true }
 };
 SpellsList["elementalism"] = {
@@ -15198,7 +15199,7 @@ SpellsList["elementalism"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "",
+	description : "Create minor effect (1 min): breeze; dust/sand; embers/smoke; mist/water. Sculpt element (1 hr); See B",
 	descriptionFull : "You exert control over the elements, creating one of the following effects within range." + "\n   " + "Beckon Air. You create a breeze strong enough to ripple cloth, stir dust, rustle leaves, and close open doors and shutters, all in a 5-foot Cube. Doors and shutters being held open by someone or something aren't affected." + "\n   " + "Beckon Earth. You create a thin shroud of dirt or sand that covers surfaces in a 5-foot-square area, or you cause a single word to appear in your handwriting in a patch of dirt or sand." + "\n   " + "Beckon Fire. You create a thin cloud of harmless embers and colored, scented smoke in a 5-foot Cube. You choose the color and scent, and the embers can light candles, torches, or lamps in the area. The smoke's scent lingers for 1 minute." + "\n   " + "Beckon Water. You create a spray of cool mist that lightly dampens creatures and objects in a 5-foot Cube. Alternatively, you create 1 cup of clean water either in an open container or on a surface, and the water evaporates in 1 minute." + "\n   " + "Sculpt Element. You cause dirt, sand, fire, smoke, mist, or water that can fit in a 1-foot cube to assume a crude shape (such as that of a creature or an object) for 1 hour."
 };
 SpellsList["elemental weapon"] = {
@@ -15257,7 +15258,7 @@ SpellsList["ensnaring strike"] = {
 	source : [["PHB2024", 268]],
 	level : 1,
 	school : "Conj",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting a creature with a weapon",
 	range : "Self",
 	components : "V",
@@ -15293,7 +15294,7 @@ SpellsList["enthrall"] = {
 	duration : "Conc, 1 min",
 	save : "Wis",
 	description : "While I speak, any crea save (succ. if fighting) or -10 on Wis(Perception) and Passive Perception",
-	descriptionFull : "You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeed on this save. On a failed save, a target has a -10 penalty to Wisdom (Perception) checks and Passive Perception until the spell ends."
+	descriptionFull : "You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom (Perception) checks and Passive Perception until the spell ends."
 };
 SpellsList["etherealness"] = {
 	name : "Etherealness",
@@ -16542,7 +16543,7 @@ SpellsList["lightning arrow"] = {
 	source : [["PHB2024", 292]],
 	level : 3,
 	school : "Trans",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting or missing a target with a ranged attack using a weapon",
 	range : "Self",
 	components : "V,S",

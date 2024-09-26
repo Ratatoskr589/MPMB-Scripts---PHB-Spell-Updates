@@ -15214,7 +15214,7 @@ SpellsList["elemental weapon"] = {
 	duration : "Conc, 1 h",
 	description : "+1 magical weapon; +1d4 Acid, Cold, Fire, Lightning, or Thunder dmg; SL5: +2/+2d4, SL7: +3/+3d4",
 	descriptionShorter : "+1 wea; +1d4 Acid/Cold/Fire/Lightning/Thunder dmg; SL5: +2/+2d4, SL7: +3/+3d4",
-	descriptionFull : "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types - acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits." + AtHigherLevels + "When you cast this spell using a spell slot of 5th or 6th level, the bonus to attack rolls increases to +2 and the extra damage increases to 2d4. When you use a spell slot of 7th level or higher, the bonus increases to +3 and the extra damage increases to 3d4.",
+	descriptionFull : "A nonmagical weapon you touch becomes a magic weapon. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. For the duration, the weapon has a +1 bonus to attack rolls and deals an extra 1d4 damage of the chosen type when it hits." + AtHigherLevels + "If you use a level 5–6 spell slot, the bonus to attack rolls increases to +2, and the extra damage increases to 2d4. If you use a level 7+ spell slot, the bonus increases to +3, and the extra damage increases to 3d4.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["acid", "cold", "fire", "lightning", "thunder"],
@@ -15233,8 +15233,8 @@ SpellsList["enhance ability"] = {
 	components : "V,S,M",
 	compMaterial : "Fur or a feather",
 	duration : "Conc, 1 h",
-	description : "1+1/SL crea adv. on checks with 1 stat; choosing Str, Dex, Int, Wis, or Cha",
-	descriptionFull : "You touch a creature and choose Strength, Dexterity, Intelligence, Wisdom, Charisma. For the duration, the target has Advantage on ability checks using the chosen ability." + AtHigherLevels + "You can target one additional creature for each spell slot level above 2. You can choose a different ability for each target."
+	description : "1+1/SL crea adv. on checks with 1 stat (choice per target): Str, Dex, Int, Wis, or Cha",
+	descriptionFull : "You touch a creature and choose Strength, Dexterity, Intelligence, Wisdom, or Charisma. For the duration, the target has Advantage on ability checks using the chosen ability." + AtHigherLevels + "You can target one additional creature for each spell slot level above 2. You can choose a different ability for each target."
 };
 SpellsList["enlarge/reduce"] = {
 	name : "Enlarge/Reduce",
@@ -15248,9 +15248,9 @@ SpellsList["enlarge/reduce"] = {
 	compMaterial : "A pinch of powdered iron",
 	duration : "Conc, 1 min",
 	save : "Con",
-	description : "1 crea/object save or enlarged (Str adv. +1d4 weapon dmg), reduced (Str dis. -1d4 weapon dmg)",
-	descriptionFull : "You cause a creature or an object you can see within range to grow larger or smaller for the duration. Choose either a creature or an object that is neither worn nor carried. If the target is unwilling, it can make a Constitution saving throw. On a success, the spell has no effect." + "\n   " + "If the target is a creature, everything it is wearing and carrying changes size with it. Any item dropped by an affected creature returns to normal size at once." + "\n   " + toUni("Enlarge") + ": The target's size doubles in all dimensions, and its weight is multiplied by eight. This growth increases its size by one category - from Medium to Large, for example. If there isn't enough room for the target to double its size, the creature or object attains the maximum possible size in the space available. Until the spell ends, the target also has advantage on Strength checks and Strength saving throws. The target's weapons also grow to match its new size. While these weapons are enlarged, the target's attack with them deal 1d4 extra damage." + "\n   " + toUni("Reduce") + ": The target's size is halved in all dimensions, and its weight is reduced to one-eighth of normal. This reduction decreases its size by one category - from Medium to Small, for example. Until the spell ends, the target also has disadvantage on Strength checks and Strength saving throws. The target's weapons also shrink to match its new size. While these weapons are reduced, the target's attacks with them deal 1d4 less damage (this can't reduce the damage below 1).",
-	dynamicDamageBonus : { doNotProcess : true } // Not actual damage form the spell
+	description : "1 crea/obj save or Enlarged (Str adv. +1d4 weapon/unarmed dmg), Reduced (Str disadv; -1d4, min 1)",
+	descriptionFull : "For the duration, the spell enlarges or reduces a creature or an object you can see within range (see the chosen effect below). A targeted object must be neither worn nor carried. If the target is an unwilling creature, it can make a Constitution saving throw. On a successful save, the spell has no effect." + "\n   " + "Everything that a targeted creature is wearing and carrying changes size with it. Any item it drops returns to normal size at once. A thrown weapon or piece of ammunition returns to normal size immediately after it hits or misses a target." + "\n   " + toUni("Enlarge") + ": The target’s size increases by one category—from Medium to Large, for example. The target also has Advantage on Strength checks and Strength saving throws. The target’s attacks with its enlarged weapons or Unarmed Strikes deal an extra 1d4 damage on a hit." + "\n   " + toUni("Reduce") + ": The target’s size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target’s attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can’t reduce the damage below 1).",
+	dynamicDamageBonus : { doNotProcess : true } // Not actual damage from the spell
 };
 SpellsList["ensnaring strike"] = {
 	name : "Ensnaring Strike",
@@ -15264,9 +15264,9 @@ SpellsList["ensnaring strike"] = {
 	components : "V",
 	duration : "Conc, 1 min",
 	save : "Str",
-	description : "Next crea hit save (Large adv.) or restrained, 1d6+1d6/SL Piercing dmg/rnd; Str check to escape",
-	descriptionShorter : "Next crea hit save (Large adv.) or restrained, 1d6+1d6/SL Piercing dmg/rnd; Str chk escape",
-	descriptionFull : "The next time you hit a creature with a weapon attack before this spell ends, a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be restrained by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away." + "\n   " + "While restrained by this spell, the target takes 1d6 piercing damage at the start of each of its turns. A creature restrained by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed." + AtHigherLevels + "If you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+	description : "Hit crea save (Large adv.) or Restrained, 1d6+1d6/SL Piercing at start of turn; Str (Ath) check to escape",
+	descriptionShorter : "Hit crea save (Large adv.) or restrained, 1d6+1d6/SL Piercing dmg/rnd; Str chk escape",
+	descriptionFull : "As you hit the target, grasping vines appear on it, and it makes a Strength saving throw. A Large or larger creature has Advantage on this save. On a failed save, the target has the Restrained condition until the spell ends. On a successful save, the vines shrivel away, and the spell ends." + "\n   " + "While Restrained, the target takes 1d6 Piercing damage at the start of each of its turns. The target or a creature within reach of it can take an action to make a Strength (Athletics) check against your spell save DC. On a success, the spell ends." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 1."
 };
 SpellsList["entangle"] = {
 	name : "Entangle",
@@ -15279,8 +15279,8 @@ SpellsList["entangle"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Str",
-	description : "20-ft square save or restrained; Str check vs. Spell DC to escape; for duration area is difficult terrain",
-	descriptionFull : "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain." + "\n   " + "A creature in the area when you cast the spell must succeed on a Strength saving throw or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a Strength check against your spell save DC. On a success, it frees itself." + "\n   " + "When the spell ends, the conjured plants wilt away."
+	description : "20-ft square save or Restrained; Str (Ath) check vs. spell DC to escape; for duration area is Dif. Terrain",
+	descriptionFull : "Grasping plants sprout from the ground in a 20-foot square within range. For the duration, these plants turn the ground in the area into Difficult Terrain. They disappear when the spell ends." + "\n   " + "Each creature (other than you) in the area when you cast the spell must succeed on a Strength saving throw or have the Restrained condition until the spell ends. A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them."
 };
 SpellsList["enthrall"] = {
 	name : "Enthrall",
@@ -15293,7 +15293,7 @@ SpellsList["enthrall"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "While I speak, any crea save (succ. if fighting) or -10 on Wis(Perception) and Passive Perception",
+	description : "While I speak, any crea save (success if fighting) or -10 on Wis (Perception) and Passive Perception",
 	descriptionFull : "You weave a distracting string of words, causing creatures of your choice that you can see within range to make a Wisdom saving throw. Any creature you or your companions are fighting automatically succeeds on this save. On a failed save, a target has a -10 penalty to Wisdom (Perception) checks and Passive Perception until the spell ends."
 };
 SpellsList["etherealness"] = {
@@ -15306,8 +15306,8 @@ SpellsList["etherealness"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "8 h",
-	description : "Me or 3/SL willing go to Ethereal Plane; move there, but able to perceive 60 ft into the normal plane",
-	descriptionFull : "You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away." + "\n   " + "While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so." + "\n   " + "You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from." + "\n   " + "When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved." + "\n   " + "This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes." + AtHigherLevels + "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
+	description : "Me or 3/SL willing crea in 10ft to Ethereal Plane for duration; able to perceive 60ft into the normal plane",
+	descriptionFull : "You step into the border regions of the Ethereal Plane, where it overlaps with your current plane. You remain in the Border Ethereal for the duration. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can perceive the plane you left, which looks gray, and you can’t see anything there more than 60 feet away." + "\n   " + "While on the Ethereal Plane, you can affect and be affected only by creatures, objects, and effects on that plane. Creatures that aren’t on the Ethereal Plane can’t perceive or interact with you unless a feature gives them the ability to do so." + "\n   " + "You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from." + "\n   " + "When the spell ends, you return to the plane you left in the spot that corresponds to your space in the Border Ethereal. If you appear in an occupied space, you are shunted to the nearest unoccupied space and take Force damage equal to twice the number of feet you are moved." + "\n   " + "This spell ends instantly if you cast it while you are on the Ethereal Plane or a plane that doesn’t border it, such as one of the Outer Planes." + AtHigherLevels + "You can target up to three willing creatures (including yourself) for each spell slot level above 7. The creatures must be within 10 feet of you when you cast the spell."
 };
 SpellsList["evard's black tentacles"] = {
 	name : "Evard's Black Tentacles",
@@ -15322,9 +15322,9 @@ SpellsList["evard's black tentacles"] = {
 	compMaterial : "A tentacle",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "All who enter/start 20-ft square save or restrained \u0026 3d6 Bludg. dmg/rnd; Str/Dex check to escape",
-	descriptionShorter : "All enter/start 20-ft square save or restrained \u0026 3d6 Bludg. dmg/rnd; Str/Dex chk escape",
-	descriptionFull : "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in the area into difficult terrain." + "\n   " + "When a creature enters the affected area for the first time on a turn or starts its turn there, the creature must succeed on a Dexterity saving throw or take 3d6 bludgeoning damage and be restrained by the tentacles until the spell ends. A creature that starts its turn in the area and is already restrained by the tentacles takes 3d6 bludgeoning damage." + "\n   " + "A creature restrained by the tentacles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
+	description : "20-ft square cast/enter/EoT save or Restrained \u0026 3d6 Bludg. (1/turn/crea); Str (Ath) check to escape",
+	descriptionShorter : "All in cast/enter/end turn 20-ft square save or restrained \u0026 3d6 Bludg. dmg/rnd; Str (Ath) chk escape",
+	descriptionFull : "Squirming, ebony tentacles fill a 20-foot square on ground that you can see within range. For the duration, these tentacles turn the ground in that area into Difficult Terrain." + "\n   " + "Each creature in that area makes a Strength saving throw. On a failed save, it takes 3d6 Bludgeoning damage, and it has the Restrained condition until the spell ends. A creature also makes that save if it enters the area or ends it turn there. A creature makes that save only once per turn." + "\n   " + "A Restrained creature can take an action to make a Strength (Athletics) check against your spell save DC, ending the condition on itself on a success."
 };
 SpellsList["expeditious retreat"] = {
 	name : "Expeditious Retreat",
@@ -15337,7 +15337,7 @@ SpellsList["expeditious retreat"] = {
 	components : "V,S",
 	duration : "Conc, 10 min",
 	description : "I can take Dash action now, and as a bonus action for the duration",
-	descriptionFull : "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action."
+	descriptionFull : "You take the Dash action, and until the spell ends, you can take that action again as a Bonus Action."
 };
 SpellsList["eyebite"] = {
 	name : "Eyebite",
@@ -15350,8 +15350,8 @@ SpellsList["eyebite"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 crea/rnd within 60 ft save or either fall asleep, panicked, or sickened, my choice",
-	descriptionFull : "For the spell's duration, your eyes become an inky void imbued with dread power. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration. On each of your turns until the spell ends, you can use your action to target another creature but can't target a creature again if it has succeeded on a saving throw against this casting of Eyebite." + "\n   " + toUni("Asleep") + ": The target falls unconscious. It wakes up if it takes any damage or if another creature uses its action to shake the sleeper awake." + "\n   " + toUni("Panicked") + ": The target is frightened of you. On each of its turns, the frightened creature must take the Dash action and move away from you by the safest and shortest available route, unless there is nowhere to move. If the target moves to a place at least 60 feet away from you where it can no longer see you, this effect ends." + "\n   " + toUni("Sickened") + ": The target has disadvantage on attack rolls and ability checks. At the end of each of its turns, it can make another Wisdom saving throw. If it succeeds, the effect ends."
+	description : "1 crea in 60 ft save vs Unconscious, Frightened, or Poisoned. 1 a target another crea that hasn't saved",
+	descriptionFull : "For the duration, your eyes become an inky void. One creature of your choice within 60 feet of you that you can see must succeed on a Wisdom saving throw or be affected by one of the following effects of your choice for the duration." + "\n   " + "On each of your turns until the spell ends, you can take a Magic action to target another creature but can’t target a creature again if it has succeeded on a save against this casting of the spell." + "\n   " + toUni("Asleep") + ": The target has the Unconscious condition. It wakes up if it takes any damage or if another creature takes an action to shake it awake." + "\n   " + toUni("Panicked") + ": The target has the Frightened condition. On each of its turns, the Frightened target must take the Dash action and move away from you by the safest and shortest route available. If the target moves to a space at least 60 feet away from you where it can’t see you, this effect ends." + "\n   " + toUni("Sickened") + ": The target has the Poisoned condition."
 };
 SpellsList["fabricate"] = {
 	name : "Fabricate",
@@ -15363,8 +15363,8 @@ SpellsList["fabricate"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Create simple object from raw materials; or complex object if proficient in the appropriate tools",
-	descriptionFull : "You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, and clothes from flax or wool." + "\n   " + "Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot cube, or eight connected 5-foot cubes), given a sufficient quantity of raw material. If you are working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a single 5-foot cube). The quality of objects made by the spell is commensurate with the quality of the raw materials." + "\n   " + "Creatures or magic items can't be created or transmuted by this spell. You also can't use it to create items that ordinarily require a high degree of craftsmanship, such as jewelry, weapons, glass, or armor, unless you have proficiency with the type of artisan's tools used to craft such objects."
+	description : "Create Lg or smaller obj from raw materials (10 ft cu or 8 5ft cu); or complex obj if prof. in crafting tools",
+	descriptionFull : "You convert raw materials into products of the same material. For example, you can fabricate a wooden bridge from a clump of trees, a rope from a patch of hemp, or clothes from flax or wool." + "\n   " + "Choose raw materials that you can see within range. You can fabricate a Large or smaller object (contained within a 10-foot Cube or eight connected 5-foot Cubes) given a sufficient quantity of material. If you’re working with metal, stone, or another mineral substance, however, the fabricated object can be no larger than Medium (contained within a 5-foot Cube). The quality of any fabricated objects is based on the quality of the raw materials." + "\n   " + "Creatures and magic items can’t be created by this spell. You also can’t use it to create items that require a high degree of skill—such as weapons and armor—unless you have proficiency with the type of Artisan’s Tools used to craft such objects."
 };
 SpellsList["faerie fire"] = {
 	name : "Faerie Fire",
@@ -15377,8 +15377,8 @@ SpellsList["faerie fire"] = {
 	components : "V",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "20-ft cube all obj/crea save or outlined in 10 ft dim light and attacks have adv.; see invisible crea",
-	descriptionFull : "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed dim light in a 10-foot radius." + "\n   " + "Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible."
+	description : "20-ft cube all obj/crea save or emit 10 ft dim light and attacks have adv.; no benefit from Invisible",
+	descriptionFull : "Objects in a 20-foot Cube within range are outlined in blue, green, or violet light (your choice). Each creature in the Cube is also outlined if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed Dim Light in a 10-foot radius and can’t benefit from the Invisible condition." + "\n   " + "Attack rolls against an affected creature or object have Advantage if the attacker can see it."
 };
 SpellsList["false life"] = {
 	name : "False Life",
@@ -15391,8 +15391,8 @@ SpellsList["false life"] = {
 	components : "V,S,M",
 	compMaterial : "A drop of alcohol",
 	duration : "Instantaneous",
-	description : "I gain 1d4+4+5/SL temporary hit points for the duration",
-	descriptionFull : "Bolstering yourself with a necromatic facsimile of life, you gain 1d4+4 temporary hit points for the duration." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+	description : "I gain 2d4 + 4 Temporary Hit Points.",
+	descriptionFull : "You gain 2d4 + 4 Temporary Hit Points." + AtHigherLevels + "You gain 5 additional Temporary Hit Points for each spell slot level above 1."
 };
 SpellsList["fear"] = {
 	name : "Fear",
@@ -15401,13 +15401,13 @@ SpellsList["fear"] = {
 	level : 3,
 	school : "Illus",
 	time : "1 a",
-	range : "Self",
+	range : ""S:30" + (typePF ? "-" : "") + "ft cone"",
 	components : "V,S,M",
 	compMaterial : "A white feather",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "All crea save or drop what it is holding and frightened; extra save at end of turn if not in line of sight",
-	descriptionFull : "You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become frightened for the duration." + "\n   " + "While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature."
+	description : "All crea save or drop held items and Frightened; dash away; extra save at EoT if not in line of sight",
+	descriptionFull : "Each creature in a 30-foot Cone must succeed on a Wisdom saving throw or drop whatever it is holding and have the Frightened condition for the duration." + "\n   " + "A Frightened creature takes the Dash action and moves away from you by the safest route on each of its turns unless there is nowhere to move. If the creature ends its turn in a space where it doesn’t have line of sight to you, the creature makes a Wisdom saving throw. On a successful save, the spell ends on that creature."
 };
 SpellsList["feather fall"] = {
 	name : "Feather Fall",
@@ -15416,13 +15416,13 @@ SpellsList["feather fall"] = {
 	level : 1,
 	school : "Trans",
 	time : "1 rea",
-	timeFull : "1 reaction, which you take when you or a creature within 60 feet of you falls",
+	timeFull : "1 reaction, which you take when you or a creature you can see within 60 feet of you falls",
 	range : "60 ft",
 	components : "V,M",
 	compMaterial : "A small feather or piece of down",
 	duration : "1 min",
-	description : "5 creatures descent only 60 ft/rnd for duration or until landed, taking no falling damage",
-	descriptionFull : "Reaction - When you or a creature within 60 feet of you falls Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature."
+	description : "5 creatures descend only 60 ft/rnd for duration or until landed, taking no falling damage",
+	descriptionFull : "Reaction - Choose up to five falling creatures within range. A falling creature’s rate of descent slows to 60 feet per round until the spell ends. If a creature lands before the spell ends, the creature takes no damage from the fall, and the spell ends for that creature."
 };
 SpellsList["feign death"] = {
 	name : "Feign Death",
@@ -15436,8 +15436,8 @@ SpellsList["feign death"] = {
 	components : "V,S,M",
 	compMaterial : "A pinch of graveyard dirt",
 	duration : "1 h",
-	description : "Willing creature appears dead; it is blinded, incapacitated, has dmg resist. all but Psychic, and speed 0",
-	descriptionFull : "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death." + "\n   " + "For the spell's duration, or until you use an action to touch the target and dismiss the spell, the target appears dead to all outward inspection and to spells used to determine the target's status. The target is blinded and incapacitated, and its speed drops to 0. The target has resistance to all damage except psychic damage. If the target is diseased or poisoned when you cast the spell, or becomes diseased or poisoned while under the spell's effect, the disease and poison have no effect until the spell ends."
+	description : "Willing crea looks dead: Blinded, Incapacitated, resist. all dmg but Psychic, speed 0, immune Poisoned",
+	descriptionFull : "You touch a willing creature and put it into a cataleptic state that is indistinguishable from death." + "\n   " + "For the duration, the target appears dead to outward inspection and to spells used to determine the target’s status. The target has the Blinded and Incapacitated conditions, and its Speed is 0." + "\n   " + "The target also has Resistance to all damage except Psychic damage, and it has Immunity to the Poisoned condition."
 };
 SpellsList["find familiar"] = {
 	name : "Find Familiar",
@@ -15451,8 +15451,8 @@ SpellsList["find familiar"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "burning incense worth 10+ gp, which the spell consumes",
 	duration : "Instantaneous",
-	description : "Gain the services of a familiar; can see through its eyes; it can deliver touch spells; see B (10gp cons.)",
-	descriptionFull : "You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form (see appendix B), though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but obeys your commands." + "\n   " + "Telepathic Connection. While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has." + "\n   " + "Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. You familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell." + "\n   " + "Combat. The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal." + "\n   " + "Disappearance of the Familiar. When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying." + "\n   " + "One Familiar Only. You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause i to adopt a new eligible form."
+	description : "Gain the services of a familiar; bns see through its eyes; it can deliver touch spells; see B (10gp cons.)",
+	descriptionFull : "You gain the service of a familiar, a spirit that takes an animal form you choose: Bat, Cat, Frog, Hawk, Lizard, Octopus, Owl, Rat, Raven, Spider, Weasel, or another Beast that has a Challenge Rating of 0. Appearing in an unoccupied space within range, the familiar has the statistics of the chosen form (see appendix B), though it is a Celestial, Fey, or Fiend (your choice) instead of a Beast. Your familiar acts independently of you, but it obeys your commands." + "\n   " + "Telepathic Connection. While your familiar is within 100 feet of you, you can communicate with it telepathically. Additionally, as a Bonus Action, you can see through the familiar's eyes and hear what it hears until the start of your next turn, gaining the benefits of any special senses it has." + "\n   " + "Finally, when you cast a spell with a range of touch, your familiar can deliver the touch. Your familiar must be within 100 feet of you, and it must take a Reaction to deliver the touch when you cast the spell." + "\n   " + "Combat. The familiar is an ally to you and your allies. It rolls its own Initiative and acts on its own turn. A familiar can't attack, but it can take other actions as normal." + "\n   " + "Disappearance of the Familiar. When the familiar drops to 0 Hit Points, it disappears. It reappears after you cast this spell again. As a Magic action, you can temporarily dismiss the familiar to a pocket dimension. Alternatively, you can dismiss it forever. As a Magic action while it is temporarily dismissed, you can cause it to reappear in an unoccupied space within 30 feet of you. Whenever the familiar drops to 0 Hit Points or disappears into the pocket dimension, it leaves behind in its space anything it was wearing or carrying." + "\n   " + "One Familiar Only. You can't have more than one familiar at a time. If you cast this spell while you have a familiar, you instead cause it to adopt a new eligible form."
 };
 SpellsList["find steed"] = {
 	name : "Find Steed",
@@ -15464,8 +15464,8 @@ SpellsList["find steed"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Gain the services of an Otherworldly Steed; communicate with each other telepathically; share spells with it; see book",
-	descriptionFull : "You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the Otherworldly Steed stat block. If you already have a steed from this spell, the steed is replaced by a new one." + "\n   " + "The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed's creature type - Celestial, Fey, or Fiend -." + "\n   " + "Combat. The steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you." + "\n   " + "Disappearance of the Steed. The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying, if you cast this spell again, you decide whether you summon the steed that disappeared or a different one." + "\n   " + "Using the spell slot's level for the spell's level in the stat block."
+	description : "Gain otherworldly steed; telepathic with me; share initiative & healing spells; controlled if mount; see  B",
+	descriptionFull : "You summon an otherworldly being that appears as a loyal steed in an unoccupied space of your choice within range. This creature uses the Otherworldly Steed stat block. If you already have a steed from this spell, the steed is replaced by the new one." + "\n   " + "The steed resembles a Large, rideable animal of your choice, such as a horse, a camel, a dire wolf, or an elk. Whenever you cast the spell, choose the steed’s creature type — Celestial, Fey, or Fiend — which determines certain traits in the stat block." + "\n   " + "Combat. The steed is an ally to you and your allies. In combat, it shares your Initiative count, and it functions as a controlled mount while you ride it (as defined in the rules on mounted combat). If you have the Incapacitated condition, the steed takes its turn immediately after yours and acts independently, focusing on protecting you." + "\n   " + "Disappearance of the Steed. The steed disappears if it drops to 0 Hit Points or if you die. When it disappears, it leaves behind anything it was wearing or carrying, if you cast this spell again, you decide whether you summon the steed that disappeared or a different one." + "\n   " + "Use the spell slot's level for the spell's level in the stat block."
 };
 SpellsList["find the path"] = {
 	name : "Find the Path",

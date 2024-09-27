@@ -14069,7 +14069,7 @@ SpellsList["blur"] = {
 	range : "Self",
 	components : "V",
 	duration : "Conc, 1 min",
-	description : "Creatures have disadv. on attacks vs. me; no effect against creature with Blindsight or Truesight",
+	description : "Creatures have dis. on attacks vs. me; no effect against creature with Blindsight or Truesight",
 	descriptionFull : "Your body becomes blurred. For the duration, any creature has Disadvantage on attack rolls against you. An attacker is immune to the effect if it perceives you with Blindsight or Truesight."
 };
 SpellsList["burning hands"] = {
@@ -14083,7 +14083,7 @@ SpellsList["burning hands"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "All in area 3d6+1d6/SL Fire dmg; save halves; unattended flammable objects start Burning",
+	description : "All in area 3d6+1d6/SL Fire dmg; save halves; unattended flammable objects ignite",
 	descriptionFull : "A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one." + "\n   " + "Flammable objects in the Cone that aren't being worn or carried start burning." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 1."
 };
 SpellsList["call lightning"] = {
@@ -14815,7 +14815,7 @@ SpellsList["delayed blast fireball"] = {
 	compMaterial : "A ball of bat guano and sulfur",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "Create bead; when conc. ends (dropped/broken) 20ft rad 12d6+1d6/SL+1d6/EoT. Fire; save halves",
+	description : "Create bead; if conc. ends (dropped/broken) 20ft rad 12d6+1d6/SL+1d6/EoT. Fire; save 1/2; obj. ignite",
 	descriptionFull : "A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one." + "\n   " + "The spell's base damage is 12d6, and the damage increases by 1d6 whenever your turn ends and the spell hasn't ended." + "\n   " + "If a creature touches the glowing bead before the spell ends, that creature makes a Dexterity saving throw. On a failed save, the spell ends, causing the bead to explode. On a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends, and the bead explodes." + "\n   " + "When the bead explodes, flammable objects in the explosion that aren't being worn or carried start burning." + AtHigherLevels + "The base damage increases by 1d6 for each spell slot level above 7.",
 	dynamicDamageBonus : { multipleDmgMoments : false }
 };
@@ -15128,7 +15128,7 @@ SpellsList["drawmij's instant summons"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A sapphire worth 1,000+ gp",
 	duration : "Until dispelled",
-	description : "Link object to sapphire (M); 1 M a crush gem to summon the unattended object or learn of holder",
+	description : "Link object to sapphire (M); 1 a crush gem to summon the unattended object or learn of holder",
 	descriptionFull : "You touch the sapphire used in the casting and an object weighing 10 pounds or less whose longest dimension is 6 feet or less. The spell leaves an Invisible mark on that object and invisibly inscribes the object’s name on the sapphire. Each time you cast this spell, you must use a different sapphire." + "\n   " + "Thereafter, you can take a Magic action to speak the object’s name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends." + "\n   " + "If another creature is holding or carrying the object, crushing the sapphire doesn’t transport it, but instead you learn who that creature is and where that creature is currently located."
 };
 SpellsList["dream"] = {
@@ -15156,7 +15156,7 @@ SpellsList["druidcraft"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Predict weather 24 hrs, grow flower/pod/leaf, harmless sensory effect in 5ft cu, snuff/light small fire",
+	description : "Predict weather 24 hrs, grow/bloom tiny plant, harmless sensory effect in 5ft cu, snuff/light small fire",
 	descriptionFull : "Whispering to the spirits of nature, you create one of the following effects within range." + "\n " + "\u2022 Weather Sensor. You create a Tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round." + "\n " + "\u2022 Bloom. You instantly make a flower blossom, a seed pod open, or a leaf bud bloom." + "\n " + "\u2022 Sensory Effect. You create a harmless sensory effect, such as falling leaves, spectral dancing fairies, a gentle breeze, the sound of an animal, or the faint odor of skunk. The effect must fit in a 5-foot Cube." + "\n " + "\u2022 Fire Play. You light or snuff out a candle, a torch, or a campfire."
 };
 SpellsList["earthquake"] = {
@@ -15478,8 +15478,8 @@ SpellsList["find the path"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A set of divination tools - such as cards or runes - worth 100+ gp",
 	duration : "Conc, 1 day",
-	description : "Know the shortest route to a location I am familiar with and are on the same plane with (100gp)",
-	descriptionFull : "This spell allows you to find the shortest, most direct physical route to a specific fixed location that you are familiar with on the same plane of existence. If you name a destination on another plan of existence, a destination that moves (such as a mobile fortress), or a destination that isn't specific (such as a green dragon's lair), the spell fails." + "\n   " + "For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. While you are traveling there, whenever you are presented with a choice of paths along the way, you automatically determine which path is the shortest and most direct route (but not necessarily the safest route) to the destination."
+	description : "Know the shortest route to a static location I am familiar with and am on the same plane with (100gp)",
+	descriptionFull : "You magically sense the most direct physical route to a location you name. You must be familiar with the location, and the spell fails if you name a destination on another plane of existence, a moving destination (such as a mobile fortress), or an unspecific destination (such as “a green dragon’s lair”)." + "\n   " + "For the duration, as long as you are on the same plane of existence as the destination, you know how far it is and in what direction it lies. Whenever you face a choice of paths along the way there, you know which path is the most direct."
 };
 SpellsList["find traps"] = {
 	name : "Find Traps",
@@ -15491,8 +15491,8 @@ SpellsList["find traps"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Sense presence of any trap within line of sight; not exact location, but general nature of trap",
-	descriptionFull : "You sense the presence of any trap within range that is within line of sight. A trap, for the purpose of this spell, includes anything that would inflict a sudden or unexpected effect you consider harmful or undesirable, which was specifically intended as such by its creator. Thus, the spell would sense an area affected by the alarm spell, a glyph of warding, or a mechanical pit trap, but it would not reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole." + "\n   " + "This spell merely reveals that a trap is present. You don't learn the location of each trap, but you do learn the general nature of the danger posed by a trap you sense."
+	description : "Sense presence of any trap in line of sight; not exact location, but general nature of trap",
+	descriptionFull : "You sense any trap within range that is within line of sight. A trap, for the purpose of this spell, includes any object or mechanism that was created to cause damage or other danger. Thus, the spell would sense the Alarm or Glyph of Warding spell or a mechanical pit trap, but it wouldn’t reveal a natural weakness in the floor, an unstable ceiling, or a hidden sinkhole." + "\n   " + "This spell reveals that a trap is present but not its location. You do learn the general nature of the danger posed by a trap you sense."
 };
 SpellsList["finger of death"] = {
 	name : "Finger of Death",
@@ -15505,8 +15505,8 @@ SpellsList["finger of death"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "1 crea 7d8+30 Necrotic dmg; save halves; crea killed becomes zombie under my command",
-	descriptionFull : "You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a Constitution saving throw. It takes 7d8+30 necrotic damage on a failed save, or half as much damage on a successful one." + "\n   " + "A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability."
+	description : "1 crea 7d8+30 Necrotic dmg; save halves; humanoid killed becomes zombie under my command",
+	descriptionFull : "You unleash negative energy toward a creature you can see within range. The target makes a Constitution saving throw, taking 7d8 + 30 Necrotic damage on a failed save or half as much damage on a successful one." + "\n   " + "A Humanoid killed by this spell rises at the start of your next turn as a Zombie (see appendix B) that follows your verbal orders."
 };
 SpellsList["fireball"] = {
 	name : "Fireball",
@@ -15521,7 +15521,7 @@ SpellsList["fireball"] = {
 	duration : "Instantaneous",
 	save : "Dex",
 	description : "20-ft rad all crea 8d6+1d6/SL Fire dmg; save halves; unattended flammable objects ignite",
-	descriptionFull : "A bright streak flashes from your pointing finger to a point you choose within range then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot radius must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one." + "\n   " + "The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried." + AtHigherLevels + "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+	descriptionFull : "A bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one." + "\n   " + "Flammable objects in the area that aren’t being worn or carried start burning." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 3."
 };
 SpellsList["fire bolt"] = {
 	name : "Fire Bolt",
@@ -15535,7 +15535,7 @@ SpellsList["fire bolt"] = {
 	duration : "Instantaneous",
 	description : "Spell attack for 1d10 Fire dmg; unattended flammable objects ignite; +1d10 at CL 5, 11, and 17",
 	descriptionCantripDie : "Spell attack for `CD`d10 Fire dmg; unattended flammable objects ignite",
-	descriptionFull : "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried." + "\n   " + "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+	descriptionFull : "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell starts burning if it isn’t being worn or carried." + "\n   " + "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10)."
 };
 SpellsList["fire shield"] = {
 	name : "Fire Shield",
@@ -15548,9 +15548,9 @@ SpellsList["fire shield"] = {
 	components : "V,S,M",
 	compMaterial : "A bit of phosphorous or a firefly",
 	duration : "10 min",
-	description : "Fiery shield gives either Fire or Cold dmg resist. and deals 2d8 of the other dmg type to melee attackers",
-	descriptionShorter : "Fiery shield; Fire or Cold dmg resistance; deals 2d8 of other dmg type to melee attackers",
-	descriptionFull : "Thin and wispy flames wreathe your body for the duration, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell early by using an action to dismiss it." + "\n   " + "The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage." + "\n   " + "In addition, whenever a creature within 5 feet of you hits you with a melee attack, the shield erupts with flame. The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.",
+	description : "Shield gives Fire or Cold resist; deals 2d8 of other dmg to melee atkers in 5ft; 10ft bright/10ft dim light",
+	descriptionShorter : "Fiery shield; Fire or Cold dmg resistance; deals 2d8 of other dmg type to melee attackers; emits 10ft bright light and 10ft dim light",
+	descriptionFull : "Wispy flames wreathe your body for the duration, shedding Bright Light in a 10-foot radius and Dim Light for an additional 10 feet." + "\n   " + "The flames provide you with a warm shield or a chill shield, as you choose. The warm shield grants you Resistance to Cold damage, and the chill shield grants you Resistance to Fire damage." + "\n   " + "In addition, whenever a creature within 5 feet of you hits you with a melee attack roll, the shield erupts with flame. The attacker takes 2d8 Fire damage from a warm shield, or 2d8 Cold damage from a cold shield.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["cold", "fire"],
@@ -15570,7 +15570,7 @@ SpellsList["fire storm"] = {
 	duration : "Instantaneous",
 	save : "Dex",
 	description : "10 connected 10-ft cubes all crea 7d10 Fire dmg; save halves; unattended flammable objects ignite",
-	descriptionFull : "A storm made up of sheets of roaring flame appears in a location you choose within range. The area of the storm consists of up to ten 10-foot cubes, which you can arrange as you wish. Each cube must have at least one face adjacent to the face of another cube. Each creature in the area must make Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one." + "\n   " + "The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell."
+	descriptionFull : "A storm of fire appears within range. The area of the storm consists of up to ten 10-foot Cubes, which you arrange as you like. Each Cube must be contiguous with at least one other Cube. Each creature in the area makes a Dexterity saving throw, taking 7d10 Fire damage on a failed save or half as much damage on a successful one." + "\n   " + "Flammable objects in the area that aren’t being worn or carried start burning."
 };
 SpellsList["flame blade"] = {
 	name : "Flame Blade",
@@ -15583,9 +15583,9 @@ SpellsList["flame blade"] = {
 	components : "V,S,M",
 	compMaterial : "Leaf of sumac",
 	duration : "Conc, 10 min",
-	description : "Summon fiery blade; 1 a to make a melee spell attack for 3d6+1d6/2SL Fire dmg; 10 ft bright light",
-	descriptionShorter : "Summon fiery blade; 1 a to make melee spell atk 3d6+1d6/2SL Fire dmg; 10 ft bright light",
-	descriptionFull : "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke the blade again as a bonus action." + "\n   " + "You can use your action to make a melee spell attack with the fiery blade. On a hit, the target takes 3d6 fire damage." + "\n   " + "The flaming blade sheds bright light in a 10-foot radius and dim light for an additional 10 feet." + AtHigherLevels + "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd."
+	description : "Summon fiery blade; 1 a to make melee spell atk for 3d6+1d6/2SL+mod Fire; 10ft bright/10ft dim light",
+	descriptionShorter : "Summon fiery blade; 1 a to make melee spell atk 3d6+1d6/2SL Fire dmg; 10ft bright/10ft dim light",
+	descriptionFull : "You evoke a fiery blade in your free hand. The blade is similar in size and shape to a scimitar, and it lasts for the duration. If you let go of the blade, it disappears, but you can evoke it again as a Bonus Action." + "\n   " + "As a Magic action, you can make a melee spell attack with the fiery blade. On a hit, the target takes Fire damage equal to 3d6 plus your spellcasting ability modifier." + "\n   " + "The flaming blade sheds Bright Light in a 10-foot radius and Dim Light for an additional 10 feet." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 2."
 };
 SpellsList["flame strike"] = {
 	name : "Flame Strike",
@@ -15599,9 +15599,9 @@ SpellsList["flame strike"] = {
 	compMaterial : "Pinch of sulfur",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "10-ft rad 40-ft high all crea 4d6 Fire dmg and 4d6 Radiant dmg; save halves; +1d6/SL Fire or Radiant",
-	descriptionShorter : "10-ft rad 40-ft high all crea 4d6 Fire dmg and 4d6 Radiant dmg; save half; +1d6/SL dmg",
-	descriptionFull : "A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot radius, 40-foot-high cylinder centered on a point within range must make a Dexterity saving throw. A creature takes 5d6 fire damage and 5d6 radiant damage on a failed save, or half as much damage on a successful one." + AtHigherLevels + "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.",
+	description : "10-ft rad 40-ft high all crea 5d6 Fire dmg and 5d6 Radiant dmg; save halves; +1d6/SL Fire and Radiant",
+	descriptionShorter : "10-ft rad 40-ft high all crea 5d6 Fire dmg and 5d6 Radiant dmg; save half; +1d6/SL dmg",
+	descriptionFull : "A vertical column of brilliant fire roars down from above. Each creature in a 10-foot-radius, 40-foot-high Cylinder centered on a point within range makes a Dexterity saving throw, taking 5d6 Fire damage and 5d6 Radiant damage on a failed save or half as much damage on a successful one." + AtHigherLevels + "The Fire damage and the Radiant damage increase by 1d6 for each spell slot level above 5.",
 	dynamicDamageBonus : { allDmgTypesSingleMoment : true }
 };
 SpellsList["flaming sphere"] = {
@@ -15616,9 +15616,9 @@ SpellsList["flaming sphere"] = {
 	compMaterial : "A ball of wax",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "2.5-ft rad flaming sphere; bns a move 30 ft; all within 5-ft rad 2d6+1d6/SL Fire dmg; save halves",
-	descriptionShorter : "2.5-ft rad flaming sphere; bns a move 30 ft; all in 5-ft rad 2d6+1d6/SL Fire dmg; save half",
-	descriptionFull : "A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a Dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one." + "\n   " + "As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn." + "\n   " + "When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet." + AtHigherLevels + "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+	description : "5ft dia flaming sphere; 20ft bright/20ft dim; bns move 30ft; if hit/EoT in 5ft 2d6+1d6/SL Fire; save 1/2",
+	descriptionShorter : "5-ft dia rad flaming sphere; bns a move 30 ft; if hit or end turn in 5-ft rad 2d6+1d6/SL Fire dmg; save half",
+	descriptionFull : "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one." + "\n   " + "As a Bonus Action, you can move the sphere up to 30 feet, rolling it along the ground. If you move the sphere into a creature’s space, that creature makes the save against the sphere, and the sphere stops moving for the turn." + "\n   " + "When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. Flammable objects that aren’t being worn or carried start burning if touched by the sphere, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 2."
 };
 SpellsList["flesh to stone"] = {
 	name : "Flesh to Stone",
@@ -15632,8 +15632,8 @@ SpellsList["flesh to stone"] = {
 	compMaterial : "A cockatrice feather",
 	duration : "Conc, 1 min",
 	save : "Con",
-	description : "1 crea save or restrained; save at end of turn, 3 cumulative fail: petrified, 3 cumulative success: free",
-	descriptionFull : "You attempt to turn one creature that you can see within range into stone. If the targets body is made of flesh, the creature must make a Constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected." + "\n   " + "A creature restrained by this spell must make another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind." + "\n   " + "If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state." + "\n   " + "If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed."
+	description : "1 crea save or Restrained; EoT save, 3 cumulative fails: Petrified, 3 successes: free; if full duration perm.",
+	descriptionFull : "You attempt to turn one creature that you can see within range into stone. The target makes a Constitution saving throw. On a failed save, it has the Restrained condition for the duration. On a successful save, its Speed is 0 until the start of your next turn. Constructs automatically succeed on the save." + "\n   " + "A Restrained target makes another Constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and has the Petrified condition for the duration. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind." + "\n   " + "If you maintain your Concentration on this spell for the entire possible duration, the target is Petrified until the condition is ended by Greater Restoration or similar magic."
 };
 SpellsList["fly"] = {
 	name : "Fly",
@@ -15646,8 +15646,8 @@ SpellsList["fly"] = {
 	components : "V,S,M",
 	compMaterial : "A feather",
 	duration : "Conc, 10 min",
-	description : "1+1/SL willing creatures gain fly 60 ft speed",
-	descriptionFull : "You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall." + AtHigherLevels + "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+	description : "1+1/SL willing creatures gain 60 feet fly speed and hover",
+	descriptionFull : "You touch a willing creature. For the duration, the target gains a Fly Speed of 60 feet and can hover. When the spell ends, the target falls if it is still aloft unless it can stop the fall." + AtHigherLevels + "You can target one additional creature for each spell slot level above 3."
 };
 SpellsList["fog cloud"] = {
 	name : "Fog Cloud",
@@ -15659,8 +15659,8 @@ SpellsList["fog cloud"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Conc, 1 h",
-	description : "20-ft+20-ft/SL rad fog that spreads around corners; heavily obscures; 10 mph wind disperses it",
-	descriptionFull : "You create a 20-foot-radius sphere of fog centered on a point within range. The sphere spreads around corners, and its area is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
+	description : "20ft + 20ft/SL radius fog that heavily obscures; strong wind disperses it",
+	descriptionFull : "You create a 20-foot-radius Sphere of fog centered on a point within range. The Sphere is Heavily Obscured. It lasts for the duration or until a strong wind (such as one created by Gust of Wind) disperses it." + AtHigherLevels + "The fog’s radius increases by 20 feet for each spell slot level above 1."
 };
 SpellsList["forbiddance"] = {
 	name : "Forbiddance",
@@ -15674,11 +15674,11 @@ SpellsList["forbiddance"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "ruby dust worth 1000+ gp",
 	duration : "1 day",
-	description : "40k sq ft 30-ft high no extra planar travel; 1 crea type 5d10 Radiant/Necrotic dmg per rnd (1000gp)",
-	descriptionMetric : "3,7k m2 9-m high no extra planar travel; 1 crea type 5d10 Radiant or Necrotic dmg per rnd (1000gp)",
-	descriptionShorter : "40k sq ft 30ft high no planar travel; 1 crea type 5d10 Radiant/Necro. dmg/rnd (1k gp)",
+	description : "40k sq ft 30ft high no extraplanar travel; 1 crea type 5d10 Radiant/Necrotic enters/ends turn (1000gp)",
+	descriptionMetric : "3,7k m2 9-m high no extraplanar travel; 1 crea type 5d10 Radiant or Necrotic enters/ends turn (1000gp)",
+	descriptionShorter : "40k sq ft 30ft high no planar travel; 1 crea type 5d10 Radiant/Necro. enters/EoT (1k gp)",
 	descriptionShorterMetric : "3,6k m2 9-m high no planar travel; 1 crea type 5d10 Radiant/Necrotic dmg/rnd (1k gp)",
-	descriptionFull : "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, Ethereal Plane, Feywild, Shadowfell, or the plane shift spell." + "\n   " + "In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following - celestials, elementals, fey, fiends, and undead. When a chosen creature enters the spell's area for the first time on a turn or starts its turn there, the creature takes 5d10 radiant or necrotic damage (your choice when you cast this spell)." + "\n   " + "When you cast this spell, you can designate a password. A creature that speaks the password as it enters the area takes no damage from the spell." + "\n   " + "The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.",
+	descriptionFull : "You create a ward against magical travel that protects up to 40,000 square feet of floor space to a height of 30 feet above the floor. For the duration, creatures can't teleport into the area or use portals, such as those created by the gate spell, to enter the area. The spell proofs the area against planar travel, and therefore prevents creatures from accessing the area by way of the Astral Plane, the Ethereal Plane, the Feywild, the Shadowfell, or the Plane Shift spell." + "\n   " + "In addition, the spell damages types of creatures that you choose when you cast it. Choose one or more of the following: Aberrations, Celestials, Elementals, Fey, Fiends, and Undead. When a creature of a chosen type enters the spell’s area for the first time on a turn or ends its turn there, the creature takes 5d10 Radiant or Necrotic damage (your choice when you cast this spell)." + "\n   " + "You can designate a password when you cast the spell. A creature that speaks the password as it enters the area takes no damage from the spell." + "\n   " + "The spell's area can't overlap with the area of another forbiddance spell. If you cast forbiddance every day for 30 days in the same location, the spell lasts until it is dispelled, and the material components are consumed on the last casting.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["radiant", "necrotic"],
@@ -15698,8 +15698,8 @@ SpellsList["forcecage"] = {
 	compMaterial : "Ruby dust worth 1,500+ gp, which the spell consumes",
 	duration : "Conc. 1 h",
 	save : "Cha",
-	description : "20-ft cube cage, or 10-ft cube solid; blocks all spells; extra planar travel in/out on save (1500gp)",
-	descriptionFull : "An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box as you choose." + "\n   " + "A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart." + "\n   " + "A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out of the area." + "\n   " + "When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside the area, are pushed away from the center of the area until they are completely outside the area." + "\n   " + "A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave the cage, it must first make a Charisma saving throw. On a success, the creature can use that magic to exit the cage. On a failure, the creature can't exit the cage and wastes the use of the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel." + "\n   " + "This spell can't be dispelled by dispel magic."
+	description : "20-ft cu cage or 10-ft cu solid box; blocks spells; teleport or extraplanar travel in/out if save (1500gp)",
+	descriptionFull : "An immobile, invisible, cube-shaped prison composed of magical force springs into existence around an area you choose within range. The prison can be a cage or a solid box, as you choose." + "\n   " + "A prison in the shape of a cage can be up to 20 feet on a side and is made from 1/2-inch diameter bars spaced 1/2 inch apart." + "\n   " + "A prison in the shape of a box can be up to 10 feet on a side, creating a solid barrier that prevents any matter from passing through it and blocking any spells cast into or out from the area." + "\n   " + "When you cast the spell, any creature that is completely inside the cage's area is trapped. Creatures only partially within the area, or those too large to fit inside it, are pushed away from the center of the area until they are completely outside it." + "\n   " + "A creature inside the cage can’t leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave, it must first make a Charisma saving throw. On a successful save, the creature can use that magic to exit the cage. On a failed save, the creature doesn't exit the cage and wastes the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel." + "\n   " + "This spell can't be dispelled by dispel magic."
 };
 SpellsList["foresight"] = {
 	name : "Foresight",
@@ -15712,8 +15712,8 @@ SpellsList["foresight"] = {
 	components : "V,S,M",
 	compMaterial : "A hummingbird feather",
 	duration : "8 h",
-	description : "1 willing crea can't be surprised; adv. on attacks, ability checks, and saves; dis. on attacks vs. target",
-	descriptionFull : "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target can't be surprised and has advantage on attack rolls, ability checks, and saving throws. Additionally, other creatures have disadvantage on attack rolls against the target for the duration." + "\n   " + "This spell immediately ends if you cast it again before its duration ends."
+	description : "1 willing creature adv. on attacks, checks and saves; attackers dis. vs. target; ends if cast again",
+	descriptionFull : "You touch a willing creature and bestow a limited ability to see into the immediate future. For the duration, the target has Advantage on d20 Tests, and other creatures have Disadvantage on attack rolls against it. The spell ends early if you cast it again."
 };
 SpellsList["fount of moonlight"] = {
 	name : "Fount of Moonlight",
@@ -15725,7 +15725,7 @@ SpellsList["fount of moonlight"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "Conc. up to 10 mins",
-	description : "You Emit Bright in 20 and Dim in addit. 20, Resist Rad, 2d6 Rad. dmg extra on melee atks, reaction to taking dmg, attacker Con save or Blinded",
+	description : "Emit 20/20 bright/dim; resist Rad.; melee atks+2d6 Rad.; Reac if dmg, crea save or Blind to my next EoT",
 	descriptionFull : "A cool light wreathes your body for the duration, emitting Bright Light in a 20-foot radius and Dim Light for an additional 20 feet." + "\n   " + "Until the spell ends, you have Resistance to Radiant damage, and your melee attacks deal and extra 2d6 Radiant damage on a hit." + "\n   " + "In addition, immediately after you take damage from a creature you can see within 60 feet of yourself, you can take a Reaction to force the creature to make a Constitution saving throw. On a failed save, the creature has the Blinded condition until the end of your turn."
 };
 SpellsList["freedom of movement"] = {
@@ -15739,8 +15739,8 @@ SpellsList["freedom of movement"] = {
 	components : "V,S,M",
 	compMaterial : "A leather strap",
 	duration : "1 h",
-	description : "1+1/SL willing crea; magic cannot reduce speed, paralyze, restrain; use 5 ft to escape nonmagical restraints",
-	descriptionFull : "You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained." + "\n   " + "The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks."
+	description : "1+1/SL willing crea; swim spd; magic can't lower spd, paralyze, restrain; 5ft to leave nonmagic restraints",
+	descriptionFull : "You touch a willing creature. For the duration, the target's movement is unaffected by Difficult Terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to have the Paralyzed or Restrained conditions. The target also has a Swim Speed equal to its Speed." + "\n   " + "In addition, the target can spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature imposing the Grappled condition on it." + AtHigherLevels + "You can target one additional creature for each spell slot level above 4."
 };
 SpellsList["friends"] = {
 	name : "Friends",
@@ -15753,8 +15753,8 @@ SpellsList["friends"] = {
 	components : "S,M",
 	compMaterial : "some makeup",
 	duration : "Conc, 1 min",
-	description : "Adv. on Cha checks vs. 1 crea currently not hostile; when spell ends, crea knows and becomes hostile",
-	descriptionFull : "You magically emanate a sens of friendship toward one creature you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it..."
+	description : "1 non-hostile humanoid save or Charmed (once/day); ends if dmged, I atk, dmg, force save; knows after",
+	descriptionFull : "You magically emanate a sense of friendship toward one creature you can see within range. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target succeeds automatically if it isn't a Humanoid, if you're fighting it, or if you have cast this spell on it within the past 24 hours." + "\n   " + "The spell ends early if the target takes damage or if you make an attack roll, deal damage, or force anyone to make a saving throw. When the spell ends, the target knows it was Charmed by you."
 };
 SpellsList["gaseous form"] = {
 	name : "Gaseous Form",
@@ -15767,8 +15767,8 @@ SpellsList["gaseous form"] = {
 	components : "V,S,M",
 	compMaterial : "A bit of gauze",
 	duration : "Conc, 1 h",
-	description : "1+1/SL willing crea into a misty cloud with fly 10 ft, resist. to nonmagical dmg, adv. on Str/Dex/saves",
-	descriptionFull : "You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected." + "\n   " + "While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated." + "\n   " + "While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells."
+	description : "1+1/SL willing crea into cloud; fly 10ft, resist. physical dmg, adv. on Str/Dex/Con saves; 1 a/0 hp revert",
+	descriptionFull : "A willing creature you touch shape-shifts, along with everything it’s wearing and carrying, into a misty cloud for the duration. The spell ends on the target if it drops to 0 Hit Points or if it takes a Magic action to end the spell on itself." + "\n   " + "While in this form, the target’s only method of movement is a Fly Speed of 10 feet, and it can hover. The target can enter and occupy the space of another creature. The target has Resistance to Bludgeoning, Piercing, and Slashing damage; it has Immunity to the Prone condition; and it has Advantage on Strength, Dexterity, and Constitution saving throws. The target can pass through narrow openings, but it treats liquids as though they were solid surfaces." + "\n   " + "The target can’t talk or manipulate objects, and any objects it was carrying or holding can’t be dropped, used, or otherwise interacted with. Finally, the target can’t attack or cast spells." + AtHigherLevels + "You can target one additional creature for each spell slot level above 3."
 };
 SpellsList["gate"] = {
 	name : "Gate",
@@ -15781,8 +15781,8 @@ SpellsList["gate"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A diamond worth 5,000+ gp",
 	duration : "Conc, 1 min",
-	description : "Create a portal to a precise location on a different plane; can transport named crea to me (5000gp)",
-	descriptionFull : "You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration." + "\n   " + "The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal." + "\n   " + "Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains." + "\n   " + "When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn't work). If that creature is on a plane other than the one you are on, the portal opens in the named creature's immediate vicinity and draws the creature through it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you."
+	description : "Create a 5-20ft portal to precise location on different plane; can transport named crea to me (5000gp)",
+	descriptionFull : "You conjure a portal linking an unoccupied space you can see within range to a precise location on a different plane of existence. The portal is a circular opening, which you can make 5 to 20 feet in diameter. You can orient the portal in any direction you choose. The portal lasts for the duration, and the portal’s destination is visible through it." + "\n   " + "The portal has a front and a back on each plane where it appears. Travel through the portal is possible only by moving through its front. Anything that does so is instantly transported to the other plane, appearing in the unoccupied space nearest to the portal." + "\n   " + "Deities and other planar rulers can prevent portals created by this spell from opening in their presence or anywhere within their domains." + "\n   " + "When you cast this spell, you can speak the name of a specific creature (a pseudonym, title, or nickname doesn’t work). If that creature is on a plane other than the one you are on, the portal opens next to the named creature and transports it to the nearest unoccupied space on your side of the portal. You gain no special power over the creature, and it is free to act as the DM deems appropriate. It might leave, attack you, or help you."
 };
 SpellsList["geas"] = {
 	name : "Geas",
@@ -15793,11 +15793,11 @@ SpellsList["geas"] = {
 	time : "1 min",
 	range : "60 ft",
 	components : "V",
-	duration : "30 days (D)",
+	duration : "30 days",
 	save : "Wis",
-	description : "1 crea save or charmed, it must obey commands or 5d10 Psychic dmg; SL7: 1 year, SL9: until disp.",
+	description : "1 crea save or Charmed; obey nonlethal commands or 5d10 Psychic (1/day); SL7: 1 year, SL9: until disp.",
 	descriptionShorter : "1 crea save or charmed, it must obey order or 5d10 Psychic dmg; SL7: 1 year, SL9: 'til disp.",
-	descriptionFull : "You place a magical command on a creature that you can see within range, forcing it to carry out some service or refrain from some action or course of activity as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become charmed by you for the duration. While the creature is charmed by you, it takes 5d10 psychic damage each time it acts in a manner directly counter to your instructions, but no more than once each day. A creature that can't understand you is unaffected by the spell." + "\n   " + "You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends." + "\n   " + "You can end the spell early by using an action to dismiss it. A remove curse, greater restoration, or wish spell also ends it." + AtHigherLevels + "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
+	descriptionFull : "You give a verbal command to a creature that you can see within range, ordering it to carry out some service or refrain from an action or a course of activity as you decide. The target must succeed on a Wisdom saving throw or have the Charmed condition for the duration. The target automatically succeeds if it can’t understand your command." + "\n   " + "While Charmed, the creature takes 5d10 Psychic damage if it acts in a manner directly counter to your command. It takes this damage no more than once each day." + "\n   " + "You can issue any command you choose, short of an activity that would result in certain death. Should you issue a suicidal command, the spell ends." + "\n   " + "A Remove Curse, Greater Restoration, or Wish spell ends this spell." + AtHigherLevels + "If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above."
 };
 SpellsList["gentle repose"] = {
 	name : "Gentle Repose",
@@ -15811,8 +15811,8 @@ SpellsList["gentle repose"] = {
 	components : "V,S,M",
 	compMaterial : "2 copper pieces, which the spell consumes",
 	duration : "10 days",
-	description : "1 corpse protected from decay and prevent it from becoming undead; add duration to raising dead",
-	descriptionFull : "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become undead." + "\n   " + "The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as raise dead."
+	description : "1 corpse protected from decay and becoming undead; add duration to time limit for raising dead",
+	descriptionFull : "You touch a corpse or other remains. For the duration, the target is protected from decay and can't become Undead." + "\n   " + "The spell also effectively extends the time limit on raising the target from the dead, since days spent under the influence of this spell don't count against the time limit of spells such as Raise Dead."
 };
 SpellsList["giant insect"] = {
 	name : "Giant Insect",
@@ -15824,7 +15824,7 @@ SpellsList["giant insect"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "Summon a Giant centipede, spider, or wasp; obey my verbal commands",
+	description : "Summon Giant Insect (centipede, spider, or wasp); obeys my verbal commands; acts after me; see book",
 	descriptionFull : "You summon a giant centipede, spider, or wasp (chosen when you cast the spell). It manifests in an unoccupied space you can see within range and uses the Giant Insect stat block. The form you choose determines certain details in its stat block. The creature disappears when it drops to 0 Hit Points or when the spell ends." + "\n   " + "The creature is an ally to you and your allies. In combat, the creature shares your Initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its movement to avoid danger." + AtHigherLevels + "Use the spell slot's level for the spell's level in the stat block."
 };
 SpellsList["glibness"] = {
@@ -15837,7 +15837,7 @@ SpellsList["glibness"] = {
 	range : "Self",
 	components : "V",
 	duration : "1 h",
-	description : "I can choose to roll a 15 on any Charisma check; magic cannot detect if I am lying",
+	description : "I can choose to replace roll with 15 on any Charisma check; magic cannot detect if I am lying",
 	descriptionFull : "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful."
 };
 SpellsList["globe of invulnerability"] = {
@@ -15847,12 +15847,12 @@ SpellsList["globe of invulnerability"] = {
 	level : 6,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:10-ft rad",
 	components : "V,S,M",
 	compMaterial : "A glass bead",
 	duration : "Conc, 1 min",
-	description : "SL<(6+1/SL) cast outside area cannot effect inside area; casting with a higher spell slot does not help",
-	descriptionFull : "An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration." + "\n   " + "Any spell of 5th level or lower cast from outside the barrier can't affect creatures or objects within it, even if the spell is cast using a higher level spell slot. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from the areas affected by such spells." + AtHigherLevels + "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th."
+	description : "Immobile barrier surrounds me for duration. SL<(6+1/SL) cast outside area can't affect inside area",
+	descriptionFull : "An immobile, faintly shimmering barrier springs into existence in a 10-foot radius around you and remains for the duration." + "\n   " + "Any spell of level 5 or lower cast from outside the barrier can’t affect anything within it. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from areas of effect created by such spells." + AtHigherLevels + "The barrier blocks spells of 1 level higher for each spell slot level above 6."
 };
 SpellsList["glyph of warding"] = {
 	name : "Glyph of Warding",

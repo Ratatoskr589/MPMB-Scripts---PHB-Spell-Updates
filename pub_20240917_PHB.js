@@ -17148,8 +17148,8 @@ SpellsList["otiluke's freezing sphere"] = {
 	compMaterial : "A miniature crystal sphere",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "60-ft rad all 10d6+1d6/SL Cold dmg; save halves; freezes water; can save up to 1 min before using",
-	descriptionFull : "A frigid globe of cold energy streaks from your fingertips to a point of your choice within range, where it explodes in a 60-foot-radius sphere. Each creature within the area must make a Constitution saving throw. On a failed save, a creature takes 10d6 cold damage. On successful save, it takes half as much damage." + "\n   " + "If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice. A trapped creature can use an action to make a Strength check against your spell save DC to break free." + "\n   " + "You can refrain from firing the globe after completing the spell, if you wish. A small globe about the size of a sling stone, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as the normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes." + AtHigherLevels + "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th."
+	description : "60ft rad all 10d6+1d6/SL Cold; save 1/2; freeze 30ft sq water & restrain crea; save up to 1 min then use",
+	descriptionFull : "A frigid globe streaks from you to a point of your choice within range, where it explodes in a 60-foot-radius Sphere. Each creature in that area makes a Constitution saving throw, taking 10d6 Cold damage on failed save or half as much damage on a successful one." + "\n   " + "If the globe strikes a body of water, it freezes the water to a depth of 6 inches over an area 30 feet square. This ice lasts for 1 minute. Creatures that were swimming on the surface of frozen water are trapped in the ice and have the Restrained condition. A trapped creature can take an action to make a Strength (Athletics) check against your spell save DC to break free." + "\n   " + "You can refrain from firing the globe after completing the spell's casting. If you do so, a globe about the size of a sling bullet, cool to the touch, appears in your hand. At any time, you or a creature you give the globe to can throw the globe (to a range of 40 feet) or hurl it with a sling (to the sling's normal range). It shatters on impact, with the same effect as a normal casting of the spell. You can also set the globe down without shattering it. After 1 minute, if the globe hasn't already shattered, it explodes." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 6."
 };
 SpellsList["otiluke's resilient sphere"] = {
 	name : "Otiluke's Resilient Sphere",
@@ -17164,8 +17164,8 @@ SpellsList["otiluke's resilient sphere"] = {
 	compMaterial : "A glass sphere",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "1 crea/obj up to Large save or enclosed in impenetrable sphere; can be moved as hamster ball ",
-	descriptionFull : "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a Dexterity saving throw. On a failed save, the creature is enclosed for the duration." + "\n   " + "Nothing, not physical objects, energy, or other spell effects, can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it." + "\n   " + "The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures." + "\n   " + "A disintegrate spell targeting the globe destroys it without harming anything inside it."
+	description : "1 crea/obj up to Lg save or enclosed in impenetrable sphere; can move as hamster ball at half speed",
+	descriptionFull : "A shimmering sphere encloses a Large or smaller creature or object within range. An unwilling creature must succeed on a Dexterity saving throw or be enclosed for the duration." + "\n   " + "Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it." + "\n   " + "The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures." + "\n   " + "A Disintegrate spell targeting the globe destroys it without harming anything inside."
 };
 SpellsList["otto's irresistible dance"] = {
 	name : "Otto's Irresistible Dance",
@@ -17178,7 +17178,7 @@ SpellsList["otto's irresistible dance"] = {
 	range : "30 ft",
 	components : "V",
 	duration : "Conc, 1 min",
-	description : "1 crea wis save or dances in place, can't move, dis. on atks/Dex saves, adv. on atks vs. target; 1 a Wis save to end",
+	description : "1 crea pass: dance to next EoT; fail: Charmed, no move, dis. atk/Dex saves, adv. atk vs it; 1 a save to end",
 	descriptionFull : "One creature that you can see within range must make a Wisdom saving throw. On a successful save, The target dances comically until the end of its next turn, during which it must spend all its movement to dance in place." + "\n   " + "On a failed save, the target has the Charmed condition for the duration. While Charmed, the target dances comically, must use all its movement to dance in place, and has Disadvantage on Dexterity saving throws and attack rolls, and other creatures have Advantage on attack rolls against it. On each of its turns, the target can take an action to collect itself and repeat the save, ending the spell on itself on a success."
 };
 SpellsList["passwall"] = {
@@ -17192,8 +17192,8 @@ SpellsList["passwall"] = {
 	components : "V,S,M",
 	compMaterial : "A pinch of sesame seeds",
 	duration : "1 h",
-	description : "Create a passage (max. 5 ft wide, 8 ft tall, 20 ft deep) in a wooden, plaster or stone surface for 1 h",
-	descriptionFull : "A passage appears at a point of your choice that you can see on a wooden, plaster, or stone surface (such as a wall, a ceiling, or a floor) within range, and lasts for the duration. You choose the opening's dimensions - up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it." + "\n   " + "When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
+	description : "Create a passage (max 5 ft wide, 8 ft tall, 20 ft deep) in a wooden, plaster or stone surface for 1 h",
+	descriptionFull : "A passage appears at a point that you can see on a wooden, plaster, or stone surface (such as a wall, ceiling, or floor) within range and lasts for the duration. You choose the opening's dimensions: up to 5 feet wide, 8 feet tall, and 20 feet deep. The passage creates no instability in a structure surrounding it." + "\n   " + "When the opening disappears, any creatures or objects still in the passage created by the spell are safely ejected to an unoccupied space nearest to the surface on which you cast the spell."
 };
 SpellsList["pass without trace"] = {
 	name : "Pass Without Trace",
@@ -17202,12 +17202,12 @@ SpellsList["pass without trace"] = {
 	level : 2,
 	school : "Abjur",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S,M",
 	compMaterial : "Ashes from burned mistletoe",
 	duration : "Conc, 1 h",
-	description : "Any within 30-ft rad +10 Dex(Stealth) checks, leave no tracks, can't be tracked by nonmagical means",
-	descriptionFull : "A veil of shadows and silence radiates from you, masking you and your companions from detection. For the duration, each creature you choose within 30 feet of you (including you) has a +10 bonus to Dexterity (Stealth) checks and can't be tracked except by magical means. A creature that receives this bonus leaves behind no tracks or other traces of its passage."
+	description : "Any creatures of your choice in area have +10 Dexterity (Stealth) checks and leave no tracks",
+	descriptionFull : "You radiate a concealing aura in a 30-foot Emanation for the duration. While in the aura, you and each creature you choose have a +10 bonus to Dexterity (Stealth) checks and leave no tracks."
 };
 SpellsList["phantasmal force"] = {
 	name : "Phantasmal Force",
@@ -17221,9 +17221,9 @@ SpellsList["phantasmal force"] = {
 	compMaterial : "A bit of fleece",
 	duration : "Conc, 1 min",
 	save : "Int",
-	description : "1 crea save or sees 10 ft cube illusion that does 2d8 Psychic dmg/rnd; Int(Investigation) vs. spell DC",
-	descriptionShorter : "1 crea save or sees 10 ft cube illusion that does 2d8 Psychic dmg/rnd; Investigation vs. DC",
-	descriptionFull : "You craft an illusion that takes root in the mind of a creature that you can see within range. The target must make an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other visible phenomenon of your choice that is no larger than a 10-foot cube and that is perceivable only to the target for the duration. This spell has no effect on undead or constructs." + "\n   " + "The phantasm includes sound, temperature, and other stimuli, also evident only to the creature." + "\n   " + "The target can use its action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends." + "\n   " + "While a target is affected by the spell, the target treats the phantasm as if it were real. The target rationalizes any illogical outcomes from interacting with the phantasm. For example, a target attempting to walk across a phantasmal bridge that spans a chasm falls once it steps onto the bridge. If the target survives the fall, it still believes that the bridge exists and comes up with some other explanation for its fall - it was pushed, it slipped, or a strong wind might have knocked it off." + "\n   " + "An affected target is so convinced of the phantasm's reality that it can even take damage from the illusion. A phantasm created to appear as a creature can attack the target. Similarly, a phantasm created to appear as fire, a pool of acid, or lava can burn the target. Each round on your turn, the phantasm can deal 2d8 psychic damage to the target if it is in the phantasm's area or within 5 feet of the phantasm, provided that the illusion is of a creature or hazard that could logically deal damage, such as by attacking. The target perceives the damage as a type appropriate to the illusion."
+	description : "1 crea save or see 10ft cu illusion; if harmful & in 5ft 2d8 Psych. on my turn; Int(Invest.) vs Spell DC ends",
+	descriptionShorter : "1 crea save or sees 10 ft cu illusion; 2d8 Psychic dmg/rnd; Investigation vs DC",
+	descriptionFull : "You attempt to craft an illusion in the mind of a creature you can see within range. The target makes an Intelligence saving throw. On a failed save, you create a phantasmal object, creature, or other phenomenon that is no larger than a 10-foot Cube and that is perceivable only to the target for the duration. The phantasm includes sound, temperature, and other stimuli." + "\n   " + "The target can take a Study action to examine the phantasm with an Intelligence (Investigation) check against your spell save DC. If the check succeeds, the target realizes that the phantasm is an illusion, and the spell ends." + "\n   " + "While affected by the spell, the target treats the phantasm as if it were real and rationalizes any illogical outcomes from interacting with it. For example, if the target steps through a phantasmal bridge and survives the fall, it believes the bridge exists and something else caused it to fall." + "\n   " + "An affected target can even take damage from the illusion if the phantasm represents a dangerous creature or hazard. On each of your turns, such a phantasm can deal 2d8 Psychic damage to the target if it is in the phantasm's area or within 5 feet of the phantasm. The target perceives the damage as a type appropriate to the illusion."
 };
 SpellsList["phantasmal killer"] = {
 	name : "Phantasmal Killer",
@@ -17236,8 +17236,8 @@ SpellsList["phantasmal killer"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "1 crea save or 4d10+1d10/SL Psy dmg + disadvantage on ability checks + atk rolls; end of each turn save to end or 4d10+1d10/SL Psychic dmg",
-	descriptionFull : "You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes 4d10 Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends." + "\n   " + "For the duration, the target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends." + AtHigherLevels + "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
+	description : "1 crea 4d10+1d10/SL Psychic; dis. on chks & atks; save 1/2 dmg only; redo save EoT, same dmg or end",
+	descriptionFull : "You tap into the nightmares of a creature you can see within range and create an illusion of its deepest fears, visible only to that creature. The target makes a Wisdom saving throw. On a failed save, the target takes 4d10 Psychic damage and has Disadvantage on ability checks and attack rolls for the duration. On a successful save, the target takes half as much damage, and the spell ends." + "\n   " + "For the duration, the target makes a Wisdom saving throw at the end of each of its turns. On a failed save, it takes the Psychic damage again. On a successful save, the spell ends." + AtHigherLevels + "The damage increases by 1d10 for each spell slot level above 4."
 };
 SpellsList["phantom steed"] = {
 	name : "Phantom Steed",
@@ -17250,8 +17250,8 @@ SpellsList["phantom steed"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "1 h",
-	description : "Summon quasi-real steed with 100 ft speed (13 mph); I designate rider; spells ends if it takes dmg",
-	descriptionFull : "A Large quasi-real, horse-like creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed." + "\n   " + "For the duration, you or a creature you choose can ride the steed. The creature uses the statistics for a riding horse, except it has a speed of 100 feet and can travel 13 miles in an hour. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends if you use an action to dismiss it or if the steed takes any damage."
+	description : "Summon Large quasi-real steed with 100 ft speed (13 mph); I designate rider; spell ends if takes dmg",
+	descriptionFull : "A Large, quasi-real, horselike creature appears on the ground in an unoccupied space of your choice within range. You decide the creature's appearance, but it is equipped with a saddle, bit, and bridle. Any of the equipment created by the spell vanishes in a puff of smoke if it is carried more than 10 feet away from the steed." + "\n   " + "For the duration, you or a creature you choose can ride the steed. The steed uses the Riding Horse stat block (see appendix B), except it has a Speed of 100 feet and can travel 13 miles in an hour. When the spell ends, the steed gradually fades, giving the rider 1 minute to dismount. The spell ends early if the steed takes any damage."
 };
 SpellsList["planar ally"] = {
 	name : "Planar Ally",
@@ -17263,8 +17263,8 @@ SpellsList["planar ally"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Otherworldly entity sends celestial, elemental or fiend to a location near me; see book",
-	descriptionFull : "You beseech an otherworldly entity for aid. The being must be known to you - a god, a primordial, a demon prince, or some other being of cosmic power. That entity sends a celestial, an elemental, or a fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM's choice)." + "\n   " + "When the creature appears, it is under no compulsion to behave in any particular way. You can ask the creature to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services." + "\n   " + "Payment can take a variety of forms. A celestial might require a sizable donation of gold or magic items to an allied temple, while a fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you." + "\n   " + "As a rule of thumb, a task that can be measured in minutes requires a payment worth 100 gp per minute. A task measured in hours requires 1,000 gp per hour. And a task measured in days (up to 10 days) requires 10,000 gp per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal." + "\n   " + "After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you, if appropriate to the task and if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane." + "\n   " + "A creature enlisted to join your group counts as a member of it, receiving a full share of experience points awarded."
+	description : "Celestial, elemental or fiend appears in location near me; can negotiate for service; see book",
+	descriptionFull : "You beseech an otherworldly entity for aid. The being must be known to you: a god, a demon prince, or some other being of cosmic power. That entity sends a Celestial, an Elemental, or a Fiend loyal to it to aid you, making the creature appear in an unoccupied space within range. If you know a specific creature's name, you can speak that name when you cast this spell to request that creature, though you might get a different creature anyway (DM's choice)." + "\n   " + "When the creature appears, it is under no compulsion to behave a particular way. You can ask it to perform a service in exchange for payment, but it isn't obliged to do so. The requested task could range from simple (fly us across the chasm, or help us fight a battle) to complex (spy on our enemies, or protect us during our foray into the dungeon). You must be able to communicate with the creature to bargain for its services." + "\n   " + "Payment can take a variety of forms. A Celestial might require a sizable donation of gold or magic items to an allied temple, while a Fiend might demand a living sacrifice or a gift of treasure. Some creatures might exchange their service for a quest undertaken by you." + "\n   " + "A task that can be measured in minutes requires a payment worth 100 GP per minute. A task measured in hours requires 1,000 GP per hour. And a task measured in days (up to 10 days) requires 10,000 GP per day. The DM can adjust these payments based on the circumstances under which you cast the spell. If the task is aligned with the creature's ethos, the payment might be halved or even waived. Nonhazardous tasks typically require only half the suggested payment, while especially dangerous tasks might require a greater gift. Creatures rarely accept tasks that seem suicidal." + "\n   " + "After the creature completes the task, or when the agreed-upon duration of service expires, the creature returns to its home plane after reporting back to you if possible. If you are unable to agree on a price for the creature's service, the creature immediately returns to its home plane."
 };
 SpellsList["planar binding"] = {
 	name : "Planar Binding",
@@ -17278,8 +17278,8 @@ SpellsList["planar binding"] = {
 	compMaterial : "A jewel worth 1,000+ gp, which the spell consumes",
 	duration : "24 h",
 	save : "Cha",
-	description : "1 celestial/elem/fey/fiend save or bound; SL6: 10, SL7: 30, SL8: 180, SL9: 366 days (1000gp cons.)",
-	descriptionFull : "With this spell, you attempt to bind a celestial, an elemental, a fey, or a fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of an inverted magic circle in order to keep it trapped while this spell is cast.) At the completion of the casting, the target must make a Charisma saving throw. On a failed save, it is bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell." + "\n   " + "A bound creature must follow your instructions to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. The creature obeys the letter of your instructions, but if the creature is hostile to you, it strives to twist your words to achieve its own objectives. If the creature carries out your instructions completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane of existence, it returns to the place where you bound it and remains there until the spell ends." + AtHigherLevels + "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
+	description : "1 celestial/elem/fey/fiend save or bound; SL6: 10, SL7: 30, SL8: 180, SL9: 366 days (1000gp cons.); see B",
+	descriptionFull : "You attempt to bind a Celestial, an Elemental, a Fey, or a Fiend to your service. The creature must be within range for the entire casting of the spell. (Typically, the creature is first summoned into the center of the inverted version of the Magic Circle spell to trap it while this spell is cast.) At the completion of the casting, the target must succeed on a Charisma saving throw or be bound to serve you for the duration. If the creature was summoned or created by another spell, that spell's duration is extended to match the duration of this spell." + "\n   " + "A bound creature must follow your commands to the best of its ability. You might command the creature to accompany you on an adventure, to guard a location, or to deliver a message. If the creature is Hostile, it strives to twist your commands to achieve its own objectives. If the creature carries out your commands completely before the spell ends, it travels to you to report this fact if you are on the same plane of existence. If you are on a different plane, it returns to the place where you bound it and remains there until the spell ends." + AtHigherLevels + "The duration increases with a spell slot of level 6 (10 days), 7 (30 days), 8 (180 days), and 9 (366 days)."
 };
 SpellsList["plane shift"] = {
 	name : "Plane Shift",
@@ -17290,11 +17290,10 @@ SpellsList["plane shift"] = {
 	time : "1 a",
 	range : "Touch",
 	components : "V,S,M\u0192",
-	compMaterial : "A forked, metal rod worth 250+ gp, attuned to a particular plane of existence",
+	compMaterial : "A forked, metal rod worth 250+ gp and attuned to a plane of existence",
 	duration : "Instantaneous",
-	save : "Cha",
-	description : "Me + 8 willing crea teleport to different plane; or spell attack + save or transported to random plane",
-	descriptionFull : "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion." + "\n   " + "Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle." + "\n   " + "You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails the save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence."
+	description : "Me + 8 willing crea teleport to general location on different plane or teleportation circle you know",
+	descriptionFull : "You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination, as determined by the DM." + "\n   " + "Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle."
 };
 SpellsList["plant growth"] = {
 	name : "Plant Growth",
@@ -17307,8 +17306,8 @@ SpellsList["plant growth"] = {
 	range : "150 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "1 a: 100-ft rad plants overgrow for 1/4 speed; 8h: 1 mile diameter plants yield double food at harvest",
-	descriptionFull : "This spell channels vitality into plants within a specific area. There are two possible uses for the spell, granting either immediate or long-term benefits." + "\n   " + "If you cast this spell using 1 action, choose a point within range. All normal plants in a 100-foot radius centered on that point become thick and overgrown. A creature moving through the area must spend 4 feet of movement for every 1 foot it moves." + "\n   " + "You can exclude one or more areas of any size within the spell's area from being affected." + "\n   " + "If you cast this spell over 8 hours, you enrich the land. All plants in a half-mile radius centered on a point within range become enriched for 1 year. The plants yield twice the normal amount of food when harvested."
+	description : "1 a: 100ft rad plants overgrow, cause 1/4 speed; 8h: 1 mile dia. plants yield double food at harvest",
+	descriptionFull : "This spell channels vitality into plants. The casting time you use determines whether the spell has the Overgrowth or the Enrichment effect below." + "\n   " + "Overgrowth. Choose a point within range. All normal plants in a 100-foot-radius Sphere centered on that point become thick and overgrown. A creature moving through that area must spend 4 feet of movement for every 1 foot it moves. You can exclude one or more areas of any size within the spell's area from being affected." + "\n   " + "Enrichment. All plants in a half-mile radius centered on a point within range become enriched for 365 days. The plants yield twice the normal amount of food when harvested. They can benefit from only one Plant Growth per year."
 };
 SpellsList["poison spray"] = {
 	name : "Poison Spray",
@@ -17320,9 +17319,9 @@ SpellsList["poison spray"] = {
 	range : "30 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell attack for 1d12 Poison dmg; +1d12 at CL 5, 11, and 17",
+	description : "Ranged spell attack for 1d12 Poison damage; +1d12 at CL 5, 11, and 17",
 	descriptionCantripDie : "Spell attack for `CD`d12 Poison dmg",
-	descriptionFull : "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage." + "\n   " + "Cantrip Upgrade. The damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17 level (4d12)."
+	descriptionFull : "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage." + "\n   " + "Cantrip Upgrade. The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12)."
 };
 SpellsList["polymorph"] = {
 	name : "Polymorph",
@@ -17336,8 +17335,8 @@ SpellsList["polymorph"] = {
 	compMaterial : "A caterpillar cocoon",
 	duration : "Conc, 1 h",
 	save : "Wis",
-	description : "1 creature with > 0 HP save or transformed into beast of choice of same CR or lower; see book",
-	descriptionFull : "You attempt to transform a creature that you can see within range into a Beast. The target must succeed on a Wisdom saving throw or shape-shift into a Beast for the duration. That form can be any Beast you choose that has a Challenge Rating equal to or less tan the target's (or the target's level if it doesn't have a Challenge Rating). The target's game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, Hit Points, and Hit Point Dice. See appendix B for a sample of Beast stat blocks" + "\n   " + "The target gains a number of Temporary Hit Points equal to the Hit Points of the Beast for. The spell ends early on the target if it has no Temporary Hit Points left." + "\n   " + "The target is limited in their actions it can perform by the anatomy of its new form, and it cant speak or cast spells." + "\n   " + "\n   " + "The target's gear melds into the new form. The creature can't activate, use, wield, or otherwise benefit from any of its equipment."
+	description : "1 crea save or turned into chosen beast of same CR (or lvl) or lower; gain beast HP as THP; see book",
+	descriptionFull : "You attempt to transform a creature that you can see within range into a Beast. The target must succeed on a Wisdom saving throw or shape-shift into Beast form for the duration. That form can be any Beast you choose that has a Challenge Rating equal to or less than the target's (or the target's level if it doesn't have a Challenge Rating). The target's game statistics are replaced by the stat block of the chosen Beast, but the target retains its alignment, personality, creature type, Hit Points, and Hit Point Dice." + "\n   " + "The target gains a number of Temporary Hit Points equal to the Hit Points of the Beast form. The spell ends early on the target if it has no Temporary Hit Points left." + "\n   " + "The target is limited in the actions it can perform by the anatomy of its new form, and it cant speak or cast spells." + "\n   " + "\n   " + "The target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment."
 };
 SpellsList["power word fortify"] = {
 	name : "Power Word Fortify",
@@ -17349,8 +17348,8 @@ SpellsList["power word fortify"] = {
 	range : "60 ft",
 	components : "V",
 	duration : "instantaneous",
-	description : "Up to 6 crea, split 120 Temp HP",
-	descriptionFull : "You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients"
+	description : "120 Temp HP divided equally among up to 6 visible creatures",
+	descriptionFull : "You fortify up to six creatures you can see within range. The spell bestows 120 Temporary Hit Points, which you divide among the spell's recipients."
 };
 SpellsList["power word heal"] = {
 	name : "Power Word Heal",
@@ -17362,9 +17361,9 @@ SpellsList["power word heal"] = {
 	range : "60 ft",
 	components : "V",
 	duration : "Instantaneous",
-	description : "1 crea heals all HP and stops being charmed, frightened, paralyzed, stunned; it can use rea to stand up",
-	descriptionShorter : "1 crea heals all HP, not charmed, frightened, paralyzed, stunned; rea to stand up",
-	descriptionFull : "A wave of healing energy washes over the creature you can see within range. The target regains all its hit points. If the creature is charmed, frightened, paralyzed, poisoned, or stunned conditions, the condition ends. If the creature is prone, it can use its reaction to stand up."
+	description : "1 crea heals all HP & cured of Charmed, Frightened, Paralyzed, Poisoned, Stunned; can use rea to stand",
+	descriptionShorter : "1 crea heals all HP, not charmed, frightened, paralyzed, poisoned, stunned; rea to stand up",
+	descriptionFull : "A wave of healing energy washes over one creature you can see within range. The target regains all its Hit Points. If the creature has the Charmed, Frightened, Paralyzed, Poisoned, or Stunned condition, the condition ends. If the creature has the Prone condition, it can use its Reaction to stand up."
 };
 SpellsList["power word kill"] = {
 	name : "Power Word Kill",
@@ -17376,8 +17375,8 @@ SpellsList["power word kill"] = {
 	range : "60 ft",
 	components : "V",
 	duration : "Instantaneous",
-	description : "1 creature with 100 current HP or less dies, else 12d12 Psy dmg.",
-	descriptionFull : "You utter a word of power that can compel one creature you can see within range to die instantly. If the creature you chose has 100 hit points or fewer, it dies. Otherwise, it takes 12d12 Psychic damage."
+	description : "1 creature dies if it has 100 or less current HP, else takes 12d12 Psychic damage",
+	descriptionFull : "You compel one creature you can see within range to die. If the target has 100 Hit Points or fewer, it dies. Otherwise, it takes 12d12 Psychic damage."
 };
 SpellsList["power word stun"] = {
 	name : "Power Word Stun",
@@ -17390,8 +17389,8 @@ SpellsList["power word stun"] = {
 	components : "V",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "1 creature with 150 current HP or less is stunned, else Speed is 0 till start of your next turn; save at end of each turn to end Stunned",
-	descriptionFull : "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, its Speed is 0 until the start of your next turn." + "\n   " + "The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
+	description : "1 crea Stunned if 150 or less current HP, else Speed is 0 until my next turn; repeat save at end of turn",
+	descriptionFull : "You overwhelm the mind of one creature you can see within range. If the target has 150 Hit Points or fewer, it has the Stunned condition. Otherwise, its Speed is 0 until the start of your next turn." + "\n   " + "The Stunned target makes a Constitution saving throw at the end of each of its turns, ending the condition on itself on a success."
 };
 SpellsList["prayer of healing"] = {
 	name : "Prayer of Healing",
@@ -17403,8 +17402,8 @@ SpellsList["prayer of healing"] = {
 	range : "30 ft",
 	components : "V",
 	duration : "Instantaneous",
-	description : "6 living creatures heal 2d8+1d8/SL+spellcasting ability modifier HP",
-	descriptionFull : "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs." + AtHigherLevels + "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
+	description : "5 creatures heal 2d8+1d8/SL+spellcasting ability mod HP and gain short rest benefits (once per LR)",
+	descriptionFull : "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain 2d8 Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest." + AtHigherLevels + "The healing increases by 1d8 for each spell slot level above 2."
 };
 SpellsList["prestidigitation"] = {
 	name : "Prestidigitation",
@@ -17416,8 +17415,8 @@ SpellsList["prestidigitation"] = {
 	range : "10 ft",
 	components : "V,S",
 	duration : "1 h",
-	description : "Minor trick; harmless sensory effect, illusory image, snuff light, clean/soil/chill/warm/flavor etc.",
-	descriptionFull : "This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within range." + "\n " + "\u2022 You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor." + "\n " + "\u2022 You instantaneously light or snuff out a candle, a torch, or a small campfire." + "\n " + "\u2022 You instantaneously clean or soil an object no larger than 1 cubic foot." + "\n " + "\u2022 You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour." + "\n " + "\u2022 You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour." + "\n " + "\u2022 You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn." + "\n\n" + "If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+	description : "Harmless sensory effect, snuff/light fire, clean/soil, chill/warm/flavor, small mark, illusion/trinket; up to 3",
+	descriptionFull : "You create a magical effect within range. Choose the effect from the options below. If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time." + "\n " + "\u2022 Sensory Effect. You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor." + "\n " + "\u2022 Fire Play. You instantaneously light or snuff out a candle, a torch, or a small campfire." + "\n " + "\u2022 Clean or Soil. You instantaneously clean or soil an object no larger than 1 cubic foot." + "\n " + "\u2022 Minor Sensation. You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour." + "\n " + "\u2022 Magic Mark. You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour." + "\n " + "\u2022 Minor Creation. You create a nonmagical trinket or an illusory image that can fit in your hand. It lasts until the end of your next turn. A trinket can deal no damage and has no monetary worth."
 };
 SpellsList["prismatic spray"] = {
 	name : "Prismatic Spray",

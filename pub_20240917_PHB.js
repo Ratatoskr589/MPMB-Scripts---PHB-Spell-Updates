@@ -14632,7 +14632,7 @@ SpellsList["counterspell"] = {
 	level : 3,
 	school : "Abjur",
 	time : "1 rea",
-	timeFull : "1 Reaction, which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components",
+	timeFull : "Reaction, which you take when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components",
 	range : "60 ft",
 	components : "S",
 	duration : "Instantaneous",
@@ -15416,7 +15416,7 @@ SpellsList["feather fall"] = {
 	level : 1,
 	school : "Trans",
 	time : "1 rea",
-	timeFull : "1 reaction, which you take when you or a creature you can see within 60 feet of you falls",
+	timeFull : "Reaction, which you take when you or a creature you can see within 60 feet of you falls",
 	range : "60 ft",
 	components : "V,M",
 	compMaterial : "A small feather or piece of down",
@@ -16130,7 +16130,7 @@ SpellsList["hellish rebuke"] = {
 	level : 1,
 	school : "Evoc",
 	time : "1 rea",
-	timeFull : "1 reaction, which you take in response to taking damage from a creature that you can see within 60 feet of yourself",
+	timeFull : "Reaction, which you take in response to taking damage from a creature that you can see within 60 feet of yourself",
 	range : "60 ft",
 	components : "V,S",
 	duration : "Instantaneous",
@@ -16980,7 +16980,7 @@ SpellsList["mislead"] = {
 	range : "Self",
 	components : "S",
 	duration : "Conc, 1 h",
-	description : "I go Invisible (til atk/dmg/cast); create illusory duplicate; see/hear through it; 1 a to move \u0026 control ",
+	description : "I go Invisible (til atk/dmg/cast) \u0026 create illusory duplicate; see/hear through it; 1 a manipulate",
 	descriptionFull : "You gain the Invisible condition at the same time that an illusory double of you appears where you are standing. The double lasts for the duration, but the invisibility ends immediately after you make an attack roll, deal damage, or cast a spell." + "\n   " + "As a Magic action, you can move the illusory double up to twice your Speed and make it gesture, speak, and behave in whatever way you choose. It is intangible and invulnerable." + "\n   " + "You can see through its eyes and hear through its ears as if you were located where it is."
 };
 SpellsList["misty step"] = {
@@ -17425,20 +17425,20 @@ SpellsList["prismatic spray"] = {
 	level : 7,
 	school : "Evoc",
 	time : "1 a",
-	range : "Self",
+	range : "S:60" + (typePF ? "-" : "") + "ft cone",
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "All random effect each, see book: either 12d6 dmg, restrained, or blinded; save halves/negates",
-	descriptionFull : "Eight multicolored rays of light flash from your hand. Each ray is a different color and has a different power and purpose. Each creature in a 60-foot cone must make a Dexterity saving throw. For each target, roll a d8 to determine which color ray affects it."+
-	"\n   " + toUni("1-Red") + ": The target takes 12d6 fire damage on a failed save, or half as much damage on a successful one."+
-	"\n   " + toUni("2-Orange") + ": The target takes 12d6 acid damage on a failed save, or half as much damage on a successful one."+
-	"\n   " + toUni("3-Yellow") + ": The target takes 12d6 lightning damage on a failed save, or half as much damage on a successful one."+
-	"\n   " + toUni("4-Green") + ": The target takes 12d6 poison damage on a failed save, or half as much damage on a successful one."+
-	"\n   " + toUni("5-Blue") + ": The target takes 12d6 cold damage on a failed save, or half as much damage on a successful one."+
-	"\n   " + toUni("6-Indigo") + ": On a failed save, the target is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the target collects three of a kind."+
-	"\n   " + toUni("7-Violet") + ": On a failed save, the target is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of existence of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.)"+
-	"\n   " + toUni("8-Special") + ": The target is struck by two rays. Roll twice more, rerolling any 8.",
+	description : "All crea random effect each: 12d6 dmg, Restrained, or Blinded; save halves/negates; see book",
+	descriptionFull : "Eight rays of light flash from you in a 60-foot Cone. Each creature in the Cone makes a Dexterity saving throw. For each target, roll 1d8 to determine which color ray affects it, consulting the Prismatic Rays table."+
+	"\n   " + toUni("1-Red") + ": Failed Save: 12d6 Fire damage. Successful Save: Half as much damage."+
+	"\n   " + toUni("2-Orange") + ": Failed Save: 12d6 Acid damage. Successful Save: Half as much damage."+
+	"\n   " + toUni("3-Yellow") + ": Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage."+
+	"\n   " + toUni("4-Green") + ": Failed Save: 12d6 Poison damage. Successful Save: Half as much damage."+
+	"\n   " + toUni("5-Blue") + ": Failed Save: 12d6 Cold damage. Successful Save: Half as much damage."+
+	"\n   " + toUni("6-Indigo") + ": Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind."+
+	"\n   " + toUni("7-Violet") + ": Violet. Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice)."+
+	"\n   " + toUni("8-Special") + ": The target is struck by two rays. Roll twice, rerolling any 8.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["acid", "cold", "fire", "lightning", "poison"],
@@ -17458,17 +17458,17 @@ SpellsList["prismatic wall"] = {
 	duration : "10 min",
 	save : "Con",
 	description : "Up to 90 ft long 30 ft high 5 inch thick; all in 20 ft save or blinded; 7 layers with effects, see book",
-	descriptionFull : "A shimmering, multicolored plane of light forms a vertical opaque wall - up to 90 feet long, 30 feet high, and 1 inch thick - entered on a point you can see within range. Alternatively, you can shape the wall into a sphere up to 30 feet in diameter centered on a point you choose within range. The wall remains in place for the duration. If you position the wall so that it passes through a space occupied by a creature, the spell fails, and your action and the spell slot are wasted."+
-	"\n The wall sheds bright light out to a range of 100 feet and dim light for an additional 100 feet. You and creatures you designate at the time you cast the spell can pass through and remain near the wall without harm. If another creature that can see the wall moves to within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or become blinded for 1 minute."+
-	"\n The wall consists of seven layers, each with a different color. When a creature attempts to reach into or pass through the wall, it does so one layer at a time through all the wall's layers. As it passes or reaches through each layer, the creature must make a Dexterity saving throw or be affected by that layer's properties as described below."+
-	"\n The wall can be destroyed, also one layer at a time, in order from red to violet, by means specific to each layer. Once a layer is destroyed, it remains so for the duration of the spell. An antimagic field has no effect on a prismatic wall."+
-	"\n   " + toUni("Red") + ": The creature takes 12d6 fire damage on a failed save, or half as much damage on a successful one. While this layer is in place, nonmagical ranged attacks can't pass through the wall. The layer can be destroyed by dealing at least 25 cold damage to it."+
-	"\n   " + toUni("Orange") + ": The creature takes 12d6 acid damage on a failed save, or half as much damage on a successful one. While this layer is in place, magical ranged attacks can't pass through the wall. The layer is destroyed by a strong wind."+
-	"\n   " + toUni("Yellow") + ": The creature takes 12d6 lightning damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 60 force damage to it."+
-	"\n   " + toUni("Green") + ": The creature takes 12d6 poison damage on a failed save, or half as much damage on a successful one. A passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer."+
-	"\n   " + toUni("Blue") + ": The creature takes 12d6 cold damage on a failed save, or half as much damage on a successful one. This layer can be destroyed by dealing at least 25 fire damage to it."+
-	"\n   " + toUni("Indigo") + ": On a failed save, the creature is restrained. It must then make a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the spell ends. If it fails its save three times, it permanently turns to stone and is subjected to the petrified condition. The successes and failures don't need to be consecutive, keep track of both until the creature collects three of a kind. While this layer is in place, spells can't be cast through the wall. The layer is destroyed by bright light shed by a daylight spell or a similar spell of equal or higher level."+
-	"\n   " + toUni("Violet") + ": On a failed save, the creature is blinded. It must then make a Wisdom saving throw at the start of your next turn. A successful save ends the blindness. If it fails that save, the creature is transported to another plane of the DM's choosing and is no longer blinded. (Typically, a creature that is on a plane that isn't its home plane is banished home, while other creatures are usually cast into the Astral or Ethereal planes.) This layer is destroyed by a dispel magic spell or a similar spell of equal or higher level that can end spells and magical effects."
+	descriptionFull : "A shimmering, multicolored plane of light forms a vertical opaque wall—up to 90 feet long, 30 feet high, and 1 inch thick—centered on a point within range. Alternatively, you shape the wall into a globe up to 30 feet in diameter centered on a point within range. The wall lasts for the duration. If you position the wall in a space occupied by a creature, the spell ends instantly without effect."+
+	"\n The wall sheds Bright Light within 100 feet and Dim Light for an additional 100 feet. You and creatures you designate when you cast the spell can pass through and be near the wall without harm. If another creature that can see the wall moves within 20 feet of it or starts its turn there, the creature must succeed on a Constitution saving throw or have the Blinded condition for 1 minute."+
+	"\n The wall consists of seven layers, each with a different color. When a creature reaches into or passes through the wall, it does so one layer at a time through all the layers. Each layer forces the creature to make a Dexterity saving throw or be affected by that layer’s properties as described in the Prismatic Layers table."+
+	"\n The wall, which has AC 10, can be destroyed one layer at a time, in order from red to violet, by means specific to each layer. If a layer is destroyed, it is gone for the duration. Antimagic Field has no effect on the wall, and Dispel Magic can affect only the violet layer."+
+	"\n   " + toUni("Red") + ": Failed Save: 12d6 Fire damage. Successful Save: Half as much damage. Additional Effects: Nonmagical ranged attacks can’t pass through this layer, which is destroyed if it takes at least 25 Cold damage."+
+	"\n   " + toUni("Orange") + ": Failed Save: 12d6 Acid damage. Successful Save: Half as much damage. Additional Effects: Magical ranged attacks can’t pass through this layer, which is destroyed by a strong wind (such as the one created by Gust of Wind)."+
+	"\n   " + toUni("Yellow") + ": Failed Save: 12d6 Lightning damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 60 Force damage."+
+	"\n   " + toUni("Green") + ": Failed Save: 12d6 Poison damage. Successful Save: Half as much damage. Additional Effects: A Passwall spell, or another spell of equal or greater level that can open a portal on a solid surface, destroys this layer."+
+	"\n   " + toUni("Blue") + ": Failed Save: 12d6 Cold damage. Successful Save: Half as much damage. Additional Effects: The layer is destroyed if it takes at least 25 Fire damage."+
+	"\n   " + toUni("Indigo") + ": Failed Save: The target has the Restrained condition and makes a Constitution saving throw at the end of each of its turns. If it successfully saves three times, the condition ends. If it fails three times, it has the Petrified condition until it is freed by an effect like the Greater Restoration spell. The successes and failures needn’t be consecutive; keep track of both until the target collects three of a kind. Additional Effects: Spells can’t be cast through this layer, which is destroyed by Bright Light shed by the Daylight spell."+
+	"\n   " + toUni("Violet") + ": Failed Save: The target has the Blinded condition and makes a Wisdom saving throw at the start of your next turn. On a successful save, the condition ends. On a failed save, the condition ends, and the creature teleports to another plane of existence (DM’s choice). Additional Effects: This layer is destroyed by Dispel Magic."
 };
 SpellsList["produce flame"] = {
 	name : "Produce Flame",
@@ -17479,10 +17479,10 @@ SpellsList["produce flame"] = {
 	time : "1 bns",
 	range : "Self",
 	components : "V,S",
-	duration : "10 min (D)",
-	description : "Flame 10 ft bright light; once 30 ft ranged spell attack for 1d8 Fire dmg; +1d8 at CL 5, 11, and 17",
+	duration : "10 min",
+	description : "Flame 20ft bright light/20ft dim; 1 a 60ft ranged spell atk for 1d8 Fire; +1d8 at CL 5, 11, and 17",
 	descriptionCantripDie : "Flame 10 ft bright light; once 30 ft ranged spell attack for `CD`d8 Fire dmg",
-	descriptionFull : "A flickering flame appears in your hand. The flame remains there for the duration and harms neither you nor your equipment. The flame sheds bright light in a 10-foot radius and dim light for an additional 10 feet. The spell ends if you dismiss it as an action or if you cast it again." + "\n   " + "You can also attack with the flame, although doing so ends the spell. When you cast this spell, or as an action on a later turn, you can hurl the flame at a creature within 30 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 fire damage." + "\n   " + "Cantrip Upgrade. This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+	descriptionFull : "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again." + "\n   " + "Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
 	dynamicDamageBonus : { multipleDmgMoments : false }
 };
 SpellsList["programmed illusion"] = {
@@ -17496,8 +17496,8 @@ SpellsList["programmed illusion"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "Jade dust worth 25+ gp",
 	duration : "Until dispelled",
-	description : "30-ft cube illusion includes visible, audible; triggers on set condition; see book (25gp)",
-	descriptionFull : "You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific condition occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes." + "\n   " + "When the condition you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes. After this time, the illusion can be activated again." + "\n   " + "The triggering condition can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door, or you could set the illusion to trigger only when a creature says the correct word or phrase." + "\n   " + "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+	description : "30-ft cube illusion includes visual, audible; activates on set trigger; see book (25gp)",
+	descriptionFull : "You create an illusion of an object, a creature, or some other visible phenomenon within range that activates when a specific trigger occurs. The illusion is imperceptible until then. It must be no larger than a 30-foot cube, and you decide when you cast the spell how the illusion behaves and what sounds it makes. This scripted performance can last up to 5 minutes." + "\n   " + "When the trigger you specify occurs, the illusion springs into existence and performs in the manner you described. Once the illusion finishes performing, it disappears and remains dormant for 10 minutes, after which the illusion can be activated again." + "\n   " + "The trigger can be as general or as detailed as you like, though it must be based on visual or audible phenomena that occur within 30 feet of the area. For example, you could create an illusion of yourself to appear and warn off others who attempt to open a trapped door." + "\n   " + "Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
 };
 SpellsList["project image"] = {
 	name : "Project Image",
@@ -17510,8 +17510,8 @@ SpellsList["project image"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A statuette of yourself worth 5+ gp",
 	duration : "Conc, 1 day",
-	description : "Project image of me to familiar place; 1 a manipulate; bns a switch between its senses and mine (5gp)",
-	descriptionFull : "You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends." + "\n   " + "You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly." + "\n   " + "You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings." + "\n   " + "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
+	description : "Project image of me to familiar place; see/hear through it; 1 a manipulate; Int(Invest.) vs Spell DC (5gp)",
+	descriptionFull : "You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you, but it is intangible. If the illusion takes any damage, it disappears, and the spell ends." + "\n   " + "You can see through the illusion’s eyes and hear through its ears as if you were in its space. As a Magic action, you can move it up to 60 feet and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly." + "\n   " + "Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature."
 };
 SpellsList["protection from energy"] = {
 	name : "Protection from Energy",
@@ -17523,8 +17523,8 @@ SpellsList["protection from energy"] = {
 	range : "Touch",
 	components : "V,S",
 	duration : "Conc, 1 h",
-	description : "1 creature gains resistance to either Acid, Cold, Fire, Lightning, or Thunder damage for duration",
-	descriptionFull : "For the duration, the willing creature you touch has resistance to one damage type of your choice - acid, cold, fire, lightning, or thunder."
+	description : "1 willing creature gains resistance to either Acid, Cold, Fire, Lightning, or Thunder damage",
+	descriptionFull : "For the duration, the willing creature you touch has Resistance to one damage type of your choice: Acid, Cold, Fire, Lightning, or Thunder."
 };
 SpellsList["protection from evil and good"] = {
 	name : "Protection from Evil and Good",
@@ -17538,8 +17538,8 @@ SpellsList["protection from evil and good"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "A flask of Holy Water worth 25+ gp, which the spell consumes",
 	duration : "Conc, 10 min",
-	description : "1 crea immune fear/charm/possess by abber./celest./elem./fey/fiends/undead, they also dis. on atks",
-	descriptionFull : "Until the spell ends, one willing creature you touch is protected against certain types of creatures - aberrations, celestials, elementals, fey, fiends, and undead." + "\n   " + "The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect."
+	description : "1 crea immune fear/charm/possess by abber./celes./elem./fey/fiends/undead; adv new save; dis. atks from them (25gp cons.)",
+	descriptionFull : "Until the spell ends, one willing creature you touch is protected against creatures that are Aberrations, Celestials, Elementals, Fey, Fiends, or Undead. The protection grants several benefits. Creatures of those types have Disadvantage on attack rolls against the target. The target also can’t be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a creature, the target has Advantage on any new saving throw against the relevant effect."
 };
 SpellsList["protection from poison"] = {
 	name : "Protection from Poison",
@@ -17551,8 +17551,8 @@ SpellsList["protection from poison"] = {
 	range : "Touch",
 	components : "V,S",
 	duration : "1 h",
-	description : "1 crea cured from 1 poison, gains resistance to Poison damage, and adv. on saves vs. being poisoned",
-	descriptionFull : "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize on poison that you know is present, or you neutralize one at random." + "\n   " + "For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage."
+	description : "1 crea cured of Poisoned, gains resistance to Poison damage, and adv. on saves vs Poisoned",
+	descriptionFull : "You touch a creature and end the Poisoned condition on it. For the duration, the target has Advantage on saving throws to avoid or end the Poisoned condition, and it has Resistance to Poison damage."
 };
 SpellsList["purify food and drink"] = {
 	name : "Purify Food and Drink",
@@ -17565,8 +17565,8 @@ SpellsList["purify food and drink"] = {
 	range : "10 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "5-ft rad of food and drink is rendered free of all poison and disease",
-	descriptionFull : "All nonmagical food and drink within a 5-foot-radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease."
+	description : "5-ft rad of food and drink is rendered free of all poison and rot",
+	descriptionFull : "You remove poison and rot from nonmagical food and drink in a 5-foot-radius Sphere centered on a point within range."
 };
 SpellsList["raise dead"] = {
 	name : "Raise Dead",
@@ -17579,8 +17579,8 @@ SpellsList["raise dead"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "A diamond worth 500+ gp, which the spell consumes",
 	duration : "Instantaneous",
-	description : "Restores a creature's body that has died in the last 10 days to life with 1 HP; see book (500gp cons.)",
-	descriptionFull : "You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point." + "\n   " + "This spell also neutralizes any poison and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects, if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life." + "\n   " + "This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival - its head, for instance - the spell automatically fails." + "\n   " + "Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears."
+	description : "Restores corpse that died within the last 10 days to life with 1 HP; see book (500gp cons.)",
+	descriptionFull : "With a touch, you revive a dead creature if it has been dead no longer than 10 days and it wasn’t Undead when it died." + "\n   " + "The creature returns to life with 1 Hit Point. This spell also neutralizes any poisons that affected the creature at the time of death." + "\n   " + "This spell closes all mortal wounds, but it doesn’t restore missing body parts. If the creature is lacking body parts or organs integral for its survival—its head, for instance—the spell automatically fails." + "\n   " + "Coming back from the dead is an ordeal. The target takes a -4 penalty to d20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0."
 };
 SpellsList["rary's telepathic bond"] = {
 	name : "Rary's Telepathic Bond",
@@ -17596,8 +17596,8 @@ SpellsList["rary's telepathic bond"] = {
 	components : "V,S,M",
 	compMaterial : "two eggs",
 	duration : "1 h",
-	description : "8 willing crea with Int>2 gain a telepathic bond that works for any distance on the same plane",
-	descriptionFull : "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures with Intelligence scores of 2 or less aren't affected by this spell." + "\n   " + "Until the spell ends, the targets can communicate telepathically through the bond whether or not they have a common language. The communication is possible over any distance, though it can't extend to other planes of existence."
+	description : "8 willing crea gain a telepathic bond that works for any distance on same plane; must know a language",
+	descriptionFull : "You forge a telepathic link among up to eight willing creatures of your choice within range, psychically linking each creature to all the others for the duration. Creatures that can’t communicate in any languages aren’t affected by this spell." + "\n   " + "Until the spell ends, the targets can communicate telepathically through the bond whether or not they share a language. The communication is possible over any distance, though it can’t extend to other planes of existence."
 };
 SpellsList["ray of enfeeblement"] = {
 	name : "Ray of Enfeeblement",
@@ -17610,8 +17610,8 @@ SpellsList["ray of enfeeblement"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Con",
-	description : "Spell attack; crea does half dmg with weapon attacks that use Str; save at end of each turn to end",
-	descriptionFull : "A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends." + "\n   " + "At the end of each of the target's turns, it can make a Constitution saving throw against the spell. On a success, the spell ends."
+	description : "Crea save or dis. on all Str d20 rolls and -1d8 each damage roll; repeat save at end of each turn",
+	descriptionFull : "A beam of enervating energy shoots from you toward a creature within range. The target must make a Constitution saving throw. On a successful save, the target has Disadvantage on the next attack roll it makes until the start of your next turn." + "\n   " + "On a failed save, the target has Disadvantage on Strength-based d20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the save at the end of each of its turns, ending the spell on a success."
 };
 SpellsList["ray of frost"] = {
 	name : "Ray of Frost",
@@ -17623,9 +17623,9 @@ SpellsList["ray of frost"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell attack for 1d8 Cold dmg and -10 ft speed until start of my next turn; +1d8 at CL 5, 11, and 17",
+	description : "Spell atk for 1d8 Cold dmg and -10 ft speed until start of my next turn; +1d8 at CL 5, 11, and 17",
 	descriptionCantripDie : "Spell attack for `CD`d8 Cold dmg and -10 ft speed until start of my next turn",
-	descriptionFull : "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn." + "\n   " + "Cantrip Upgrade. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+	descriptionFull : "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 };
 SpellsList["ray of sickness"] = {
 	name : "Ray of Sickness",
@@ -17638,8 +17638,8 @@ SpellsList["ray of sickness"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "Spell attack for 2d8+1d8/SL Poison dmg; save or also poisoned until end of my next turn",
-	descriptionFull : "A ray of sickening greenish energy lashes out toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 poison damage and must make a Constitution saving throw. On a failed save, it is also poisoned until the end of your next turn." + AtHigherLevels + "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+	description : "Spell attack for 2d8+1d8/SL Poison dmg; save or also Poisoned until end of my next turn",
+	descriptionFull : "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 1."
 };
 SpellsList["regenerate"] = {
 	name : "Regenerate",
@@ -17652,9 +17652,9 @@ SpellsList["regenerate"] = {
 	components : "V,S,M",
 	compMaterial : "A prayer wheel",
 	duration : "1 h",
-	description : "1 crea heals 4d8+15 HP now and 1 HP/rnd for rest of duration; restores lost body parts in 2 min",
+	description : "1 crea heals 4d8+15 HP; gains 1 HP at SoT for rest of duration; restores lost body parts in 2 min",
 	descriptionShorter : "1 crea heals 4d8+15 HP and 1 HP/rnd for the duration; restores lost body parts in 2 min",
-	descriptionFull : "You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute)." + "\n   " + "The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.",
+	descriptionFull : "A creature you touch regains 4d8 + 15 Hit Points. For the duration, the target regains 1 Hit Point at the start of each of its turns, and any severed body parts regrow after 2 minutes.",
 	dynamicDamageBonus : {
 		multipleDmgMoments : false,
 		extraDmgGroupsSameType : /(and |\u0026 )((?:\+?\d+d?\d*)+)( HP\/rnd)/i
@@ -17672,7 +17672,7 @@ SpellsList["reincarnate"] = {
 	compMaterial : "Rare oils worth 1,000+ gp, which the spell consumes",
 	duration : "Instantaneous",
 	description : "Brings humanoid that died in last 10 days to life in a new random adult body, see book (1000gp cons.)",
-	descriptionFull : "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails." + "\n   " + "The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a d10 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form." + "\n\n   " + toUni("d10") + "\t" + toUni("Race") + "\n   " + "1\tAasimar" + "\n   " + "2\tDragonborn" + "\n   " + "3\tDwarf" + "\n   " + "4\tElf" + "\n   " + "5\tGnome" + "\n   " + "6\tGoliath" + "\n   " + "7\tHalfling" + "\n   " + "8\tHuman" + "\n   " + "9\tOrc" + "\n   " + "10\tTiefling" + "\n\n" + "The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly."
+	descriptionFull : "You touch a dead Humanoid or a piece of one. If the creature has been dead no longer than 10 days, the spell forms a new body for it and calls the soul to enter that body. Roll 1d10 and consult the table below to determine the body’s species, or the DM chooses another playable species." + "\n\n   " + toUni("d10") + "\t" + toUni("Race") + "\n   " + "1\tAasimar" + "\n   " + "2\tDragonborn" + "\n   " + "3\tDwarf" + "\n   " + "4\tElf" + "\n   " + "5\tGnome" + "\n   " + "6\tGoliath" + "\n   " + "7\tHalfling" + "\n   " + "8\tHuman" + "\n   " + "9\tOrc" + "\n   " + "10\tTiefling" + "\n\n" + "The reincarnated creature makes any choices that a species’ description offers, and the creature recalls its former life. It retains the capabilities it had in its original form, except it loses the traits of its previous species and gains the traits of its new one."
 };
 SpellsList["remove curse"] = {
 	name : "Remove Curse",
@@ -17684,8 +17684,8 @@ SpellsList["remove curse"] = {
 	range : "Touch",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "1 creature or object is freed of all curses; cursed magic items break attunement with owner",
-	descriptionFull : "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded."
+	description : "All curses end for 1 creature or object; magic items retain curses but break attunement",
+	descriptionFull : "At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's Attunement to the object so it can be removed or discarded."
 };
 SpellsList["resistance"] = {
 	name : "Resistance",
@@ -17698,7 +17698,7 @@ SpellsList["resistance"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	description : "Choose 1 dmg type except Force and Psy. 1 crea takes 1d4 less damage of the chosen type",
-	descriptionFull : "You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lighting, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once."
+	descriptionFull : "You touch a willing creature and choose a damage type: Acid, Bludgeoning, Cold, Fire, Lightning, Necrotic, Piercing, Poison, Radiant, Slashing, or Thunder. When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by 1d4. A creature can benefit from this spell only once per turn."
 };
 SpellsList["resurrection"] = {
 	name : "Resurrection",
@@ -17712,7 +17712,7 @@ SpellsList["resurrection"] = {
 	compMaterial : "A diamond worth 1,000+ gp, which the spell consumes",
 	duration : "Instantaneous",
 	description : "Resurrects a crea that died in the last century to life with whole body and full HP; see B (1000gp cons.)",
-	descriptionFull : "You touch a dead creature that has been dead for no more than a century, that didn't die of old age, and that isn't undead. If its soul is free and willing, the target returns to life with all its hit points." + "\n   " + "This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died. It doesn't, however, remove magical diseases, curses, and the like, if such affects aren't removed prior to casting the spell, they afflict the target on its return to life." + "\n   " + "This spell closes all mortal wounds and restores any missing body parts." + "\n   " + "Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears." + "\n   " + "Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws."
+	descriptionFull : "With a touch, you revive a dead creature that has been dead for no more than a century, didn’t die of old age, and wasn’t Undead when it died." + "\n   " + "The creature returns to life with all its Hit Points. This spell also neutralizes any poisons that affected the creature at the time of death. This spell closes all mortal wounds and restores any missing body parts." + "\n   " + "Coming back from the dead is an ordeal. The target takes a -4 penalty to d20 Tests. Every time the target finishes a Long Rest, the penalty is reduced by 1 until it becomes 0." + "\n   " + "Casting this spell to revive a creature that has been dead for 365 days or longer taxes you. Until you finish a Long Rest, you can’t cast spells again, and you have Disadvantage on d20 Tests."
 };
 SpellsList["reverse gravity"] = {
 	name : "Reverse Gravity",
@@ -17726,8 +17726,8 @@ SpellsList["reverse gravity"] = {
 	compMaterial : "A lodestone and iron filings",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "50-ft rad 100-ft high everything falls upward; save to grab hold onto something solid",
-	descriptionFull : "This spell reverses gravity in a 50-foot-radius, 100-foot high cylinder centered on a point within range. All creatures and objects that aren't somehow anchored to the ground in the area fall upward and reach the top of the area when you cast this spell. A creature can make a Dexterity saving throw to grab onto a fixed object it can reach, thus avoiding the fall." + "\n   " + "If some solid object (such as a ceiling) is encountered in this fall, falling objects and creatures strike it just as they would during a normal downward fall. If an object or creature reaches the top of the area without striking anything, it remains there, oscillating slightly, for the duration." + "\n   " + "At the end of the duration, affected objects and creatures fall back down."
+	description : "50-ft rad 100-ft high everything falls upward; save to grab onto something; fall down when ends",
+	descriptionFull : "This spell reverses gravity in a 50-foot-radius, 100-foot high Cylinder centered on a point within range. All creatures and objects in that area that aren’t anchored to the ground fall upward and reach the top of the Cylinder. A creature can make a Dexterity saving throw to grab a fixed object it can reach, thus avoiding the fall upward." + "\n   " + "If a ceiling or an anchored object is encountered in this upward fall, creatures and objects strike it just as they would during a downward fall. If an affected creature or object reaches the Cylinder’s top without striking anything, it hovers there for the duration. When the spell ends, affected objects and creatures fall downward."
 };
 SpellsList["revivify"] = {
 	name : "Revivify",
@@ -17740,8 +17740,8 @@ SpellsList["revivify"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "A diamond worth 300+ gp, which the spell consumes",
 	duration : "Instantaneous",
-	description : "Restores a creature's body that has died in the last min to life with 1 HP (300gp cons.)",
-	descriptionFull : "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+	description : "Restores a corpse that has died within the last min to life with 1 HP (300gp cons.)",
+	descriptionFull : "You touch a creature that has died within the last minute. That creature revives with 1 Hit Point. This spell can’t revive a creature that has died of old age, nor does it restore any missing body parts."
 };
 SpellsList["rope trick"] = {
 	name : "Rope Trick",
@@ -17754,8 +17754,8 @@ SpellsList["rope trick"] = {
 	components : "V,S,M",
 	compMaterial : "A segment of rope",
 	duration : "1 h",
-	description : "Rope up to 60 ft stands vertical; extradimens. space with invisible 3\xD75 ft entrance at top, for 8 crea",
-	descriptionFull : "You touch a length of rope that is up to 60 feet long. One end of the rope then rises into the air until the whole rope hangs perpendicular to the ground. At the upper end of the rope, an invisible entrance opens to an extradimensional space that lasts until the spell ends." + "\n   " + "The extradimensional space can be reached by climbing to the top of the rope. The space can hold as many as eight Medium or smaller creatures. The rope can be pulled into the space, making the rope disappear from view outside the space." + "\n   " + "Attacks and spells can't cross through the entrance into or out of the extradimensional space, but those inside can see out of it as if through a 3-foot-by-5-foot window centered on the rope." + "\n   " + "Anything inside the extradimensional space drops out when the spell ends."
+	description : "Rope stands vertical; at top extradimens. space with invisible 3\xD75 ft entrance, for 8 med crea",
+	descriptionFull : "You touch a rope. One end of it hovers upward until the rope hangs perpendicular to the ground or the rope reaches a ceiling. At the rope’s upper end, an Invisible 3-foot-by-5-foot portal opens to an extradimensional space that lasts until the spell ends. That space can be reached by climbing the rope, which can be pulled into or dropped out of it." + "\n   " + "The space can hold up to eight Medium or smaller creatures. Attacks, spells, and other effects can’t pass into or out of the space, but creatures inside it can see through the portal. Anything inside the space drops out when the spell ends."
 };
 SpellsList["sacred flame"] = {
 	name : "Sacred Flame",
@@ -17768,10 +17768,10 @@ SpellsList["sacred flame"] = {
 	components : "V,S",
 	duration : "Instantaneous",
 	save : "Dex",
-	description : "1 crea that I can see save or 1d8 Radiant dmg; no bonus for cover on save; +1d8 at CL 5, 11, and 17",
-	descriptionShorter : "1 crea that I can see save or 1d8 Radiant dmg; no bonus for cover on save; +1d8 at CL 5/11/17",
-	descriptionCantripDie : "1 creature that I can see save or `CD`d8 Radiant dmg; no bonus for cover on save",
-	descriptionFull : "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw." + "\n   " + "Cantrip Upgrade. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+	description : "1 visible crea save or 1d8 Radiant; no save bonus for 1/2 or 3/4 cover; +1d8 at CL 5, 11, and 17",
+	descriptionShorter : "1 visible crea save or 1d8 Radiant dmg; no bonus for 1/2 or 3/4 covere; +1d8 at CL 5/11/17",
+	descriptionCantripDie : "1 visible creature save or `CD`d8 Radiant dmg; no bonus for 1/2 or 3/4 cover on save",
+	descriptionFull : "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 };
 SpellsList["sanctuary"] = {
 	name : "Sanctuary",
@@ -17785,8 +17785,8 @@ SpellsList["sanctuary"] = {
 	compMaterial : "A shard of glass from a mirror",
 	duration : "1 min",
 	save : "Wis",
-	description : "1 crea warded; any who want to attack/target must first make save; doesn't protect vs. area spells",
-	descriptionFull : "You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball." + "\n   " + "If the warded creature makes an attack, casts a spell that affects an enemy, or deals damage to another creature, this spell ends."
+	description : "1 crea warded until atks/casts/dmg; must save to atk/target them; doesn't protect vs area spells",
+	descriptionFull : "You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn’t protect the warded creature from areas of effect." + "\n   " + "The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage."
 };
 SpellsList["scorching ray"] = {
 	name : "Scorching Ray",
@@ -17798,8 +17798,8 @@ SpellsList["scorching ray"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "3+1/SL rays hit creature(s) on spell attack with each ray for 2d6 Fire dmg per ray",
-	descriptionFull : "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several." + "\n   " + "Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage." + AtHigherLevels + "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.",
+	description : "3+1/SL rays target 1 or more crea; each ray ranged spell atk for 2d6 Fire dmg",
+	descriptionFull : "You hurl three fiery rays. You can hurl them at one target within range or at several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 Fire damage." + AtHigherLevels + "You create one additional ray for each spell slot level above 2.",
 	dynamicDamageBonus : { multipleDmgMoments : true }
 };
 SpellsList["scrying"] = {
@@ -17814,8 +17814,8 @@ SpellsList["scrying"] = {
 	compMaterial : "A focus worth 1,000+ gp, such as a crystal ball, mirror, or water filled font",
 	duration : "Conc, 10 min",
 	save : "Wis",
-	description : "1 crea save or sensor follows it around; or create sensor in familiar location; see book (1000gp)",
-	descriptionFull : "You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed." + "\n\n" + toUni("Knowledge") + "\t\t\t   " + toUni("Save Modifier") + "\n" + "Secondhand (you have heard of the target)\t+5" + "\n" + "Firsthand (you have met the target)\t\t+0" + "\n" + "Familiar (you know the target well)\t\t-5" + "\n\n" + toUni("Connection") + "\t\t\t   " + toUni("Save Modifier") + "\n" + "Likeness or picture\t\t\t\t-2" + "\n" + "Possession or garment\t\t\t-4" + "\n" + "Body part, lock of hair, bit of nail, or the like\t-10" + "\n\n" + "On a successful save, the target isn't affected, and you can't use this spell against it again for 24 hours." + "\n   " + "On a failed save, the spell creates an invisible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. A creature that can see invisible objects sees the sensor as a luminous orb about the size of your fist." + "\n   " + "Instead of targeting a creature, you can choose a location you have seen before as the target of this spell. When you do, the sensor appears at that location and doesn't move."
+	description : "1 crea save or followed by sensor; or create immobile sensor in familiar location; see B (1000gp)",
+	descriptionFull : "You can see and hear a creature you choose that is on the same plane of existence as you. The target makes a Wisdom saving throw, which is modified (see the tables below) by how well you know the target and the sort of physical connection you have to it. The target doesn’t know what it is making the save against, only that it feels uneasy." + "\n\n" + toUni("Knowledge") + "\t\t\t   " + toUni("Save Modifier") + "\n" + "Secondhand (heard of the target)\t+5" + "\n" + "Firsthand (met the target)\t\t+0" + "\n" + "Familiar (know the target well)\t\t-5" + "\n\n" + toUni("Connection") + "\t\t\t   " + toUni("Save Modifier") + "\n" + "Picture or other likeness\t\t\t\t-2" + "\n" + "Garment or other possession\t\t\t-4" + "\n" + "Body part, lock of hair, or bit of nail\t-10" + "\n\n" + "On a successful save, the target isn't affected, and you can't use this spell on it again for 24 hours." + "\n   " + "On a failed save, the spell creates an Invisible, intangible sensor within 10 feet of the target. You can see and hear through the sensor as if you were there. The sensor moves with the target, remaining within 10 feet of it for the duration. If something can see the sensor, it appears as a luminous orb about the size of your fist." + "\n   " + "Instead of targeting a creature, you can target a location you have seen. When you do so, the sensor appears at that location and doesn’t move."
 };
 SpellsList["searing smite"] = {
 	name : "Searing Smite",
@@ -17823,13 +17823,13 @@ SpellsList["searing smite"] = {
 	source : [["PHB2024", 314]],
 	level : 1,
 	school : "Evoc",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting a target with a Melee weapon or an Unarmed Strike",
 	range : "Self",
 	components : "V",
 	duration : "1 min",
 	save : "Con",
-	description : "on melee weapon hit +1d6+1d6/SL Fire dmg and target ignites: start of turn save to end or 1d6 dmg",
+	description : "Melee weapon/unarmed hit +1d6+1d6/SL Fire dmg and target ignites; each SoT 1d6+1d6/SL fire then save to end",
 	descriptionShorter : "on melee wea hit +1d6+1d6/SL Fire dmg \u0026 ignites: start of turn save to end or 1d6 dmg",
 	descriptionFull : "As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends." + AtHigherLevels + "All the damage increases by 1d6 for each spell slot level above 1.",
 	dynamicDamageBonus : {
@@ -17845,10 +17845,10 @@ SpellsList["see invisibility"] = {
 	time : "1 a",
 	range : "Self",
 	components : "V,S,M",
-	compMaterial : "A pinch of Talc",
+	compMaterial : "A pinch of talc",
 	duration : "1 h",
-	description : "See invisible/ethereal creatures and objects as if they were visible; ethereals are ghostly, translucent",
-	descriptionFull : "For the duration, you see invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane. Ethereal creatures and objects appear ghostly and translucent."
+	description : "See invisible/ethereal creatures and objects as if they were visible; ethereals appear ghostly",
+	descriptionFull : "For the duration, you see creatures and objects that have the Invisible condition as if they were visible, and you can see into the Ethereal Plane. Creatures and objects there appear ghostly."
 };
 SpellsList["seeming"] = {
 	name : "Seeming",
@@ -17861,8 +17861,8 @@ SpellsList["seeming"] = {
 	components : "V,S",
 	duration : "8 h",
 	save : "Cha",
-	description : "Any crea save or disguised by changing physical appearance; Int(Investigation) check vs. spell DC",
-	descriptionFull : "This spell allows you to change the appearance of any number of creatures that you can see within range. You give each target you choose a new, illusory appearance. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected by this spell." + "\n   " + "The spell disguises physical appearances as well as clothing, armor, weapons, and equipment. You can make each creature seem 1 foot shorter or taller and appear thin, fat, or in-between. You can't change a target's body type, so you must choose a form that has the same basic arrangement of limbs. Otherwise, the extent of the illusion is up to you. The spell lasts for the duration, unless you use your action to dismiss it sooner." + "\n   " + "The changes wrought by this spell fail to hold up to physical inspections. For example, if you use this spell to add a hat to a creature's outfit objects pass through the hat, and anyone who touches it would feel nothing or would feel the creature's head and hair. If you use this spell to appear thinner then you are, the hand of someone who reaches out to touch you would bump into you while it was seemingly still in midair." + "\n   " + "A creature can use its action to inspect a target and make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised."
+	description : "Any crea save or disguised by illusory appearance; Int(Investigation) check vs. spell DC",
+	descriptionFull : "You give an illusory appearance to each creature of your choice that you can see within range. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected by this spell." + "\n   " + "You can give the same appearance or different ones to the targets. The spell can change the appearance of the targets’ bodies and equipment. You can make each creature seem 1 foot shorter or taller and appear heavier or lighter. A target’s new appearance must have the same basic arrangement of limbs as the target, but the extent of the illusion is otherwise up to you. The spell lasts for the duration." + "\n   " + "The changes wrought by this spell fail to hold up to physical inspection. For example, if you use this spell to add a hat to a creature’s outfit, objects pass through the hat." + "\n   " + "A creature that takes the Study action to examine a target can make an Intelligence (Investigation) check against your spell save DC. If it succeeds, it becomes aware that the target is disguised."
 };
 SpellsList["sending"] = {
 	name : "Sending",
@@ -17875,7 +17875,7 @@ SpellsList["sending"] = {
 	components : "V,S,M",
 	compMaterial : "A copper wire",
 	duration : "Instantaneous",
-	description : "Send a 25 word message to a familiar creature; it recognizes me and can respond with 25 words",
+	description : "Send 25 word message to familiar crea; can respond with 25 words and/or block for 8 hrs",
 	descriptionFull : "You send a short message of 25 words of fewer to a creature you have met or a creature described to you by someone who has bet it. The target hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables targets to understand the meaning of your message." + "\n   " + "You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive. You know if the delivery fails." + "\n   " + "Upon receiving your message, a creature can block your ability to reach it again with this spell for 8 hours. If you try to send another message during that time, you learn that you are blocked, and the spell fails."
 };
 SpellsList["sequester"] = {
@@ -17889,8 +17889,8 @@ SpellsList["sequester"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "Gem dust worth 5000+ gp, which the spell consumes",
 	duration : "Until dispelled",
-	description : "1 willing crea/obj suspended, invisible, hidden from divination magic; see book (5000gp cons.)",
-	descriptionFull : "By means of this spell, a willing creature or an object can be hidden away, safe from detection for the duration. When you cast the spell and touch the target, it becomes invisible and can't be targeted by divination spells or perceived through scrying sensors created by the divination of spells." + "\n   " + "If the target is a creature, it falls into a state of suspended animation. Time ceases to flow for it, and it doesn't grow older." + "\n   " + "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include after 1,000 years or when the tarrasque awakes. This spell also ends if the target takes any damage."
+	description : "1 willing crea/obj suspended, Invisible, hidden from Divination; see book (5000gp cons.)",
+	descriptionFull : "With a touch, you magically sequester an object or a willing creature. For the duration, the target has the Invisible condition and can’t be targeted by Divination spells, detected by magic, or viewed remotely with magic." + "\n   " + "If the target is a creature, it enters a state of suspended animation; it has the Unconscious condition, doesn’t age, and doesn’t need food, water, or air." + "\n   " + "You can set a condition for the spell to end early. The condition can be anything you choose, but it must occur or be visible within 1 mile of the target. Examples include “after 1,000 years” or “when the tarrasque awakens.” This spell also ends if the target takes any damage."
 };
 SpellsList["shapechange"] = {
 	name : "Shapechange",
@@ -17903,8 +17903,8 @@ SpellsList["shapechange"] = {
 	components : "V,S,M\u0192",
 	compMaterial : "A jade circlet worth 1,500+ gp",
 	duration : "Conc, 1 h",
-	description : "Take form of creature with CR of CL or lower; keep Int, Wis, Cha and alignment; see book (1500gp)",
-	descriptionFull : "You assume the form of a different creature for the duration. The new form can be any creature with a challenge rating equal to your level or lower. The creature can't be a construct or an undead, and you must have seen the sort of creature at least once. You transform into an average example of that creature, one without any class levels or the Spellcasting trait." + "\n   " + "Your game statistics are replaced by the statistics of the chosen creature, though you retain your alignment and Intelligence, Wisdom, and Charisma scores You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature, If the creature has the same proficiency as you, and the bonus listed in its statistics is higher than yours, use the creature's bonus in place of yours. You can't use any legendary actions or lair actions of the new form." + "\n   " + "You assume the hit points and Hit Dice of the new form. When you revert to your normal, you return to the number of hit points you had before you transformed. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. As long as the excess damage doesn't reduce your normal form to 0 hit points, you aren't knocked unconscious." + "\n   " + "You retain the benefit of any features from your class, race, or other source and can use them, provided that your new form is physically capable of doing so. You can't use any special senses you have (for example, darkvision) unless your new form also has that sense. You can only speak if the creature can normally speak." + "\n   " + "When you transform, you choose whether your equipment falls to the ground, merges into the new form, or is worn by it. Worn equipment functions as normal. The DM determines whether it is practical for the new form to wear a piece of equipment, based on the creature's shape and size. Your equipment doesn't change shape or size to match the new form, and any equipment that the new form can't wear must either fall to the ground or merge into your new form. Equipment that merges has no effect in that state." + "\n   " + "During this spell's duration, you can use your action to assume a different form following the same restrictions and rules for the original form, with one exception - if your new form has more hit pints than your current one, your hit points remain at their current value."
+	description : "Turn into known crea with CR of CL or lower; 1 a new form; crea HP as THP; ends at 0 THP; see book (1500gp)",
+	descriptionFull : "You shape-shift into another creature for the duration or until you take a Magic action to shape-shift into a different eligible form. The new form must be of a creature that has a Challenge Rating no higher than your level or Challenge Rating. You must have seen the sort of creature before, and it can’t be a Construct or an Undead." + "\n   " + "When you shape-shift, you gain a number of Temporary Hit Points equal to the Hit Points of the form. The spell ends early if you have no Temporary Hit Points left." + "\n   " + "Your game statistics are replaced by the stat block of the chosen form, but you retain your creature type; alignment; personality; Intelligence, Wisdom, and Charisma scores; Hit Points; Hit Point Dice; proficiencies; and ability to communicate. If you have the Spellcasting feature, you retain it too." + "\n   " + "Upon shape-shifting, you determine whether your equipment drops to the ground or changes in size and shape to fit the new form while you’re in it."
 };
 SpellsList["shatter"] = {
 	name : "Shatter",
@@ -17918,8 +17918,8 @@ SpellsList["shatter"] = {
 	compMaterial : "A chip of mica",
 	duration : "Instantaneous",
 	save : "Con",
-	description : "10-ft rad all 3d8+1d8/SL Thunder dmg; save halves; nonmagical unattended objects also take dmg",
-	descriptionFull : "A sudden loud ringing noise, painfully intense, erupts from a point of your choice within range. Each creature in a 10-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw." + "\n   " + "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area." + AtHigherLevels + "When you cast this spell using a spell slot of or higher, the damage increases by 1d8 for each slot level above 2nd."
+	description : "10ft rad all 3d8+1d8/SL Thunder; save halves; constructs dis.; nonmagical unattended obj take dmg",
+	descriptionFull : "A loud noise erupts from a point of your choice within range. Each creature in a 10-foot-radius Sphere centered there makes a Constitution saving throw, taking 3d8 Thunder damage on a failed save or half as much damage on a successful one. A Construct has Disadvantage on the save." + "\n   " + "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 2."
 };
 SpellsList["shield"] = {
 	name : "Shield",
@@ -17928,12 +17928,12 @@ SpellsList["shield"] = {
 	level : 1,
 	school : "Abjur",
 	time : "1 rea",
-	timeFull : "1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell",
+	timeFull : "Reaction, which you take when you are hit by an attack roll or targeted by the Magic Missile spell",
 	range : "Self",
 	components : "V,S",
 	duration : "1 rnd",
-	description : "If hit by attack +5 AC until start of next turn; or stop Magic Missile spell from doing any dmg to me",
-	descriptionFull : "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+	description : "If hit by atk +5 AC until start of next turn; may cause to miss; or stop Magic Missile from doing dmg to me",
+	descriptionFull : "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from Magic Missile."
 };
 SpellsList["shield of faith"] = {
 	name : "Shield of Faith",
@@ -17947,7 +17947,7 @@ SpellsList["shield of faith"] = {
 	compMaterial : "A prayer scroll",
 	duration : "Conc, 10 min",
 	description : "1 creature gains +2 AC for the duration",
-	descriptionFull : "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+	descriptionFull : "A shimmering field surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
 };
 SpellsList["shillelagh"] = {
 	name : "Shillelagh",
@@ -17956,13 +17956,13 @@ SpellsList["shillelagh"] = {
 	level : 0,
 	school : "Trans",
 	time : "1 bns",
-	range : "Touch",
+	range : "Self",
 	components : "V,S,M",
 	compMaterial : "Mistletoe",
 	duration : "1 min",
-	description : "Club/quarterstaff I hold does 1d8(1d10 at lvl 5/1d12 at lvl 11/2d6 at lvl 17) Bludg. dmg and uses my spellcasting ability modifier instead of Str",
+	description : "Club/quarterstaff I hold does 1d8 (CL5:1d10, CL11: 1d12, CL17:2d6) Force or wea dmg and uses my spellcasting ability",
 	descriptionShorter : "Club/quarterstaff I hold does 1d8 Bludg. dmg \u0026 uses my spellcasting modifier instead of Str",
-	descriptionFull : "The wood of a club or quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. The weapon also becomes magical, if it isn't already. The spell ends if you cast it again or if you let go of the weapon."
+	descriptionFull : "A Club or Quarterstaff you are holding is imbued with nature’s power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon’s normal damage type (your choice).." + "\n   " + "The spell ends if you cast it again or if you let go of the weapon." + "\n   " + "Cantrip Upgrade. The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6)."
 };
 SpellsList["shining smite"] = {
 	name : "Shining Smite",
@@ -17970,13 +17970,13 @@ SpellsList["shining smite"] = {
 	source : [["PHB2024", 316]],
 	level : 2,
 	school : "Trans",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike",
 	range : "Self",
 	components : "V",
-	duration : "Conc. up to 1 min",
-	description : "",
-	descriptionFull : "The target hit by the strike takes an extra 2d6 Radian damage from the attac. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 2"
+	duration : "Conc, 1 min",
+	description : "Melee weapon/unarmed hit +2d6+1d6/SL Rad.; ends Invisible; adv on atks vs crea; emits light 5ft rad",
+	descriptionFull : "The target hit by the strike takes an extra 2d6 Radian damage from the attack. Until the spell ends, the target sheds Bright Light in a 5-foot radius, attack rolls against it have Advantage, and it can't benefit from the Invisible condition." + AtHigherLevels + "The damage increases by 1d6 for each spell slot level above 2"
 };
 SpellsList["shocking grasp"] = {
 	name : "Shocking Grasp",
@@ -17988,9 +17988,9 @@ SpellsList["shocking grasp"] = {
 	range : "Touch",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell attack, adv. if metal armor, 1d8 Lightning dmg, no rea 1 turn; +1d8 at CL 5, 11, and 17",
-	descriptionCantripDie : "Spell attack, adv. if metal armor, `CD`d8 Lightning dmg, no rea 1 turn",
-	descriptionFull : "Lightning springs from your hand to deliver a shock to a creature you try to touch. Make a melee spell attack against the target. You have advantage on the attack roll if the target is wearing armor made of metal. On a hit, the target takes 1d8 lightning damage, and it can't take reactions until the start of its next turn." + "\n   " + "Cantrip Upgrade. The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+	description : "Spell atk for 1d8 Lightning, no opportunity atks until next turn; +1d8 at CL 5, 11, and 17",
+	descriptionCantripDie : "Spell attack, `CD`d8 Lightning dmg, no op atk 1 turn",
+	descriptionFull : "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can’t make Opportunity Attacks until the start of its next turn." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 };
 SpellsList["silence"] = {
 	name : "Silence",
@@ -18003,8 +18003,8 @@ SpellsList["silence"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Conc, 10 min",
-	description : "20-ft rad no sound propagates; all within deafened, immune to Thunder dmg, can't use verbal comp.",
-	descriptionFull : "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it. Casting a spell that includes a verbal component is impossible there."
+	description : "20-ft rad no sound; all within Deafened, immune to Thunder dmg, can't use verbal spells",
+	descriptionFull : "For the duration, no sound can be created within or pass through a 20-foot-radius Sphere centered on a point you choose within range. Any creature or object entirely inside the Sphere has Immunity to Thunder damage, and creatures have the Deafened condition while entirely inside it. Casting a spell that includes a Verbal component is impossible there."
 };
 SpellsList["silent image"] = {
 	name : "Silent Image",
@@ -18017,8 +18017,8 @@ SpellsList["silent image"] = {
 	components : "V,S,M",
 	compMaterial : "A bit of fleece",
 	duration : "Conc, 10 min",
-	description : "15-ft cube illusion includes visible; 1 a move it; Int(Investigation) check vs. spell DC; see book",
-	descriptionFull : "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual, it isn't accompanied by sound, smell, or other sensory effects." + "\n   " + "You can use your action to cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking." + "\n   " + "Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
+	description : "15-ft cube visual illusion; 1 a move it; Int(Investigation) check vs. spell DC; see book",
+	descriptionFull : "You create the image of an object, a creature, or some other visible phenomenon that is no larger than a 15-foot cube. The image appears at a spot within range and lasts for the duration. The image is purely visual, it isn't accompanied by sound, smell, or other sensory effects." + "\n   " + "As a Magic action, you can cause the image to move to any spot within range. As the image changes location, you can alter its appearance so that its movements appear natural for the image. For example, if you create an image of a creature and move it, you can alter the image so that it appears to be walking." + "\n   " + "Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image."
 };
 SpellsList["simulacrum"] = {
 	name : "Simulacrum",
@@ -18031,8 +18031,8 @@ SpellsList["simulacrum"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "Powdered ruby worth 1500+ gp, which the spell consumes",
 	duration : "Until dispelled",
-	description : "Create snow/ice duplicate of humanoid/beast; follows my verbal commands; see B (1500gp cons.)",
-	descriptionFull : "You shape an illusory duplicate of one beast or humanoid that is within range for the entire casting time of the spell. The duplicate is a creature, partially real and formed from ice or snow, and it can take actions and otherwise be affected as a normal creature. It appears to be the same as the original, but it has half the creature's hit point maximum and is formed without any equipment. Otherwise, the illusion uses all the statistics of the creature it duplicates, except that it is a construct." + "\n   " + "The simulacrum is friendly to you and creatures you designate. It obeys your spoken commands, moving and acting in accordance with your wishes and acting on your turn in combat. The simulacrum lacks the ability to learn or become more powerful, so it never increases its level or other abilities, nor can it regain expended spell slots." + "\n   " + "If the simulacrum is damaged, you can repair it in an alchemical laboratory, using rare herbs and minerals worth 100 gp per hit point it regains. The simulacrum lasts until it drops to 0 hit points, at which point it reverts to snow and melts instantly." + "\n   " + "If you cast this spell again, any currently active duplicates you created with this spell are instantly destroyed."
+	description : "Create snow/ice copy of humanoid/beast using their stats; follows my commands and acts on turn; see B (1500gp cons.)",
+	descriptionFull : "You create a simulacrum of one Beast or Humanoid that is within 10 feet of you for the entire casting of the spell. You finish the casting by touching both the creature and a pile of ice or snow that is the same size as that creature, and the pile turns into the simulacrum, which is a creature. It uses the game statistics of the original creature at the time of casting, except it is a Construct, its Hit Point maximum is half as much, and it can’t cast this spell." + "\n   " + "The simulacrum is Friendly to you and creatures you designate. It obeys your commands and acts on your turn in combat. The simulacrum can’t gain levels, and it can’t take Short or Long Rests." + "\n   " + "If the simulacrum takes damage, the only way to restore its Hit Points is to repair it as you take a Long Rest, during which you expend components worth 100 GP per Hit Point restored. The simulacrum must stay within 5 feet of you for the repair." + "\n   " + "The simulacrum lasts until it drops to 0 Hit Points, at which point it reverts to snow and melts away. If you cast this spell again, any simulacrum you created with this spell is instantly destroyed."
 };
 SpellsList["sleep"] = {
 	name : "Sleep",
@@ -18045,7 +18045,8 @@ SpellsList["sleep"] = {
 	components : "V,S,M",
 	compMaterial : "A pinch of sand or rose petals",
 	duration : "1 min",
-	description : "5-ft rad Wis save, or have Incap. end of next turn Wis save, or Unconscious for duration",
+	save : "Wis",
+	description : "Any 5-ft rad save or Incapacitated; if fail, next EOT save or Unconscious. 1 a or dmg to wake",
 	descriptionFull : "Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the Incapacitated condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect." + "\n   " + "Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell."
 };
 SpellsList["sleet storm"] = {
@@ -18060,8 +18061,8 @@ SpellsList["sleet storm"] = {
 	compMaterial : "A miniature umbrella",
 	duration : "Conc, 1 min",
 	save : "Dex",
-	description : "40-ft rad 20-ft high; heavily obsc.; douses flames; difficult ter.; save or prone; Con save or lose conc.",
-	descriptionFull : "Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused." + "\n   " + "The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls prone." + "\n   " + "If a creature starts its turn in the spell's area and is concentrating on a spell, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration"
+	description : "40-ft rad 20-ft high Cylin; heavily obsc.; douses flames; dif. ter.; enter/SoT save or Prone and lose conc.",
+	descriptionFull : "Until the spell ends, sleet falls in a 40-foot-tall, 20-foot-radius Cylinder centered on a point you choose within range. The area is Heavily Obscured, and exposed flames in the area are doused." + "\n   " + "Ground in the Cylinder is Difficult Terrain. When a creature enters the Cylinder for the first time on a turn or starts its turn there, it must succeed on a Dexterity saving throw or have the Prone condition and lose Concentration."
 };
 SpellsList["slow"] = {
 	name : "Slow",
@@ -18075,8 +18076,8 @@ SpellsList["slow"] = {
 	compMaterial : "A drop of molasses",
 	duration : "Conc, 1 min",
 	save : "Wis",
-	description : "6 crea in 40-ft cube save or half spd, -2 AC, -2 Dex saves, no rea, only 1 a or bns a, 1 atk; see book",
-	descriptionFull : "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration." + "\n   " + "An affected target's speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can't use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature's abilities or magic items, it can't make more than one melee or ranged attack during its turn." + "\n   " + "If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the spell doesn't take effect until the creature's next turn, and the creature must use its action on that turn to complete the spell. If it can't, the spell is wasted." + "\n   " + "A creature affected by this spell makes another Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it."
+	description : "40ft cu 6 crea save or 1/2 spd, -2 AC, -2 Dex saves, no rea, only 1 a or 1 bns, 1 atk; 25% chance S spell fails; EoT save",
+	descriptionFull : "You alter time around up to six creatures of your choice in a 40-foot cube within range. Each target must succeed on a Wisdom saving throw or be affected by this spell for the duration." + "\n   " + "An affected target’s Speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a 25 percent chance the spell fails as a result of the target making the spell’s gestures too slowly." + "\n   " + "An affected target repeats the save at the end of each of its turns, ending the spell on itself on a success."
 };
 SpellsList["sorcerous burst"] = {
 	name : "Sorcerous Burst",
@@ -18088,9 +18089,9 @@ SpellsList["sorcerous burst"] = {
 	range : "120 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell atk 1 crea 1d8 (Acid/Cold/Fire/Lightn/Pois/Psy/Thund) dmg;if you roll an 8 add 1d8 dmg(you can add a number of d8's equal to spell mod); +1d8 at CL 5, 11, and 17",
-	descriptionCantripDie : "Spell atk 1 crea `CD`d8 (Acid/Cold/Fire/Lightn/Pois/Psy/Thund) dmg;if you roll an 8 add 1d8 dmg(you can add a number of d8's equal to spell mod)",
-	descriptionFull : "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lighting, Poison, Psychic, or Thunder." + "\n   " + "If you roll an 8 on the d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+	description : "Spell atk; 1d8 Acid/Cold/Fire/Lghtng/Poison/Psych/Thndr; +1d8 per 8 (max spell mod) +1d8 CL 5/11/17",
+	descriptionCantripDie : "Spell atk 1 crea `CD`d8 (Acid/Cold/Fire/Lightn/Pois/Psy/Thund); if you roll an 8 add 1d8 (you can add a number of d8's equal to spell mod)",
+	descriptionFull : "You cast sorcerous energy at one creature or object within range. Make a ranged attack roll against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder." + "\n   " + "If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell’s damage equals your spellcasting ability modifier." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8)."
 };
 SpellsList["spare the dying"] = {
 	name : "Spare the Dying",
@@ -18102,8 +18103,8 @@ SpellsList["spare the dying"] = {
 	range : "15 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "1 living creature with 0 current HP becomes stable",
-	descriptionFull : "You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs." + "\n   " + "Cantrip Upgrade. The range doubles when you reach levels 5 (30 ft), 11 (60 ft), and 17 (120 ft)"
+	description : "1 living creature with 0 current HP becomes stable; range doubles at CL 5, 11, and 17 ",
+	descriptionFull : "Choose a creature within range that has 0 Hit Points and isn’t dead. The creature becomes Stable." + "\n   " + "Cantrip Upgrade. The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet)."
 };
 SpellsList["speak with animals"] = {
 	name : "Speak with Animals",
@@ -18116,8 +18117,8 @@ SpellsList["speak with animals"] = {
 	range : "Self",
 	components : "V,S",
 	duration : "10 min",
-	description : "Speak verbally with and understand beasts for duration; interaction limited by intelligence of beasts",
-	descriptionFull : "You gain the ability to comprehend and verbally communicate with beasts for the duration. The knowledge and awareness of many beasts is limited by their intelligence, but at minimum, beasts can give you information about nearby locations and monsters, including whatever they can perceive or have perceived within the past day. You might be able to persuade a beast to perform a small favor for you, at the DM's discretion."
+	description : "Speak with and understand beasts; gain info on nearby locations/monsters/recent sights; can Influence",
+	descriptionFull : "For the duration, you can comprehend and verbally communicate with Beasts, and you can use any of the Influence action’s skill options with them." + "\n   " + "Most Beasts have little to say about topics that don’t pertain to survival or companionship, but at minimum, a Beast can give you information about nearby locations and monsters, including whatever it has perceived within the past day."
 };
 SpellsList["speak with dead"] = {
 	name : "Speak with Dead",
@@ -18131,7 +18132,7 @@ SpellsList["speak with dead"] = {
 	compMaterial : "Burning incense",
 	duration : "10 min",
 	description : "1 corpse with mouth answers 5 questions with what it knew in life; can cast on same every 10 days",
-	descriptionFull : "You grant the semblance of life and intelligence to a corpse of your choice within range, allowing it to answer the questions you pose. The corpse must still have a mouth and can't be undead. The spell fails if the corpse was the target of this spell within the last 10 days." + "\n   " + "Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are hostile to it or it recognizes you as an enemy. This spell doesn't return the creature's soul to its body, only its animating spirit. Thus, the corpse can't learn new information, doesn't comprehend anything that has happened since it died, and can't speculate about future events."
+	descriptionFull : "You grant the semblance of life to a corpse of your choice within range, allowing it to answer questions you pose. The corpse must have a mouth, and this spell fails if the deceased creature was Undead when it died. The spell also fails if the corpse was the target of this spell within the past 10 days." + "\n   " + "Until the spell ends, you can ask the corpse up to five questions. The corpse knows only what it knew in life, including the languages it knew. Answers are usually brief, cryptic, or repetitive, and the corpse is under no compulsion to offer a truthful answer if you are antagonistic toward it or it recognizes you as an enemy. This spell doesn’t return the creature’s soul to its body, only its animating spirit. Thus, the corpse can’t learn new information, doesn’t comprehend anything that has happened since it died, and can’t speculate about future events."
 };
 SpellsList["speak with plants"] = {
 	name : "Speak with Plants",
@@ -18140,11 +18141,11 @@ SpellsList["speak with plants"] = {
 	level : 3,
 	school : "Trans",
 	time : "1 a",
-	range : "Self",
+	range : "S:30-ft rad",
 	components : "V,S",
 	duration : "10 min",
-	description : "Speak with plants in range about last 24h events; turn difficult plant terrain to normal or vice versa",
-	descriptionFull : "You imbue plants within 30 feet of you with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell's area within the past day, gaining information about creatures that have passed, weather, and other circumstances." + "\n   " + "You can also turn difficult terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into difficult terrain that lasts for the duration, causing vines and branches to hinder pursuers, for example." + "\n   " + "Plants might be able to perform other tasks on your behalf, at the DM's discretion. The spell doesn't enable plants to uproot themselves and move about, but they can freely move branches, tendrils, and stalks." + "\n   " + "If a plant creature is in the area, you can communicate with it as if you shared a common language, but you gain no magical ability to influence it." + "\n   " + "This spell can cause the plants created by the entangle spell to release a restrained creature."
+	description : "Speak with plants and plant crea in immobile 30ft rad about last 24h; turn dif. plant ter. to normal or vice versa",
+	descriptionFull : "You imbue plants in an immobile 30-foot Emanation with limited sentience and animation, giving them the ability to communicate with you and follow your simple commands. You can question plants about events in the spell’s area within the past day, gaining information about creatures that have passed, weather, and other circumstances." + "\n   " + "You can also turn Difficult Terrain caused by plant growth (such as thickets and undergrowth) into ordinary terrain that lasts for the duration. Or you can turn ordinary terrain where plants are present into Difficult Terrain that lasts for the duration." + "\n   " + "The spell doesn’t enable plants to uproot themselves and move about, but they can move their branches, tendrils, and stalks for you." + "\n   " + "If a Plant creature is in the area, you can communicate with it as if you shared a common language."
 };
 SpellsList["spider climb"] = {
 	name : "Spider Climb",
@@ -18157,8 +18158,8 @@ SpellsList["spider climb"] = {
 	components : "V,S,M",
 	compMaterial : "A drop of bitumen and a spider",
 	duration : "Conc, 1 h",
-	description : "1+1/SL gains climbing speed equal to walking speed; can go on walls and ceilings with hands free",
-	descriptionFull : "Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed." + AtHigherLevels + "You can target one additional creature for each spell slot above 2"
+	description : "1+1/SL gains Climb speed equal to Speed; can move on walls and ceilings without hands",
+	descriptionFull : "Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and along ceilings, while leaving its hands free. The target also gains a Climb Speed equal to its Speed." + AtHigherLevels + "You can target one additional creature for each spell slot above 2"
 };
 SpellsList["spike growth"] = {
 	name : "Spike Growth",
@@ -18171,9 +18172,9 @@ SpellsList["spike growth"] = {
 	components : "V,S,M",
 	compMaterial : "Seven thorns",
 	duration : "Conc, 10 min",
-	description : "20-ft rad difficult terrain; all 2d4 Piercing dmg per 5 ft moved; Wis(Perc) vs. Spell DC to recognize",
-	descriptionShorter : "20-ft rad dif. ter.; all 2d4 Piercing dmg per 5 ft moved; Wis(Perc) vs. Spell DC to recognize",
-	descriptionFull : "The ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. The area becomes difficult terrain for the duration. When a creature moves into or within the area, it takes 2d4 piercing damage for every 5 feet it travels." + "\n   " + "The transformation of the ground is camouflaged to look natural. Any creature that can't see the area at the time the spell is cast must make a Wisdom (Perception) check against your spell save DC to recognize the terrain as hazardous before entering it."
+	description : "20ft rad difficult terrain; all 2d4 Piercing per 5ft moved; Wis(Perc) vs. Spell DC to recognize",
+	descriptionShorter : "20ft rad dif. ter.; all 2d4 Piercing per 5ft moved; Wis(Perc) vs. Spell DC to recognize",
+	descriptionFull : "The ground in a 20-foot-radius Sphere centered on a point within range sprouts hard spikes and thorns. The area becomes Difficult Terrain for the duration. When a creature moves into or within the area, it takes 2d4 Piercing damage for every 5 feet it travels." + "\n   " + "The transformation of the ground is camouflaged to look natural. Any creature that can’t see the area when the spell is cast must take a Search action and succeed on a Wisdom (Perception or Survival) check against your spell save DC to recognize the terrain as hazardous before entering it."
 };
 SpellsList["spirit guardians"] = {
 	name : "Spirit Guardians",
@@ -18182,14 +18183,14 @@ SpellsList["spirit guardians"] = {
 	level : 3,
 	school : "Conj",
 	time : "1 a",
-	range : "Self",
+	range : "S:15-ft rad",
 	components : "V,S,M",
 	compMaterial : "A prayer scroll",
 	duration : "Conc, 10 min",
 	save : "Wis",
-	description : "Undesignated crea start turn/enter in area half speed, 3d8+1d8/SL Radiant/Necrotic dmg; save half",
-	descriptionShorter : "Any crea start turn/enter area half speed, 3d8+1d8/SL Radiant/Necrotic dmg; save half",
-	descriptionFull : "You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish." + "\n   " + "When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage." + AtHigherLevels + "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.",
+	description : "Undesignated crea half speed, cover/enter/EoT 3d8+1d8/SL Radiant/Necrotic (1/t/c); save half",
+	descriptionShorter : "Any crea 1/2 speed, cover/enter/EoT 3d8+1d8/SL Radiant/Necrotic; save half",
+	descriptionFull : "Protective spirits flit around you in a 15-foot Emanation for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish." + "\n   " + "When you cast this spell, you can designate creatures to be unaffected by it. Any other creature’s Speed is halved in the Emanation, and whenever the Emanation enters a creature’s space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature takes 3d8 Radiant damage (if you are good or neutral) or 3d8 Necrotic damage (if you are evil). On a successful save, the creature takes half as much damage. A creature makes this save only once per turn." + AtHigherLevels + "The damage increases by 1d8 for each spell slot level above 3.",
 	dynamicDamageBonus : {
 		multipleDmgTypes : {
 			dmgTypes : ["radiant", "necrotic"],
@@ -18206,10 +18207,10 @@ SpellsList["spiritual weapon"] = {
 	time : "1 bns",
 	range : "60 ft",
 	components : "V,S",
-	duration : "1 min",
-	description : "Create weapon; spell atk 1d8+1d8/2SL+ability modifier Force dmg; bns a to move 20 ft and/or attack",
-	descriptionShorter : "Create wea; spell atk 1d8+1d8/2SL+spell modifier Force dmg; bns a move 20 ft and/or atk",
-	descriptionFull : "You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier." + "\n   " + "As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it." + "\n   " + "The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon." + AtHigherLevels + "When you cast this spell using a spell slot 3rd level of or higher, the damage increases by 1d8 for every two slot levels above the 2nd."
+	duration : "Conc, 1 min",
+	description : "Create spectral weapon; spell atk 1d8+1d8/SL+mod Force; bns to move 20 ft and/or atk",
+	descriptionShorter : "Create wea; spell atk 1d8+1d8/2SL+spell modifier Force dmg; bns move 20 ft and/or atk",
+	descriptionFull : "You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against one creature within 5 feet of the force. On a hit, the target takes Force damage equal to 1d8 plus your spellcasting ability modifier." + "\n   " + "As a Bonus Action on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it." + AtHigherLevels + "Using a Higher-Level Spell Slot. The damage increases by 1d8 for every slot level above 2."
 };
 SpellsList["staggering smite"] = {
 	name : "Staggering Smite",
@@ -18217,13 +18218,13 @@ SpellsList["staggering smite"] = {
 	source : [["PHB2024", 320]],
 	level : 4,
 	school : "Ench",
-	time : "1 bns",
+	time : "1 bns*",
 	timeFull : "Bonus Action, which you take immediately after hitting a creature with a Melee weapon or an Unarmed Strike.",
 	range : "Self",
 	components : "V",
 	duration : "Instantaneous",
 	save : "Wis",
-	description : "On melee weapon hit 4d6+1/SL Psychic dmg and save or stunned, until end next turn",
+	description : "Melee weapon/unarmed hit +4d6+1d6/SL Psychic; target save or Stunned until my next EoT",
 	descriptionFull : "The target takes an extra 4d6 Psychic damage from the attack, and the target must succeed on a Wisdom saving throw or have the Stunned condition until the end of your next turn." + AtHigherLevels + "The extra damage increases by 1d6 for each spell slot level above 4."
 };
 SpellsList["starry wisp"] = {
@@ -18236,8 +18237,8 @@ SpellsList["starry wisp"] = {
 	range : "60 ft",
 	components : "V,S",
 	duration : "Instantaneous",
-	description : "Spell atk 1 crea 1d8 Radiant dmg and emit dim light in a 10ft rad. can't benefit from Invis.; +1d8 at CL 5, 11, and 17",
-	descriptionCantripDie : "Spell atk 1 crea `CD`d8 Radiant dmg and emit dim light in a 10ft rad. can't benefit from Invis.",
+	description : "Spell atk crea/obj; 1d8 Radiant; emits 10ft rad dim and not Invisible to my next EoT; +1d8 CL 5/11/17",
+	descriptionCantripDie : "Spell atk at crea/obj, `CD`d8 Radiant; target emits Dim Light \u0026 not Invisible thru my next turn",
 	descriptionFull : "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim light in a 10-foot radius and can't benefit from the Invisible condition." + "\n   " + "Cantrip Upgrade. The damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
 };
 SpellsList["steel wind strike"] = {
@@ -18249,10 +18250,10 @@ SpellsList["steel wind strike"] = {
 	time : "1 a",
 	range : "30 ft",
 	components : "S,M\u0192",
-	compMaterial : "A melee weapon worth 1+ sp",
+	compMaterial : "A Melee weapon worth 1+ sp",
 	duration : "Instantaneous",
-	description : "Melee spell attack vs. 5 crea in range; 6d10 Force dmg on hit; after, I teleport next to one target",
-	descriptionFull : "You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 force damage." + "\n   " + "You can then teleport to an unoccupied space you can see within 5 feet of one of the targets you hit or missed."
+	description : "Melee spell atk vs 5 visible crea; 6d10 Force dmg on each hit; after, I teleport next to 1 target",
+	descriptionFull : "You flourish the weapon used in the casting and then vanish to strike like the wind. Choose up to five creatures you can see within range. Make a melee spell attack against each target. On a hit, a target takes 6d10 force damage." + "\n   " + "You then teleport to an unoccupied space you can see within 5 feet of one of the targets."
 };
 SpellsList["stinking cloud"] = {
 	name : "Stinking Cloud",
@@ -18266,8 +18267,8 @@ SpellsList["stinking cloud"] = {
 	compMaterial : "A rotten egg",
 	duration : "Conc, 1 min",
 	save : "Con",
-	description : "20-ft rad; ignores cover, heavily obscures; all in area at start of turn save against poison or can't act",
-	descriptionFull : "You create a 20-foot-radius sphere of yellow, nauseating gas centered on a point within range. The cloud spreads around corners, and its area is heavily obscured. The cloud lingers in the air for the duration." + "\n   " + "Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw." + "\n   " + "A moderate wind (at least 10 miles per hour) disperses the cloud after 4 rounds. A strong wind (at least 20 miles per hour) disperses it after 1 round."
+	description : "20ft rad; heavily obscures; all in area at start of turn save vs Poisoned or can't act that turn",
+	descriptionFull : "You create a 20-foot-radius Sphere of yellow, nauseating gas centered on a point within range. The cloud is Heavily Obscured. The cloud lingers in the air for the duration or until a strong wind (such as the one created by Gust of Wind) disperses it." + "\n   " + "Each creature that starts its turn in the Sphere must succeed on a Constitution saving throw or have the Poisoned condition until the end of the current turn. While Poisoned in this way, the creature can’t take an action or a Bonus Action."
 };
 SpellsList["stone shape"] = {
 	name : "Stone Shape",
@@ -18281,7 +18282,7 @@ SpellsList["stone shape"] = {
 	compMaterial : "Soft clay",
 	duration : "Instantaneous",
 	description : "Form 5 cu ft of stone into any shape; can have up to two hinges and a latch, but no finer mechanisms",
-	descriptionFull : "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible."
+	descriptionFull : "You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape you like. For example, you could shape a large rock into a weapon, statue, or coffer, or you could make a small passage through a wall that is 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn’t possible."
 };
 SpellsList["stoneskin"] = {
 	name : "Stoneskin",
@@ -18294,8 +18295,8 @@ SpellsList["stoneskin"] = {
 	components : "V,S,M\u2020",
 	compMaterial : "Diamond dust worth 100+ gp, which the spell consumes",
 	duration : "Conc, 1 h",
-	description : "1 willing crea resistance to nonmagical Bludgeoning, Piercing, and Slashing dmg (100gp cons.)",
-	descriptionFull : "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage."
+	description : "1 willing crea resistance to Bludgeoning, Piercing, and Slashing dmg (100gp cons.)",
+	descriptionFull : "Until the spell ends, one willing creature you touch has Resistance to Bludgeoning, Piercing, and Slashing damage."
 };
 SpellsList["storm of vengeance"] = {
 	name : "Storm of Vengeance",
@@ -18308,7 +18309,7 @@ SpellsList["storm of vengeance"] = {
 	components : "V,S",
 	duration : "Conc, 1 min",
 	save : "Con",
-	description : "360-ft rad all save or 2d6 Thunder dmg and deafened for 5 min; effect changes every round; see book",
+	description : "300-ft rad all save or 2d6 Thunder dmg and Deafened; effect changes every round; see book",
 	descriptionFull : "A churning storm cloud forms, centered on a point you can see and spreading to a radius of 360 feet. Lightning flashes in the area, thunder booms, and strong winds roar. Each creature under the cloud (no more than 5,000 feet beneath the cloud) when it appears must make a Constitution saving throw. On a failed save, a creature takes 2d6 thunder damage and becomes deafened for 5 minutes." + "\n   " + "Each round you maintain concentration on this spell, the storm produces different effects on your turn." + "\n   " + toUni("Round 2") + ": Acidic rain falls from the cloud. Each creature and object under the cloud takes 1d6 acid damage." + "\n   " + toUni("Round 3") + ": You call six bolts of lightning from the cloud to strike six creatures or objects of your choice beneath the cloud. A given creature or object can't be struck by more than one bolt. A struck creature must make a Dexterity saving throw. The creature takes 10d6 lightning damage on a failed save, or half as much damage on a successful one." + "\n   " + toUni("Round 4") + ": Hailstones rain down from the cloud. Each creature under the cloud takes 2d6 bludgeoning damage." + "\n   " + toUni("Round 5-10") + ": Gusts and freezing rain assail the area under the cloud. the area becomes difficult terrain and is heavily obscured. Each creature there takes 1d6 cold damage. Ranged weapon attacks in the area are impossible. The wind and rain count as a severe distraction for the purposes of maintaining concentration on spells. Finally, gusts of strong wind (ranging from 20 to 50 miles per hour) automatically disperse fog, mists, and similar phenomena in the area whether mundane or magical.",
 	dynamicDamageBonus : { multipleDmgMoments : false }
 };
